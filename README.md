@@ -6,7 +6,7 @@
 ![Banner](outputs/thread.png)
 
 [![Technology](https://img.shields.io/badge/Technology-45nm-blue)]()
-[![PDK](https://img.shields.io/badge/PDK-gsclib090-green)]()
+[![PDK](https://img.shields.io/badge/Cadence-Genus-green)]()
 [![Tool](https://img.shields.io/badge/Cadence-Innovus%2021.1-red)]()
 [![Clock](https://img.shields.io/badge/Clock-100MHz-orange)]()
 [![Skew](https://img.shields.io/badge/CTS%20Skew-73ps-brightgreen)]()
@@ -237,8 +237,7 @@ This project implements a complete **RTL-to-GDSII physical design flow** for [Ti
 |:---|:---|:---|
 | Cadence Genus | — | RTL Synthesis |
 | Cadence Innovus | 21.1 | Floorplan, P&R, CTS |
-| gsclib090 PDK | 45nm | Standard Cell Library |
-| JasperGold | — | Lint / CDC |
+| PDK | 45nm | Standard Cell Library |
 | sv2v | — | SV → Verilog conversion |
 
 ---
@@ -277,7 +276,7 @@ tinygpu-rtl-to-gdsii/
 
 - [TinyGPU by Adam Maj](https://github.com/adam-maj/tiny-gpu) — Original RTL
 - [Cadence Innovus Documentation](https://www.cadence.com)
-- [gsclib090 45nm Standard Cell Library]
+
 
 ---
 
