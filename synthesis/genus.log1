@@ -1,0 +1,71 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:21:55.400305] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files gpu_script.tcl 
+Date:    Thu Apr 16 18:21:55 2026
+Host:    cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*1physical cpu*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB) (1055760632KB)
+PID:     2523430
+OS:      Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+
+[18:21:55.438984] Periodic Lic check successful
+[18:21:55.438986] Feature usage summary:
+[18:21:55.438987] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (11 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source gpu_script.tcl
+#@ Begin verbose source ./gpu_script.tcl
+@file(gpu_script.tcl) 8: set_db init_lib_search_path ./home/cadence/install/FOUNDRY/digital/90nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = ./home/cadence/install/FOUNDRY/digital/90nm/dig/lib
+@file(gpu_script.tcl) 9: read_libs slow.lib
+Error   : File error. [FILE-100] [::legacy::set_attribute]
+        : Cannot open file 'slow.lib'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [::legacy::set_attribute]
+        : File 'slow.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { slow.lib } ' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+#@ End verbose source ./gpu_script.tcl
+1
+Encountered problems processing file: gpu_script.tcl
+WARNING: This version of the tool is 1393 days old.
+@genus:root: 2> exec ls /home/cadence/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+/home/cadence/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+@genus:root: 3> read_libs /home/cadence/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@genus:root: 4> exit
+
+Lic Summary:
+[18:23:49.232929] Cdslmd servers: cadence-server
+[18:23:49.232936] Feature usage summary:
+[18:23:49.232936] Genus_Synthesis
+
+Normal exit.

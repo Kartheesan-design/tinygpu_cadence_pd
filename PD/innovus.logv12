@@ -1,0 +1,136 @@
+[06/21 12:22:02      0s] 
+[06/21 12:22:02      0s] Cadence Innovus(TM) Implementation System.
+[06/21 12:22:02      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/21 12:22:02      0s] 
+[06/21 12:22:02      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[06/21 12:22:02      0s] Options:	
+[06/21 12:22:02      0s] Date:		Sun Jun 21 12:22:02 2026
+[06/21 12:22:02      0s] Host:		cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB)
+[06/21 12:22:02      0s] OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+[06/21 12:22:02      0s] 
+[06/21 12:22:02      0s] License:
+[06/21 12:22:02      0s] 		[12:22:02.400201] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+[06/21 12:22:02      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[06/21 12:22:02      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/21 12:22:17      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[06/21 12:22:19     11s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[06/21 12:22:19     11s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[06/21 12:22:19     11s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[06/21 12:22:19     11s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[06/21 12:22:19     11s] @(#)CDS: CPE v21.15-s076
+[06/21 12:22:19     11s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[06/21 12:22:19     11s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[06/21 12:22:19     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[06/21 12:22:19     11s] @(#)CDS: RCDB 11.15.0
+[06/21 12:22:19     11s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[06/21 12:22:19     11s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[06/21 12:22:19     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3054151_cadence-server.vit.ac.in_22bec0039_xjV8NT.
+
+[06/21 12:22:19     11s] Change the soft stacksize limit to 0.2%RAM (2062 mbytes). Set global soft_stack_size_limit to change the value.
+[06/21 12:22:23     12s] 
+[06/21 12:22:23     12s] **INFO:  MMMC transition support version v31-84 
+[06/21 12:22:23     12s] 
+[06/21 12:22:23     12s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/21 12:22:23     12s] <CMD> suppressMessage ENCEXT-2799
+[06/21 12:22:23     12s] <CMD> getVersion
+[06/21 12:22:23     12s] <CMD> getVersion
+[06/21 12:22:23     12s] <CMD> getVersion
+[06/21 12:22:23     12s] [INFO] Loading PVS 22.20 fill procedures
+[06/21 12:22:23     12s] <CMD> win
+[06/21 12:31:57     77s] <CMD> set init_gnd_net VSS
+[06/21 12:31:57     77s] <CMD> set init_lef_file {../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef}
+[06/21 12:31:57     77s] <CMD> set init_design_settop 0
+[06/21 12:31:57     77s] <CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+[06/21 12:31:57     77s] <CMD> set init_mmmc_file Default.view
+[06/21 12:31:57     77s] <CMD> set init_pwr_net VDD
+[06/21 12:31:57     77s] <CMD> init_design
+[06/21 12:31:57     77s] #% Begin Load MMMC data ... (date=06/21 12:31:57, mem=1038.2M)
+[06/21 12:31:57     77s] 
+[06/21 12:31:57     77s] Usage: create_analysis_view [-help] -constraint_mode <modeName> -delay_corner <dcCornerObj> -name <viewName>
+[06/21 12:31:57     77s] 
+[06/21 12:31:57     77s] **ERROR: (IMPTCM-46):	Argument "-constraint_mode" is required for command "create_analysis_view", either this option is not specified or an option prior to it is not specified correctly.
+<CMD> set init_gnd_net VSS
+[06/21 12:33:06     84s] <CMD> set init_lef_file {../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef}
+[06/21 12:33:06     84s] <CMD> set init_design_settop 0
+[06/21 12:33:06     84s] <CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+[06/21 12:33:06     84s] <CMD> set init_mmmc_file Default.view
+[06/21 12:33:06     84s] <CMD> set init_pwr_net VDD
+[06/21 12:33:06     84s] <CMD> init_design
+[06/21 12:33:06     84s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[06/21 12:33:06     84s] % Begin Load MMMC data ... (date=06/21 12:33:06, mem=1042.5M)
+[06/21 12:33:06     84s] Extraction setup Started 
+[06/21 12:33:06     84s] 
+[06/21 12:33:06     84s] Trim Metal Layers:
+[06/21 12:33:06     84s] 
+[06/21 12:33:06     84s] Trim Metal Layers:
+[06/21 12:33:06     84s] 
+[06/21 12:33:06     84s] Trim Metal Layers:
+[06/21 12:33:06     84s] Extraction setup Started 
+[06/21 12:33:06     84s] 
+[06/21 12:33:06     84s] Trim Metal Layers:
+[06/21 12:33:06     84s] 
+[06/21 12:33:06     84s] Trim Metal Layers:
+[06/21 12:33:06     84s] 
+[06/21 12:33:06     84s] Trim Metal Layers:
+[06/21 12:33:06     84s] Extraction setup Started 
+[06/21 12:33:06     84s] 
+[06/21 12:33:06     84s] Trim Metal Layers:
+[06/21 12:33:06     84s] 
+[06/21 12:33:06     84s] Trim Metal Layers:
+[06/21 12:33:06     84s] 
+[06/21 12:33:06     84s] Trim Metal Layers:
+[06/21 12:33:06     84s] 
+[06/21 12:33:06     84s] Usage: create_analysis_view [-help] -constraint_mode <modeName> -delay_corner <dcCornerObj> -name <viewName>
+[06/21 12:33:06     84s] 
+[06/21 12:33:06     84s] **ERROR: (IMPTCM-46):	Argument "-constraint_mode" is required for command "create_analysis_view", either this option is not specified or an option prior to it is not specified correctly.
+<CMD> set init_gnd_net VSS
+[06/21 12:34:27     91s] <CMD> set init_lef_file {../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef}
+[06/21 12:34:27     91s] <CMD> set init_design_settop 0
+[06/21 12:34:27     91s] <CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+[06/21 12:34:27     91s] <CMD> set init_mmmc_file Default.view
+[06/21 12:34:27     91s] <CMD> set init_pwr_net VDD
+[06/21 12:34:27     91s] <CMD> init_design
+[06/21 12:34:27     91s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[06/21 12:34:27     91s] % Begin Load MMMC data ... (date=06/21 12:34:27, mem=1043.4M)
+[06/21 12:34:27     91s] Extraction setup Started 
+[06/21 12:34:27     91s] 
+[06/21 12:34:27     91s] Trim Metal Layers:
+[06/21 12:34:27     91s] 
+[06/21 12:34:27     91s] Trim Metal Layers:
+[06/21 12:34:27     91s] 
+[06/21 12:34:27     91s] Trim Metal Layers:
+[06/21 12:34:27     91s] Extraction setup Started 
+[06/21 12:34:27     91s] 
+[06/21 12:34:27     91s] Trim Metal Layers:
+[06/21 12:34:27     91s] 
+[06/21 12:34:27     91s] Trim Metal Layers:
+[06/21 12:34:27     91s] 
+[06/21 12:34:27     91s] Trim Metal Layers:
+[06/21 12:34:27     91s] Extraction setup Started 
+[06/21 12:34:27     91s] 
+[06/21 12:34:27     91s] Trim Metal Layers:
+[06/21 12:34:27     91s] 
+[06/21 12:34:27     91s] Trim Metal Layers:
+[06/21 12:34:27     91s] 
+[06/21 12:34:27     91s] Trim Metal Layers:
+[06/21 12:34:27     91s] 
+[06/21 12:34:27     91s] Usage: create_analysis_view [-help] -constraint_mode <modeName> -delay_corner <dcCornerObj> -name <viewName>
+[06/21 12:34:27     91s] 
+[06/21 12:34:27     91s] **ERROR: (IMPTCM-46):	Argument "-constraint_mode" is required for command "create_analysis_view", either this option is not specified or an option prior to it is not specified correctly.
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Jun 21 12:34:51 2026
+  Total CPU time:     0:01:33
+  Total real time:    0:12:50
+  Peak memory (main): 1053.93MB
+
+[06/21 12:34:51     92s] 
+[06/21 12:34:51     92s] *** Memory Usage v#1 (Current mem = 1060.219M, initial mem = 491.871M) ***
+[06/21 12:34:51     92s] 
+[06/21 12:34:51     92s] *** Summary of all messages that are not suppressed in this session:
+[06/21 12:34:51     92s] Severity  ID               Count  Summary                                  
+[06/21 12:34:51     92s] ERROR     IMPTCM-46            3  Argument "%s" is required for command "%...
+[06/21 12:34:51     92s] *** Message Summary: 0 warning(s), 3 error(s)
+[06/21 12:34:51     92s] 
+[06/21 12:34:51     92s] --- Ending "Innovus" (totcpu=0:01:32, real=0:12:49, mem=1060.2M) ---

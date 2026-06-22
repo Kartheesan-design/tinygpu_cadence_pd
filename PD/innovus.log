@@ -1,0 +1,214 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	-stylus 
+Date:		Thu Apr 16 18:57:42 2026
+Host:		cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB)
+OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+License:
+		[18:57:42.400345] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_2599455_cadence-server.vit.ac.in_22bec0039_Sryn6N.
+
+Change the soft stacksize limit to 0.2%RAM (2062 mbytes). Set global soft_stack_size_limit to change the value.
+[INFO] Loading PVS 22.20 fill procedures
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> set_db init_power_nets VDD
+@innovus 2> set_db init_ground_nets VSS
+@innovus 3> #################################
+read_physical -lef {../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef}
+#################################
+
+Loading LEF file ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef ...
+**ERROR: (IMPLF-328):	The layer 'Metal1' specified in macro pin 'XOR3XL.Y' does not exist
+**ERROR: (IMPLF-53):	The layer 'Metal1' referenced in pin 'Y' in macro 'XOR3XL' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_files variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-53' for more detail.
+**ERROR: (IMPLF-3):	Error found when processing LEF file '../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus'.
+Type 'man IMPLF-3' for more detail.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+**ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef}'.For more details, refer to error message from console.
+
+#################################
+read_netlist ../synthesis/output/gpu_netlist.v -top gpu
+#################################
+**ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v 
+read_power_intent -1801 top.1801	    #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details.
+**ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_netlist ../synthesis/output/gpu_netlist.v -top gpu'.For more details, refer to error message from console.
+
+**ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v 
+read_power_intent -1801 top.1801	    #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details.
+set_db init_power_nets VDD
+@innovus 4> set_db init_ground_nets VSS
+@innovus 5> #################################
+read_physical -lef {../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef}
+#################################
+**ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v 
+read_power_intent -1801 top.1801	    #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details.
+**ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef}'.For more details, refer to error message from console.
+
+#################################
+read_netlist ../synthesis/output/gpu_netlist.v -top gpu
+#################################
+**ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v 
+read_power_intent -1801 top.1801	    #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details.
+**ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_netlist ../synthesis/output/gpu_netlist.v -top gpu'.For more details, refer to error message from console.
+
+**ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v 
+read_power_intent -1801 top.1801	    #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details.
+set_db init_power_nets VDD
+@innovus 6> set_db init_ground_nets VSS
+@innovus 7> #################################
+read_physical -lef {../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef}
+#################################
+**ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v 
+read_power_intent -1801 top.1801	    #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details.
+**ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef}'.For more details, refer to error message from console.
+
+#################################
+read_netlist ../synthesis/output/gpu_netlist.v -top gpu
+#################################
+**ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v 
+read_power_intent -1801 top.1801	    #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details.
+**ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_netlist ../synthesis/output/gpu_netlist.v -top gpu'.For more details, refer to error message from console.
+
+**ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v 
+read_power_intent -1801 top.1801	    #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details.
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu Apr 16 19:06:04 2026
+  Total CPU time:     0:02:46
+  Total real time:    0:08:23
+  Peak memory (main): 1045.70MB
+
+
+*** Memory Usage v#1 (Current mem = 1047.023M, initial mem = 492.871M) ***
+*** Message Summary: 0 warning(s), 20 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:46, real=0:08:22, mem=1047.0M) ---

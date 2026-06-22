@@ -1,0 +1,55 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Jun 20 20:55:48 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+set init_gnd_net VSS
+set init_lef_file {../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef}
+set init_design_settop 0
+set init_verilog ../synthesis/output/gpu_netlist.v
+set init_mmmc_file gpu.view
+set init_pwr_net VDD
+init_design
+loadFPlan gpu.fp
+setDrawView fplan
+fit
+setAnalysisMode -cppr both -clockGatingCheck true -timeBorrowing true -useOutputPinCap true -sequentialConstProp false -timingSelfLoopsNoSkew false -enableMultipleDriveNet true -clkSrcPath true -warn true -usefulSkew false -analysisType bcwc -log true
+setPlaceMode -fp false
+place_design
+zoomBox 2.66650 49.85400 202.81400 161.89900
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+redraw
+zoomBox 31.32650 68.17900 175.93350 149.13200
+zoomBox 42.51900 75.33600 165.43550 144.14600
+zoomBox 85.61300 102.88950 125.01850 124.94900
+zoomBox 105.01900 115.29700 106.81700 116.30350
+zoomBox 105.02450 115.30700 106.82250 116.31350
+zoomBox 104.68250 115.14800 107.17100 116.54100

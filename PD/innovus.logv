@@ -1,0 +1,238 @@
+[04/16 18:57:42      0s] 
+[04/16 18:57:42      0s] Cadence Innovus(TM) Implementation System.
+[04/16 18:57:42      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/16 18:57:42      0s] 
+[04/16 18:57:42      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[04/16 18:57:42      0s] Options:	-stylus 
+[04/16 18:57:42      0s] Date:		Thu Apr 16 18:57:42 2026
+[04/16 18:57:42      0s] Host:		cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB)
+[04/16 18:57:42      0s] OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+[04/16 18:57:42      0s] 
+[04/16 18:57:42      0s] License:
+[04/16 18:57:42      0s] 		[18:57:42.400345] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+[04/16 18:57:42      0s] 
+[04/16 18:57:42      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[04/16 18:57:42      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[04/16 18:57:51      6s] 
+[04/16 18:57:51      6s] 
+[04/16 18:57:55      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[04/16 18:57:57     11s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[04/16 18:57:57     11s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[04/16 18:57:57     11s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[04/16 18:57:57     11s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[04/16 18:57:57     11s] @(#)CDS: CPE v21.15-s076
+[04/16 18:57:57     11s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[04/16 18:57:57     11s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[04/16 18:57:57     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[04/16 18:57:57     11s] @(#)CDS: RCDB 11.15.0
+[04/16 18:57:57     11s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[04/16 18:57:57     11s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[04/16 18:57:57     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_2599455_cadence-server.vit.ac.in_22bec0039_Sryn6N.
+
+[04/16 18:57:57     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_2599455_cadence-server.vit.ac.in_22bec0039_Sryn6N.
+[04/16 18:57:57     11s] 
+[04/16 18:57:57     11s] Change the soft stacksize limit to 0.2%RAM (2062 mbytes). Set global soft_stack_size_limit to change the value.
+[04/16 18:57:59     11s] [INFO] Loading PVS 22.20 fill procedures
+[04/16 18:58:00     12s] 
+[04/16 18:58:00     12s] **INFO:  MMMC transition support version v31-84 
+[04/16 18:58:00     12s] 
+[04/16 18:58:04     14s] @innovus 1> set_db init_power_nets VDD
+[04/16 19:00:46     38s] @innovus 2> set_db init_ground_nets VSS
+[04/16 19:00:46     38s] @innovus 3> #################################
+[04/16 19:00:46     38s] read_physical -lef {../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef}
+[04/16 19:00:46     38s] #################################
+[04/16 19:00:46     38s] 
+[04/16 19:00:46     38s] Loading LEF file ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef ...
+[04/16 19:00:46     38s] **ERROR: (IMPLF-328):	The layer 'Metal1' specified in macro pin 'XOR3XL.Y' does not exist
+[04/16 19:00:46     38s] **ERROR: (IMPLF-53):	The layer 'Metal1' referenced in pin 'Y' in macro 'XOR3XL' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_files variable to see if the layer does not exist or is specified after the one that defines the macro.
+[04/16 19:00:46     38s] Type 'man IMPLF-53' for more detail.
+[04/16 19:00:46     38s] **ERROR: (IMPLF-3):	Error found when processing LEF file '../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus'.
+[04/16 19:00:46     38s] Type 'man IMPLF-3' for more detail.
+[04/16 19:00:46     38s] **ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+[04/16 19:00:46     38s] Please rearrange the LEF file order and make sure the technology LEF file is the
+[04/16 19:00:46     38s] first one, exit and restart Innovus.
+[04/16 19:00:46     38s] **ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+[04/16 19:00:46     38s] Please rearrange the LEF file order and make sure the technology LEF file is the
+[04/16 19:00:46     38s] first one, exit and restart Innovus.
+[04/16 19:00:46     38s] **ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[04/16 19:00:54     40s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef}'.For more details, refer to error message from console.
+[04/16 19:00:54     40s] 
+[04/16 19:00:54     40s] #################################
+[04/16 19:00:54     40s] read_netlist ../synthesis/output/gpu_netlist.v -top gpu
+[04/16 19:00:54     40s] #################################
+[04/16 19:00:54     40s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 19:00:54     40s] The MMMC init sequence looks like this: 
+[04/16 19:00:54     40s] read_mmmc top.mmmc 
+[04/16 19:00:54     40s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 19:00:54     40s] read_netlist top.v 
+[04/16 19:00:54     40s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 19:00:54     40s] init_design 
+[04/16 19:00:54     40s] 
+[04/16 19:00:54     40s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 19:00:54     40s] read_libs all.lib 
+[04/16 19:00:54     40s] read_netlist top.v 
+[04/16 19:00:54     40s] read_sdc top.sdc 
+[04/16 19:00:54     40s] init_design 
+[04/16 19:00:54     40s] 
+[04/16 19:00:54     40s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 19:00:54     40s] Common UI User Guide for more details.
+[04/16 19:00:56     41s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_netlist ../synthesis/output/gpu_netlist.v -top gpu'.For more details, refer to error message from console.
+[04/16 19:00:56     41s] 
+[04/16 19:00:56     41s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 19:00:56     41s] The MMMC init sequence looks like this: 
+[04/16 19:00:56     41s] read_mmmc top.mmmc 
+[04/16 19:00:56     41s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 19:00:56     41s] read_netlist top.v 
+[04/16 19:00:56     41s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 19:00:56     41s] init_design 
+[04/16 19:00:56     41s] 
+[04/16 19:00:56     41s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 19:00:56     41s] read_libs all.lib 
+[04/16 19:00:56     41s] read_netlist top.v 
+[04/16 19:00:56     41s] read_sdc top.sdc 
+[04/16 19:00:56     41s] init_design 
+[04/16 19:00:56     41s] 
+[04/16 19:00:56     41s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 19:00:56     41s] Common UI User Guide for more details.
+[04/16 19:01:05     43s] set_db init_power_nets VDD
+[04/16 19:01:05     43s] @innovus 4> set_db init_ground_nets VSS
+[04/16 19:01:05     43s] @innovus 5> #################################
+[04/16 19:01:05     43s] read_physical -lef {../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef}
+[04/16 19:01:05     43s] #################################
+[04/16 19:01:05     43s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 19:01:05     43s] The MMMC init sequence looks like this: 
+[04/16 19:01:05     43s] read_mmmc top.mmmc 
+[04/16 19:01:05     43s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 19:01:05     43s] read_netlist top.v 
+[04/16 19:01:05     43s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 19:01:05     43s] init_design 
+[04/16 19:01:05     43s] 
+[04/16 19:01:05     43s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 19:01:05     43s] read_libs all.lib 
+[04/16 19:01:05     43s] read_netlist top.v 
+[04/16 19:01:05     43s] read_sdc top.sdc 
+[04/16 19:01:05     43s] init_design 
+[04/16 19:01:05     43s] 
+[04/16 19:01:05     43s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 19:01:05     43s] Common UI User Guide for more details.
+[04/16 19:01:07     43s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef}'.For more details, refer to error message from console.
+[04/16 19:01:07     43s] 
+[04/16 19:01:07     43s] #################################
+[04/16 19:01:07     43s] read_netlist ../synthesis/output/gpu_netlist.v -top gpu
+[04/16 19:01:07     43s] #################################
+[04/16 19:01:07     43s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 19:01:07     43s] The MMMC init sequence looks like this: 
+[04/16 19:01:07     43s] read_mmmc top.mmmc 
+[04/16 19:01:07     43s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 19:01:07     43s] read_netlist top.v 
+[04/16 19:01:07     43s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 19:01:07     43s] init_design 
+[04/16 19:01:07     43s] 
+[04/16 19:01:07     43s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 19:01:07     43s] read_libs all.lib 
+[04/16 19:01:07     43s] read_netlist top.v 
+[04/16 19:01:07     43s] read_sdc top.sdc 
+[04/16 19:01:07     43s] init_design 
+[04/16 19:01:07     43s] 
+[04/16 19:01:07     43s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 19:01:07     43s] Common UI User Guide for more details.
+[04/16 19:01:09     44s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_netlist ../synthesis/output/gpu_netlist.v -top gpu'.For more details, refer to error message from console.
+[04/16 19:01:09     44s] 
+[04/16 19:01:09     44s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 19:01:09     44s] The MMMC init sequence looks like this: 
+[04/16 19:01:09     44s] read_mmmc top.mmmc 
+[04/16 19:01:09     44s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 19:01:09     44s] read_netlist top.v 
+[04/16 19:01:09     44s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 19:01:09     44s] init_design 
+[04/16 19:01:09     44s] 
+[04/16 19:01:09     44s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 19:01:09     44s] read_libs all.lib 
+[04/16 19:01:09     44s] read_netlist top.v 
+[04/16 19:01:09     44s] read_sdc top.sdc 
+[04/16 19:01:09     44s] init_design 
+[04/16 19:01:09     44s] 
+[04/16 19:01:09     44s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 19:01:09     44s] Common UI User Guide for more details.
+[04/16 19:01:37     52s] set_db init_power_nets VDD
+[04/16 19:01:37     52s] @innovus 6> set_db init_ground_nets VSS
+[04/16 19:01:37     52s] @innovus 7> #################################
+[04/16 19:01:37     52s] read_physical -lef {../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef}
+[04/16 19:01:37     52s] #################################
+[04/16 19:01:37     52s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 19:01:37     52s] The MMMC init sequence looks like this: 
+[04/16 19:01:37     52s] read_mmmc top.mmmc 
+[04/16 19:01:37     52s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 19:01:37     52s] read_netlist top.v 
+[04/16 19:01:37     52s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 19:01:37     52s] init_design 
+[04/16 19:01:37     52s] 
+[04/16 19:01:37     52s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 19:01:37     52s] read_libs all.lib 
+[04/16 19:01:37     52s] read_netlist top.v 
+[04/16 19:01:37     52s] read_sdc top.sdc 
+[04/16 19:01:37     52s] init_design 
+[04/16 19:01:37     52s] 
+[04/16 19:01:37     52s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 19:01:37     52s] Common UI User Guide for more details.
+[04/16 19:05:54    163s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../../../../../cadence/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef}'.For more details, refer to error message from console.
+[04/16 19:05:54    163s] 
+[04/16 19:05:54    163s] #################################
+[04/16 19:05:54    163s] read_netlist ../synthesis/output/gpu_netlist.v -top gpu
+[04/16 19:05:54    163s] #################################
+[04/16 19:05:54    163s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 19:05:54    163s] The MMMC init sequence looks like this: 
+[04/16 19:05:54    163s] read_mmmc top.mmmc 
+[04/16 19:05:54    163s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 19:05:54    163s] read_netlist top.v 
+[04/16 19:05:54    163s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 19:05:54    163s] init_design 
+[04/16 19:05:54    163s] 
+[04/16 19:05:54    163s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 19:05:54    163s] read_libs all.lib 
+[04/16 19:05:54    163s] read_netlist top.v 
+[04/16 19:05:54    163s] read_sdc top.sdc 
+[04/16 19:05:54    163s] init_design 
+[04/16 19:05:54    163s] 
+[04/16 19:05:54    163s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 19:05:54    163s] Common UI User Guide for more details.
+[04/16 19:05:59    164s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_netlist ../synthesis/output/gpu_netlist.v -top gpu'.For more details, refer to error message from console.
+[04/16 19:05:59    164s] 
+[04/16 19:05:59    164s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 19:05:59    164s] The MMMC init sequence looks like this: 
+[04/16 19:05:59    164s] read_mmmc top.mmmc 
+[04/16 19:05:59    164s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 19:05:59    164s] read_netlist top.v 
+[04/16 19:05:59    164s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 19:05:59    164s] init_design 
+[04/16 19:05:59    164s] 
+[04/16 19:05:59    164s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 19:05:59    164s] read_libs all.lib 
+[04/16 19:05:59    164s] read_netlist top.v 
+[04/16 19:05:59    164s] read_sdc top.sdc 
+[04/16 19:05:59    164s] init_design 
+[04/16 19:05:59    164s] 
+[04/16 19:05:59    164s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 19:05:59    164s] Common UI User Guide for more details.
+[04/16 19:06:04    165s] 
+[04/16 19:06:04    165s] --------------------------------------------------------------------------------
+[04/16 19:06:04    165s] Exiting Innovus on Thu Apr 16 19:06:04 2026
+[04/16 19:06:04    165s]   Total CPU time:     0:02:46
+[04/16 19:06:04    165s]   Total real time:    0:08:23
+[04/16 19:06:04    165s]   Peak memory (main): 1045.70MB
+[04/16 19:06:04    165s] 
+[04/16 19:06:04    165s] 
+[04/16 19:06:04    165s] *** Memory Usage v#1 (Current mem = 1047.023M, initial mem = 492.871M) ***
+[04/16 19:06:04    165s] 
+[04/16 19:06:04    165s] *** Summary of all messages that are not suppressed in this session:
+[04/16 19:06:04    165s] Severity  ID               Count  Summary                                  
+[04/16 19:06:04    165s] ERROR     IMPLF-3              1  Error found when processing LEF file '%s...
+[04/16 19:06:04    165s] ERROR     IMPLF-26             2  No technology information is defined in ...
+[04/16 19:06:04    165s] ERROR     IMPLF-53             1  The layer '%s' referenced %s is not foun...
+[04/16 19:06:04    165s] ERROR     IMPLF-328            1  The layer '%s' specified in macro pin '%...
+[04/16 19:06:04    165s] ERROR     IMPSYT-16013         1  Loading LEF file(s) failed, and has abor...
+[04/16 19:06:04    165s] ERROR     IMPSYT-16031         6  %s                                       
+[04/16 19:06:04    165s] ERROR     IMPIMEX-12           8  'init_design' failed. You are missing on...
+[04/16 19:06:04    165s] *** Message Summary: 0 warning(s), 20 error(s)
+[04/16 19:06:04    165s] 
+[04/16 19:06:04    165s] --- Ending "Innovus" (totcpu=0:02:46, real=0:08:22, mem=1047.0M) ---

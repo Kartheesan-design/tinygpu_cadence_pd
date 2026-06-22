@@ -1,0 +1,350 @@
+[06/21 12:06:05      0s] 
+[06/21 12:06:05      0s] Cadence Innovus(TM) Implementation System.
+[06/21 12:06:05      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/21 12:06:05      0s] 
+[06/21 12:06:05      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[06/21 12:06:05      0s] Options:	
+[06/21 12:06:05      0s] Date:		Sun Jun 21 12:06:05 2026
+[06/21 12:06:05      0s] Host:		cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB)
+[06/21 12:06:05      0s] OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+[06/21 12:06:05      0s] 
+[06/21 12:06:05      0s] License:
+[06/21 12:06:05      0s] 		[12:06:05.400241] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+[06/21 12:06:05      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[06/21 12:06:05      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/21 12:06:20      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[06/21 12:06:23     11s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[06/21 12:06:23     11s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[06/21 12:06:23     11s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[06/21 12:06:23     11s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[06/21 12:06:23     11s] @(#)CDS: CPE v21.15-s076
+[06/21 12:06:23     11s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[06/21 12:06:23     11s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[06/21 12:06:23     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[06/21 12:06:23     11s] @(#)CDS: RCDB 11.15.0
+[06/21 12:06:23     11s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[06/21 12:06:23     11s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[06/21 12:06:23     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3031749_cadence-server.vit.ac.in_22bec0039_Tn04CZ.
+
+[06/21 12:06:23     11s] Change the soft stacksize limit to 0.2%RAM (2062 mbytes). Set global soft_stack_size_limit to change the value.
+[06/21 12:06:26     12s] 
+[06/21 12:06:26     12s] **INFO:  MMMC transition support version v31-84 
+[06/21 12:06:26     12s] 
+[06/21 12:06:26     12s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/21 12:06:26     12s] <CMD> suppressMessage ENCEXT-2799
+[06/21 12:06:26     12s] <CMD> getVersion
+[06/21 12:06:26     12s] <CMD> getVersion
+[06/21 12:06:26     12s] <CMD> getVersion
+[06/21 12:06:27     12s] [INFO] Loading PVS 22.20 fill procedures
+[06/21 12:06:27     12s] <CMD> win
+[06/21 12:08:37     16s] <CMD> set init_gnd_net VSS
+[06/21 12:08:37     16s] <CMD> set init_lef_file {../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef}
+[06/21 12:08:37     16s] <CMD> set init_design_settop 0
+[06/21 12:08:37     16s] <CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+[06/21 12:08:37     16s] <CMD> set init_mmmc_file gpu.view
+[06/21 12:08:37     16s] <CMD> set init_pwr_net VDD
+[06/21 12:08:37     16s] <CMD> init_design
+[06/21 12:08:37     16s] #% Begin Load MMMC data ... (date=06/21 12:08:37, mem=1020.4M)
+[06/21 12:08:37     16s] #% End Load MMMC data ... (date=06/21 12:08:37, total cpu=0:00:00.0, real=0:00:00.0, peak res=1020.9M, current mem=1020.9M)
+[06/21 12:08:37     16s] 
+[06/21 12:08:37     16s] Loading LEF file ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ...
+[06/21 12:08:37     16s] 
+[06/21 12:08:37     16s] Loading LEF file ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef ...
+[06/21 12:08:37     16s] Set DBUPerIGU to M2 pitch 400.
+[06/21 12:08:37     17s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/21 12:08:37     17s] Type 'man IMPLF-200' for more detail.
+[06/21 12:08:37     17s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[06/21 12:08:37     17s] Loading view definition file from gpu.view
+[06/21 12:08:37     17s] Reading max_timing timing library '/home/userdata/22bec0039/kar/GPU/lib/slow.lib' ...
+[06/21 12:08:38     17s] Read 479 cells in library 'slow' 
+[06/21 12:08:38     17s] Reading min_timing timing library '/home/userdata/22bec0039/kar/GPU/lib/fast.lib' ...
+[06/21 12:08:38     17s] Read 479 cells in library 'fast' 
+[06/21 12:08:38     17s] Ending "PreSetAnalysisView" (total cpu=0:00:00.7, real=0:00:01.0, peak res=1098.6M, current mem=1041.5M)
+[06/21 12:08:38     17s] *** End library_loading (cpu=0.01min, real=0.02min, mem=31.0M, fe_cpu=0.30min, fe_real=2.55min, fe_mem=1067.3M) ***
+[06/21 12:08:38     17s] #% Begin Load netlist data ... (date=06/21 12:08:38, mem=1040.5M)
+[06/21 12:08:38     17s] *** Begin netlist parsing (mem=1067.3M) ***
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[06/21 12:08:38     17s] Type 'man IMPVL-159' for more detail.
+[06/21 12:08:38     17s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[06/21 12:08:38     17s] To increase the message display limit, refer to the product command reference manual.
+[06/21 12:08:38     17s] Created 479 new cells from 2 timing libraries.
+[06/21 12:08:38     17s] Reading netlist ...
+[06/21 12:08:38     17s] Backslashed names will retain backslash and a trailing blank character.
+[06/21 12:08:38     17s] Reading verilog netlist '../synthesis/output/gpu_netlist.v'
+[06/21 12:08:38     17s] 
+[06/21 12:08:38     17s] *** Memory Usage v#1 (Current mem = 1071.301M, initial mem = 483.871M) ***
+[06/21 12:08:38     17s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=1071.3M) ***
+[06/21 12:08:38     17s] #% End Load netlist data ... (date=06/21 12:08:38, total cpu=0:00:00.1, real=0:00:00.0, peak res=1058.4M, current mem=1058.4M)
+[06/21 12:08:38     17s] Top level cell is gpu.
+[06/21 12:08:38     18s] Hooked 958 DB cells to tlib cells.
+[06/21 12:08:38     18s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1065.9M, current mem=1065.9M)
+[06/21 12:08:38     18s] Starting recursive module instantiation check.
+[06/21 12:08:38     18s] No recursion found.
+[06/21 12:08:38     18s] Building hierarchical netlist for Cell gpu ...
+[06/21 12:08:38     18s] *** Netlist is unique.
+[06/21 12:08:38     18s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[06/21 12:08:38     18s] ** info: there are 967 modules.
+[06/21 12:08:38     18s] ** info: there are 9979 stdCell insts.
+[06/21 12:08:38     18s] 
+[06/21 12:08:38     18s] *** Memory Usage v#1 (Current mem = 1130.215M, initial mem = 483.871M) ***
+[06/21 12:08:38     18s] Horizontal Layer M1 offset = 190 (guessed)
+[06/21 12:08:38     18s] Vertical Layer M2 offset = 200 (derived)
+[06/21 12:08:38     18s] Suggestion: specify LAYER OFFSET in LEF file
+[06/21 12:08:38     18s] Reason: hard to extract LAYER OFFSET from standard cells
+[06/21 12:08:38     18s] Start create_tracks
+[06/21 12:08:38     18s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in unpreferred direction.
+[06/21 12:08:38     18s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in preferred direction.
+[06/21 12:08:38     18s] Generated pitch 0.4 in M10 is different from 0.48 defined in technology file in unpreferred direction.
+[06/21 12:08:38     18s] Generated pitch 0.5 in M10 is different from 0.48 defined in technology file in preferred direction.
+[06/21 12:08:38     18s] Generated pitch 0.2 in M9 is different from 0.33 defined in technology file in unpreferred direction.
+[06/21 12:08:38     18s] Generated pitch 0.4 in M9 is different from 0.33 defined in technology file in preferred direction.
+[06/21 12:08:38     18s] Generated pitch 0.19 in M2 is different from 0.2 defined in technology file in unpreferred direction.
+[06/21 12:08:38     18s] Generated pitch 0.2 in M1 is different from 0.19 defined in technology file in unpreferred direction.
+[06/21 12:08:39     18s] Extraction setup Started 
+[06/21 12:08:39     18s] 
+[06/21 12:08:39     18s] Trim Metal Layers:
+[06/21 12:08:39     18s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[06/21 12:08:39     18s] Reading Capacitance Table File ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl ...
+[06/21 12:08:39     18s] Cap table was created using Encounter 05.20-s112_1.
+[06/21 12:08:39     18s] Process name: gpdk090_9l.
+[06/21 12:08:39     18s] **ERROR: (IMPEXT-3548):	Process information for layer 'M10' is missing from the cap table file but is defined in the tech database (which is derived from the tech LEF or Open Access technology file). To include this information, you can do one of the following: Correct the cap table file by editing it, generate a new cap table from an ICT file with the proper layers defined, or obtain the correct cap table from your foundry and run again.
+**WARN: (IMPEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[06/21 12:08:39     18s] Type 'man IMPEXT-2773' for more detail.
+[06/21 12:08:39     18s] **ERROR: (IMPEXT-3548):	Process information for layer 'M11' is missing from the cap table file but is defined in the tech database (which is derived from the tech LEF or Open Access technology file). To include this information, you can do one of the following: Correct the cap table file by editing it, generate a new cap table from an ICT file with the proper layers defined, or obtain the correct cap table from your foundry and run again.
+**WARN: (IMPEXT-2773):	The via resistance between layers M10 and M11 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[06/21 12:08:39     18s] Type 'man IMPEXT-2773' for more detail.
+[06/21 12:08:39     18s] **ERROR: (IMPEXT-2715):	Syntax Error in line 152
+**ERROR: (IMPEXT-2677):	Multi-corner RC initialization is aborted because of previously-reported errors. Use the reason provided in the error message(s) to resolve this issue and use the set_analysis_view command to invoke multi-corner initialization again.
+*Info: initialize multi-corner CTS.
+[06/21 12:08:39     18s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1336.7M, current mem=1094.7M)
+[06/21 12:08:39     18s] Reading timing constraints file '../synthesis/gpu_syn.sdc' ...
+[06/21 12:08:39     18s] Current (total cpu=0:00:18.4, real=0:02:34, peak res=1350.9M, current mem=1350.9M)
+[06/21 12:08:39     18s] INFO (CTE): Constraints read successfully.
+[06/21 12:08:39     18s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1391.6M, current mem=1391.6M)
+[06/21 12:08:39     18s] Current (total cpu=0:00:18.4, real=0:02:34, peak res=1391.6M, current mem=1391.6M)
+[06/21 12:08:39     18s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[06/21 12:08:39     18s] 
+[06/21 12:08:39     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[06/21 12:08:39     18s] Summary for sequential cells identification: 
+[06/21 12:08:39     18s]   Identified SBFF number: 112
+[06/21 12:08:39     18s]   Identified MBFF number: 0
+[06/21 12:08:39     18s]   Identified SB Latch number: 0
+[06/21 12:08:39     18s]   Identified MB Latch number: 0
+[06/21 12:08:39     18s]   Not identified SBFF number: 8
+[06/21 12:08:39     18s]   Not identified MBFF number: 0
+[06/21 12:08:39     18s]   Not identified SB Latch number: 0
+[06/21 12:08:39     18s]   Not identified MB Latch number: 0
+[06/21 12:08:39     18s]   Number of sequential cells which are not FFs: 32
+[06/21 12:08:39     18s] Total number of combinational cells: 317
+[06/21 12:08:39     18s] Total number of sequential cells: 152
+[06/21 12:08:39     18s] Total number of tristate cells: 10
+[06/21 12:08:39     18s] Total number of level shifter cells: 0
+[06/21 12:08:39     18s] Total number of power gating cells: 0
+[06/21 12:08:39     18s] Total number of isolation cells: 0
+[06/21 12:08:39     18s] Total number of power switch cells: 0
+[06/21 12:08:39     18s] Total number of pulse generator cells: 0
+[06/21 12:08:39     18s] Total number of always on buffers: 0
+[06/21 12:08:39     18s] Total number of retention cells: 0
+[06/21 12:08:39     18s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[06/21 12:08:39     18s] Total number of usable buffers: 16
+[06/21 12:08:39     18s] List of unusable buffers:
+[06/21 12:08:39     18s] Total number of unusable buffers: 0
+[06/21 12:08:39     18s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[06/21 12:08:39     18s] Total number of usable inverters: 19
+[06/21 12:08:39     18s] List of unusable inverters:
+[06/21 12:08:39     18s] Total number of unusable inverters: 0
+[06/21 12:08:39     18s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[06/21 12:08:39     18s] Total number of identified usable delay cells: 8
+[06/21 12:08:39     18s] List of identified unusable delay cells:
+[06/21 12:08:39     18s] Total number of identified unusable delay cells: 0
+[06/21 12:08:39     18s] 
+[06/21 12:08:39     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[06/21 12:08:39     18s] 
+[06/21 12:08:39     18s] TimeStamp Deleting Cell Server Begin ...
+[06/21 12:08:39     18s] 
+[06/21 12:08:39     18s] TimeStamp Deleting Cell Server End ...
+[06/21 12:08:39     18s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1393.2M, current mem=1393.2M)
+[06/21 12:08:39     18s] 
+[06/21 12:08:39     18s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[06/21 12:08:39     18s] Summary for sequential cells identification: 
+[06/21 12:08:39     18s]   Identified SBFF number: 112
+[06/21 12:08:39     18s]   Identified MBFF number: 0
+[06/21 12:08:39     18s]   Identified SB Latch number: 0
+[06/21 12:08:39     18s]   Identified MB Latch number: 0
+[06/21 12:08:39     18s]   Not identified SBFF number: 8
+[06/21 12:08:39     18s]   Not identified MBFF number: 0
+[06/21 12:08:39     18s]   Not identified SB Latch number: 0
+[06/21 12:08:39     18s]   Not identified MB Latch number: 0
+[06/21 12:08:39     18s]   Number of sequential cells which are not FFs: 32
+[06/21 12:08:39     18s]  Visiting view : worst_case
+[06/21 12:08:39     18s]    : PowerDomain = none : Weighted F : unweighted  = 37.10 (1.000) with rcCorner = -1
+[06/21 12:08:39     18s]    : PowerDomain = none : Weighted F : unweighted  = 33.00 (1.000) with rcCorner = -1
+[06/21 12:08:39     18s]  Visiting view : best_case
+[06/21 12:08:39     18s]    : PowerDomain = none : Weighted F : unweighted  = 12.40 (1.000) with rcCorner = -1
+[06/21 12:08:39     18s]    : PowerDomain = none : Weighted F : unweighted  = 11.00 (1.000) with rcCorner = -1
+[06/21 12:08:39     18s] TLC MultiMap info (StdDelay):
+[06/21 12:08:39     18s]   : min_delay + min_timing + 1 + no RcCorner := 11ps
+[06/21 12:08:39     18s]   : min_delay + min_timing + 1 + rccorner := 12.4ps
+[06/21 12:08:39     18s]   : max_delay + max_timing + 1 + no RcCorner := 33ps
+[06/21 12:08:39     18s]   : max_delay + max_timing + 1 + rccorner := 37.1ps
+[06/21 12:08:39     18s]  Setting StdDelay to: 37.1ps
+[06/21 12:08:39     18s] 
+[06/21 12:08:39     18s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[06/21 12:08:39     18s] 
+[06/21 12:08:39     18s] TimeStamp Deleting Cell Server Begin ...
+[06/21 12:08:39     18s] 
+[06/21 12:08:39     18s] TimeStamp Deleting Cell Server End ...
+[06/21 12:08:39     18s] Extraction setup Started 
+[06/21 12:08:39     18s] 
+[06/21 12:08:39     18s] Trim Metal Layers:
+[06/21 12:08:39     18s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[06/21 12:08:39     18s] Reading Capacitance Table File ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl ...
+[06/21 12:08:39     18s] Cap table was created using Encounter 05.20-s112_1.
+[06/21 12:08:39     18s] Process name: gpdk090_9l.
+[06/21 12:08:39     18s] **ERROR: (IMPEXT-3548):	Process information for layer 'M10' is missing from the cap table file but is defined in the tech database (which is derived from the tech LEF or Open Access technology file). To include this information, you can do one of the following: Correct the cap table file by editing it, generate a new cap table from an ICT file with the proper layers defined, or obtain the correct cap table from your foundry and run again.
+**WARN: (IMPEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[06/21 12:08:39     18s] Type 'man IMPEXT-2773' for more detail.
+[06/21 12:08:39     18s] **ERROR: (IMPEXT-3548):	Process information for layer 'M11' is missing from the cap table file but is defined in the tech database (which is derived from the tech LEF or Open Access technology file). To include this information, you can do one of the following: Correct the cap table file by editing it, generate a new cap table from an ICT file with the proper layers defined, or obtain the correct cap table from your foundry and run again.
+**WARN: (IMPEXT-2773):	The via resistance between layers M10 and M11 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[06/21 12:08:39     18s] Type 'man IMPEXT-2773' for more detail.
+[06/21 12:08:39     18s] **ERROR: (IMPEXT-2715):	Syntax Error in line 152
+**ERROR: (IMPEXT-2677):	Multi-corner RC initialization is aborted because of previously-reported errors. Use the reason provided in the error message(s) to resolve this issue and use the set_analysis_view command to invoke multi-corner initialization again.
+
+[06/21 12:08:39     18s] *** Summary of all messages that are not suppressed in this session:
+[06/21 12:08:39     18s] Severity  ID               Count  Summary                                  
+[06/21 12:08:39     18s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[06/21 12:08:39     18s] ERROR     IMPEXT-2677          2  Multi-corner RC initialization is aborte...
+[06/21 12:08:39     18s] ERROR     IMPEXT-2715          2  Syntax Error in line %d                  
+[06/21 12:08:39     18s] WARNING   IMPEXT-2773          4  The via resistance between layers %s and...
+[06/21 12:08:39     18s] ERROR     IMPEXT-3548          4  Process information for layer '%s' is mi...
+[06/21 12:08:39     18s] WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+[06/21 12:08:39     18s] *** Message Summary: 963 warning(s), 8 error(s)
+[06/21 12:08:39     18s] 
+[06/21 12:09:21     19s] <CMD> editPin -pin {clk reset start done device_control_write_enable device_control_data*} -side N -layer M6 -spreadType SIDE
+[06/21 12:09:21     19s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/21 12:09:21     19s] #No via in the lib
+[06/21 12:09:21     19s] #create default rule from bind_ndr_rule rule=0x7f2691f2ced0 0x7f26855de940
+[06/21 12:09:21     19s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[06/21 12:09:21     19s] Successfully spread [13] pins.
+[06/21 12:09:21     19s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1858.6M).
+[06/21 12:09:21     19s] <CMD> editPin -pin {program_mem_read_valid* program_mem_read_address* program_mem_read_ready* program_mem_read_data*} -side S -layer M6 -spreadType SIDE
+[06/21 12:09:21     19s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/21 12:09:21     19s] ### import design signature (2): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[06/21 12:09:21     19s] Successfully spread [26] pins.
+[06/21 12:09:21     19s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1859.6M).
+[06/21 12:09:21     19s] <CMD> editPin -pin {data_mem_read_valid* data_mem_read_address* data_mem_read_ready* data_mem_read_data*} -side E -layer M5 -spreadType SIDE
+[06/21 12:09:21     19s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/21 12:09:21     19s] ### import design signature (3): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[06/21 12:09:21     19s] Successfully spread [72] pins.
+[06/21 12:09:21     19s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1859.6M).
+[06/21 12:09:23     19s] <CMD> editPin -pin {data_mem_write_valid* data_mem_write_address* data_mem_write_data* data_mem_write_ready*} -side W -layer M5 -spreadType SIDE
+[06/21 12:09:23     19s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/21 12:09:23     19s] ### import design signature (4): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[06/21 12:09:23     19s] Successfully spread [72] pins.
+[06/21 12:09:23     19s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1859.6M).
+[06/21 12:09:27     19s] <CMD> redraw
+[06/21 12:09:40     19s] <CMD> getIoFlowFlag
+[06/21 12:09:59     20s] <CMD> setIoFlowFlag 0
+[06/21 12:09:59     20s] <CMD> floorPlan -coreMarginsBy die -site CoreSite -r 0.1 0.699996 2.5 2.5 2.5 2.5
+[06/21 12:09:59     20s] Horizontal Layer M1 offset = 190 (guessed)
+[06/21 12:09:59     20s] Vertical Layer M2 offset = 200 (derived)
+[06/21 12:09:59     20s] Suggestion: specify LAYER OFFSET in LEF file
+[06/21 12:09:59     20s] Reason: hard to extract LAYER OFFSET from standard cells
+[06/21 12:09:59     20s] Start create_tracks
+[06/21 12:09:59     20s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in unpreferred direction.
+[06/21 12:09:59     20s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in preferred direction.
+[06/21 12:09:59     20s] Generated pitch 0.4 in M10 is different from 0.48 defined in technology file in unpreferred direction.
+[06/21 12:09:59     20s] Generated pitch 0.5 in M10 is different from 0.48 defined in technology file in preferred direction.
+[06/21 12:09:59     20s] Generated pitch 0.2 in M9 is different from 0.33 defined in technology file in unpreferred direction.
+[06/21 12:09:59     20s] Generated pitch 0.4 in M9 is different from 0.33 defined in technology file in preferred direction.
+[06/21 12:09:59     20s] Generated pitch 0.19 in M2 is different from 0.2 defined in technology file in unpreferred direction.
+[06/21 12:09:59     20s] Generated pitch 0.2 in M1 is different from 0.19 defined in technology file in unpreferred direction.
+[06/21 12:09:59     20s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[06/21 12:09:59     20s] <CMD> uiSetTool select
+[06/21 12:09:59     20s] <CMD> getIoFlowFlag
+[06/21 12:09:59     20s] <CMD> fit
+[06/21 12:10:03     20s] <CMD> redraw
+[06/21 12:10:09     20s] <CMD> getIoFlowFlag
+[06/21 12:11:07     21s] <CMD> setIoFlowFlag 0
+[06/21 12:11:07     21s] <CMD> floorPlan -site CoreSite -r 0.0981469334208 0.69978 2.6 2.66 2.6 2.66
+[06/21 12:11:07     21s] Horizontal Layer M1 offset = 190 (guessed)
+[06/21 12:11:07     21s] Vertical Layer M2 offset = 200 (derived)
+[06/21 12:11:07     21s] Suggestion: specify LAYER OFFSET in LEF file
+[06/21 12:11:07     21s] Reason: hard to extract LAYER OFFSET from standard cells
+[06/21 12:11:07     21s] Start create_tracks
+[06/21 12:11:07     21s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in unpreferred direction.
+[06/21 12:11:07     21s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in preferred direction.
+[06/21 12:11:07     21s] Generated pitch 0.4 in M10 is different from 0.48 defined in technology file in unpreferred direction.
+[06/21 12:11:07     21s] Generated pitch 0.5 in M10 is different from 0.48 defined in technology file in preferred direction.
+[06/21 12:11:07     21s] Generated pitch 0.2 in M9 is different from 0.33 defined in technology file in unpreferred direction.
+[06/21 12:11:07     21s] Generated pitch 0.4 in M9 is different from 0.33 defined in technology file in preferred direction.
+[06/21 12:11:07     21s] Generated pitch 0.19 in M2 is different from 0.2 defined in technology file in unpreferred direction.
+[06/21 12:11:07     21s] Generated pitch 0.2 in M1 is different from 0.19 defined in technology file in unpreferred direction.
+[06/21 12:11:07     21s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[06/21 12:11:07     21s] <CMD> uiSetTool select
+[06/21 12:11:07     21s] <CMD> getIoFlowFlag
+[06/21 12:11:07     21s] <CMD> fit
+[06/21 12:11:16     22s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Jun 21 12:11:16 2026
+  Total CPU time:     0:00:22
+  Total real time:    0:05:12
+  Peak memory (main): 1667.68MB
+
+[06/21 12:11:16     22s] 
+[06/21 12:11:16     22s] *** Memory Usage v#1 (Current mem = 1866.551M, initial mem = 483.871M) ***
+[06/21 12:11:16     22s] 
+[06/21 12:11:16     22s] *** Summary of all messages that are not suppressed in this session:
+[06/21 12:11:16     22s] Severity  ID               Count  Summary                                  
+[06/21 12:11:16     22s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[06/21 12:11:16     22s] WARNING   IMPFP-325            2  Floorplan of the design is resized. All ...
+[06/21 12:11:16     22s] ERROR     IMPEXT-2677          2  Multi-corner RC initialization is aborte...
+[06/21 12:11:16     22s] ERROR     IMPEXT-2715          2  Syntax Error in line %d                  
+[06/21 12:11:16     22s] WARNING   IMPEXT-2773          4  The via resistance between layers %s and...
+[06/21 12:11:16     22s] ERROR     IMPEXT-3548          4  Process information for layer '%s' is mi...
+[06/21 12:11:16     22s] WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+[06/21 12:11:16     22s] *** Message Summary: 965 warning(s), 8 error(s)
+[06/21 12:11:16     22s] 
+[06/21 12:11:16     22s] --- Ending "Innovus" (totcpu=0:00:22.0, real=0:05:11, mem=1866.6M) ---

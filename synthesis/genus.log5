@@ -1,0 +1,208 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:49:44.400369] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files gpu_script.tcl 
+Date:    Thu Apr 16 18:49:44 2026
+Host:    cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*1physical cpu*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB) (1055760632KB)
+PID:     2582622
+OS:      Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+
+[18:49:44.433681] Periodic Lic check successful
+[18:49:44.433683] Feature usage summary:
+[18:49:44.433688] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (16 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source gpu_script.tcl
+#@ Begin verbose source ./gpu_script.tcl
+@file(gpu_script.tcl) 2: read_libs /home/cadence/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(gpu_script.tcl) 5: read_hdl -sv /home/userdata/22bec0039/kar/GPU/RTL/gpu.sv
+@file(gpu_script.tcl) 6: read_hdl -sv /home/userdata/22bec0039/kar/GPU/RTL/core.sv
+    input reg program_mem_read_ready,
+                                    |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'program_mem_read_ready' in file '/home/userdata/22bec0039/kar/GPU/RTL/core.sv' on line 29, column 37.
+        : When `default_nettype is none, each input and inout port declaration requires a corresponding net type.
+    input reg [PROGRAM_MEM_DATA_BITS-1:0] program_mem_read_data,
+                                                               |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'program_mem_read_data' in file '/home/userdata/22bec0039/kar/GPU/RTL/core.sv' on line 30, column 64.
+    input reg [THREADS_PER_BLOCK-1:0] data_mem_read_ready,
+                                                         |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'data_mem_read_ready' in file '/home/userdata/22bec0039/kar/GPU/RTL/core.sv' on line 35, column 58.
+    input reg [DATA_MEM_DATA_BITS-1:0] data_mem_read_data [THREADS_PER_BLOCK-1:0],
+                                                                                 |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'data_mem_read_data' in file '/home/userdata/22bec0039/kar/GPU/RTL/core.sv' on line 36, column 82.
+);
+|
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'data_mem_write_ready' in file '/home/userdata/22bec0039/kar/GPU/RTL/core.sv' on line 41, column 1.
+@file(gpu_script.tcl) 7: read_hdl -sv /home/userdata/22bec0039/kar/GPU/RTL/controller.sv
+@file(gpu_script.tcl) 8: read_hdl -sv /home/userdata/22bec0039/kar/GPU/RTL/decoder.sv
+    input reg [2:0] core_state,
+                              |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'core_state' in file '/home/userdata/22bec0039/kar/GPU/RTL/decoder.sv' on line 11, column 31.
+    input reg [15:0] instruction,
+                                |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'instruction' in file '/home/userdata/22bec0039/kar/GPU/RTL/decoder.sv' on line 12, column 33.
+@file(gpu_script.tcl) 9: read_hdl -sv /home/userdata/22bec0039/kar/GPU/RTL/alu.sv
+    input reg [2:0] core_state,
+                              |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'core_state' in file '/home/userdata/22bec0039/kar/GPU/RTL/alu.sv' on line 14, column 31.
+    input reg [1:0] decoded_alu_arithmetic_mux,
+                                              |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'decoded_alu_arithmetic_mux' in file '/home/userdata/22bec0039/kar/GPU/RTL/alu.sv' on line 16, column 47.
+    input reg decoded_alu_output_mux,
+                                    |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'decoded_alu_output_mux' in file '/home/userdata/22bec0039/kar/GPU/RTL/alu.sv' on line 17, column 37.
+    input reg [7:0] rs,
+                      |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'rs' in file '/home/userdata/22bec0039/kar/GPU/RTL/alu.sv' on line 19, column 23.
+    input reg [7:0] rt,
+                      |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'rt' in file '/home/userdata/22bec0039/kar/GPU/RTL/alu.sv' on line 20, column 23.
+@file(gpu_script.tcl) 10: read_hdl -sv /home/userdata/22bec0039/kar/GPU/RTL/lsu.sv
+    input reg [2:0] core_state,
+                              |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'core_state' in file '/home/userdata/22bec0039/kar/GPU/RTL/lsu.sv' on line 14, column 31.
+    input reg decoded_mem_read_enable,
+                                     |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'decoded_mem_read_enable' in file '/home/userdata/22bec0039/kar/GPU/RTL/lsu.sv' on line 17, column 38.
+    input reg decoded_mem_write_enable,
+                                      |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'decoded_mem_write_enable' in file '/home/userdata/22bec0039/kar/GPU/RTL/lsu.sv' on line 18, column 39.
+    input reg [7:0] rs,
+                      |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'rs' in file '/home/userdata/22bec0039/kar/GPU/RTL/lsu.sv' on line 21, column 23.
+    input reg [7:0] rt,
+                      |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'rt' in file '/home/userdata/22bec0039/kar/GPU/RTL/lsu.sv' on line 22, column 23.
+    input reg mem_read_ready,
+                            |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'mem_read_ready' in file '/home/userdata/22bec0039/kar/GPU/RTL/lsu.sv' on line 27, column 29.
+    input reg [7:0] mem_read_data,
+                                 |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'mem_read_data' in file '/home/userdata/22bec0039/kar/GPU/RTL/lsu.sv' on line 28, column 34.
+    input reg mem_write_ready,
+                             |
+Warning : Implicit net declaration not allowed with `default_nettype none. [VLOGPT-43]
+        : Assuming a wire net type for declaration 'mem_write_ready' in file '/home/userdata/22bec0039/kar/GPU/RTL/lsu.sv' on line 32, column 30.
+@file(gpu_script.tcl) 11: read_hdl -sv /home/userdata/22bec0039/kar/GPU/RTL/pc.sv
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'VLOGPT-43'.
+@file(gpu_script.tcl) 12: read_hdl -sv /home/userdata/22bec0039/kar/GPU/RTL/registers.sv
+@file(gpu_script.tcl) 13: read_hdl -sv /home/userdata/22bec0039/kar/GPU/RTL/fetcher.sv
+@file(gpu_script.tcl) 14: read_hdl -sv /home/userdata/22bec0039/kar/GPU/RTL/scheduler.sv
+@file(gpu_script.tcl) 15: read_hdl -sv /home/userdata/22bec0039/kar/GPU/RTL/dispatch.sv
+@file(gpu_script.tcl) 16: read_hdl -sv /home/userdata/22bec0039/kar/GPU/RTL/dcr.sv
+@file(gpu_script.tcl) 19: elaborate gpu
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'gpu' from file '/home/userdata/22bec0039/kar/GPU/RTL/gpu.sv'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'gpu' with default parameters value.
+Warning : Empty port expression. [CDFG-436]
+        : In module 'dcr' in file '/home/userdata/22bec0039/kar/GPU/RTL/dcr.sv' on line 14.
+Warning : Empty port expression. [CDFG-436]
+        : In module 'fetcher_PROGRAM_MEM_ADDR_BITS8_PROGRAM_MEM_DATA_BITS16' in file '/home/userdata/22bec0039/kar/GPU/RTL/fetcher.sv' on line 27.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'scheduler_THREADS_PER_BLOCK4' in file '/home/userdata/22bec0039/kar/GPU/RTL/scheduler.sv' on line 47.
+Warning : Unconnected instance input port detected. [ELABUTL-124]
+        : Unconnected input port 'consumer_write_valid' of instance 'program_memory_controller' of module 'controller_ADDR_BITS8_DATA_BITS16_NUM_CONSUMERS2_NUM_CHANNELS1_WRITE_ENABLE0' in file '/home/userdata/22bec0039/kar/GPU/RTL/gpu.sv' on line 110, column 33, hid = 0.
+        : Run check_design to check 'Undriven Port(s)/Pin(s)' section for all unconnected instance input ports. It is better to double confirm with designer these unconnected instance input port are expected. During syn_gen the unconnected instance input ports are controlled by attribute 'hdl_unconnected_value', the default value is 0.
+Warning : Unconnected instance input port detected. [ELABUTL-124]
+        : Unconnected input port 'consumer_write_address[0]' of instance 'program_memory_controller' of module 'controller_ADDR_BITS8_DATA_BITS16_NUM_CONSUMERS2_NUM_CHANNELS1_WRITE_ENABLE0' in file '/home/userdata/22bec0039/kar/GPU/RTL/gpu.sv' on line 110, column 33, hid = 0.
+Warning : Unconnected instance input port detected. [ELABUTL-124]
+        : Unconnected input port 'consumer_write_address[1]' of instance 'program_memory_controller' of module 'controller_ADDR_BITS8_DATA_BITS16_NUM_CONSUMERS2_NUM_CHANNELS1_WRITE_ENABLE0' in file '/home/userdata/22bec0039/kar/GPU/RTL/gpu.sv' on line 110, column 33, hid = 0.
+Warning : Unconnected instance input port detected. [ELABUTL-124]
+        : Unconnected input port 'consumer_write_data[0]' of instance 'program_memory_controller' of module 'controller_ADDR_BITS8_DATA_BITS16_NUM_CONSUMERS2_NUM_CHANNELS1_WRITE_ENABLE0' in file '/home/userdata/22bec0039/kar/GPU/RTL/gpu.sv' on line 110, column 33, hid = 0.
+Warning : Unconnected instance input port detected. [ELABUTL-124]
+        : Unconnected input port 'consumer_write_data[1]' of instance 'program_memory_controller' of module 'controller_ADDR_BITS8_DATA_BITS16_NUM_CONSUMERS2_NUM_CHANNELS1_WRITE_ENABLE0' in file '/home/userdata/22bec0039/kar/GPU/RTL/gpu.sv' on line 110, column 33, hid = 0.
+Warning : Unconnected instance input port detected. [ELABUTL-124]
+        : Unconnected input port 'mem_write_ready' of instance 'program_memory_controller' of module 'controller_ADDR_BITS8_DATA_BITS16_NUM_CONSUMERS2_NUM_CHANNELS1_WRITE_ENABLE0' in file '/home/userdata/22bec0039/kar/GPU/RTL/gpu.sv' on line 110, column 33, hid = 0.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'gpu'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: gpu, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: gpu, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.001s)
+
+Stage: post_elab
+---------------------------------------------------------
+| Transform          | Accepts | Rejects | Runtime (ms) | 
+---------------------------------------------------------
+| hlo_clip_mux_input |       0 |       0 |         1.00 | 
+| hlo_clip           |       0 |       0 |         1.00 | 
+---------------------------------------------------------
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(gpu_script.tcl) 22: read_sdc /home/userdata/22bec0039/kar/GPU/synthesis/gpu.sdc
+Error: Unable to find /home/userdata/22bec0039/kar/GPU/synthesis/gpu.sdc
+#@ End verbose source ./gpu_script.tcl
+Failed on read_sdc
+Encountered problems processing file: gpu_script.tcl
+WARNING: This version of the tool is 1393 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[18:50:11.110146] Cdslmd servers: cadence-server
+[18:50:11.110154] Feature usage summary:
+[18:50:11.110155] Genus_Synthesis
+
+Normal exit.

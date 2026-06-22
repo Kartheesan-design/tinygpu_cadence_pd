@@ -1,0 +1,784 @@
+[06/20 17:31:47      0s] 
+[06/20 17:31:47      0s] Cadence Innovus(TM) Implementation System.
+[06/20 17:31:47      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/20 17:31:47      0s] 
+[06/20 17:31:47      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[06/20 17:31:47      0s] Options:	
+[06/20 17:31:47      0s] Date:		Sat Jun 20 17:31:47 2026
+[06/20 17:31:47      0s] Host:		cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB)
+[06/20 17:31:47      0s] OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+[06/20 17:31:47      0s] 
+[06/20 17:31:47      0s] License:
+[06/20 17:31:47      0s] 		[17:31:47.400313] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+[06/20 17:31:47      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[06/20 17:31:47      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/20 17:32:02      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[06/20 17:32:04     11s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[06/20 17:32:04     11s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[06/20 17:32:04     11s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[06/20 17:32:04     11s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[06/20 17:32:04     11s] @(#)CDS: CPE v21.15-s076
+[06/20 17:32:04     11s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[06/20 17:32:04     11s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[06/20 17:32:04     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[06/20 17:32:04     11s] @(#)CDS: RCDB 11.15.0
+[06/20 17:32:04     11s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[06/20 17:32:04     11s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[06/20 17:32:04     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_2280802_cadence-server.vit.ac.in_22bec0039_p90eCu.
+
+[06/20 17:32:04     11s] Change the soft stacksize limit to 0.2%RAM (2062 mbytes). Set global soft_stack_size_limit to change the value.
+[06/20 17:32:07     12s] 
+[06/20 17:32:07     12s] **INFO:  MMMC transition support version v31-84 
+[06/20 17:32:07     12s] 
+[06/20 17:32:07     12s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/20 17:32:07     12s] <CMD> suppressMessage ENCEXT-2799
+[06/20 17:32:07     12s] <CMD> getVersion
+[06/20 17:32:07     12s] <CMD> getVersion
+[06/20 17:32:07     12s] <CMD> getVersion
+[06/20 17:32:08     12s] [INFO] Loading PVS 22.20 fill procedures
+[06/20 17:32:08     12s] <CMD> win
+[06/20 17:35:28     29s] <CMD> set init_gnd_net VSS
+[06/20 17:35:28     29s] <CMD> set init_lef_file {../lef/gsclib090_tech.lef ../lef/gsclib090_macro.lef ../lef/gsclib090_translated.lef}
+[06/20 17:35:28     29s] <CMD> set init_design_settop 0
+[06/20 17:35:28     29s] <CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+[06/20 17:35:28     29s] <CMD> set init_mmmc_file gpu.view
+[06/20 17:35:28     29s] <CMD> set init_pwr_net VDD
+[06/20 17:35:28     29s] <CMD> init_design
+[06/20 17:35:28     29s] #% Begin Load MMMC data ... (date=06/20 17:35:28, mem=1018.1M)
+[06/20 17:35:28     29s] #% End Load MMMC data ... (date=06/20 17:35:28, total cpu=0:00:00.0, real=0:00:00.0, peak res=1018.5M, current mem=1018.5M)
+[06/20 17:35:28     29s] 
+[06/20 17:35:28     29s] Loading LEF file ../lef/gsclib090_tech.lef ...
+[06/20 17:35:28     29s] **ERROR: (IMPLF-111):	Layer 'Metal1' is not defined
+**ERROR: (IMPLF-224):	Failed to create via 'VIA1X'.
+**ERROR: (IMPLF-3):	Error found when processing LEF file '../lef/gsclib090_tech.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus'.
+Type 'man IMPLF-3' for more detail.
+[06/20 17:35:28     29s] **ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[06/20 17:35:37     29s] <CMD> set init_gnd_net VSS
+[06/20 17:35:37     29s] <CMD> set init_lef_file {../lef/gsclib090_tech.lef ../lef/gsclib090_macro.lef ../lef/gsclib090_translated.lef}
+[06/20 17:35:37     29s] <CMD> set init_design_settop 0
+[06/20 17:35:37     29s] <CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+[06/20 17:35:37     29s] <CMD> set init_mmmc_file gpu.view
+[06/20 17:35:37     29s] <CMD> set init_pwr_net VDD
+[06/20 17:35:37     29s] <CMD> init_design
+[06/20 17:35:37     29s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[06/20 17:35:37     29s] #% Begin Load MMMC data ... (date=06/20 17:35:37, mem=1020.7M)
+[06/20 17:35:37     29s] Extraction setup Started 
+[06/20 17:35:37     29s] 
+[06/20 17:35:37     29s] Trim Metal Layers:
+[06/20 17:35:37     29s] 
+[06/20 17:35:37     29s] Trim Metal Layers:
+[06/20 17:35:37     29s] 
+[06/20 17:35:37     29s] Trim Metal Layers:
+[06/20 17:35:37     29s] Extraction setup Started 
+[06/20 17:35:37     29s] 
+[06/20 17:35:37     29s] Trim Metal Layers:
+[06/20 17:35:37     29s] 
+[06/20 17:35:37     29s] Trim Metal Layers:
+[06/20 17:35:37     29s] 
+[06/20 17:35:37     29s] Trim Metal Layers:
+[06/20 17:35:37     29s] Extraction setup Started 
+[06/20 17:35:37     29s] 
+[06/20 17:35:37     29s] Trim Metal Layers:
+[06/20 17:35:37     29s] 
+[06/20 17:35:37     29s] Trim Metal Layers:
+[06/20 17:35:37     29s] 
+[06/20 17:35:37     29s] Trim Metal Layers:
+[06/20 17:35:37     29s] The existing analysis_view 'best_case' has been replaced with new attributes.
+[06/20 17:35:37     29s] The existing analysis_view 'worst_case' has been replaced with new attributes.
+[06/20 17:35:37     29s] INFO: New setup and hold views overwrite old settings during design initialization
+[06/20 17:35:37     29s] #% End Load MMMC data ... (date=06/20 17:35:37, total cpu=0:00:00.0, real=0:00:00.0, peak res=1021.2M, current mem=1021.2M)
+[06/20 17:35:37     29s] 
+[06/20 17:35:37     29s] Loading LEF file ../lef/gsclib090_tech.lef ...
+[06/20 17:35:37     29s] **ERROR: (IMPLF-111):	Layer 'Metal1' is not defined
+**ERROR: (IMPLF-224):	Failed to create via 'VIA1X'.
+**ERROR: (IMPLF-3):	Error found when processing LEF file '../lef/gsclib090_tech.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus'.
+Type 'man IMPLF-3' for more detail.
+[06/20 17:35:37     29s] **ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[06/20 17:36:27     30s] <CMD> set init_gnd_net VSS
+[06/20 17:36:27     30s] <CMD> set init_lef_file {../lef/gsclib090_tech.lef ../lef/gsclib090_macro.lef ../lef/gsclib090_translated.lef}
+[06/20 17:36:27     30s] <CMD> set init_design_settop 0
+[06/20 17:36:27     30s] <CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+[06/20 17:36:27     30s] <CMD> set init_mmmc_file gpu.view
+[06/20 17:36:27     30s] <CMD> set init_pwr_net VDD
+[06/20 17:36:27     30s] <CMD> init_design
+[06/20 17:36:27     30s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[06/20 17:36:27     30s] #% Begin Load MMMC data ... (date=06/20 17:36:27, mem=1021.4M)
+[06/20 17:36:27     30s] Extraction setup Started 
+[06/20 17:36:27     30s] 
+[06/20 17:36:27     30s] Trim Metal Layers:
+[06/20 17:36:27     30s] 
+[06/20 17:36:27     30s] Trim Metal Layers:
+[06/20 17:36:27     30s] 
+[06/20 17:36:27     30s] Trim Metal Layers:
+[06/20 17:36:27     30s] Extraction setup Started 
+[06/20 17:36:27     30s] 
+[06/20 17:36:27     30s] Trim Metal Layers:
+[06/20 17:36:27     30s] 
+[06/20 17:36:27     30s] Trim Metal Layers:
+[06/20 17:36:27     30s] 
+[06/20 17:36:27     30s] Trim Metal Layers:
+[06/20 17:36:27     30s] Extraction setup Started 
+[06/20 17:36:27     30s] 
+[06/20 17:36:27     30s] Trim Metal Layers:
+[06/20 17:36:27     30s] 
+[06/20 17:36:27     30s] Trim Metal Layers:
+[06/20 17:36:27     30s] 
+[06/20 17:36:27     30s] Trim Metal Layers:
+[06/20 17:36:27     30s] The existing analysis_view 'best_case' has been replaced with new attributes.
+[06/20 17:36:27     30s] The existing analysis_view 'worst_case' has been replaced with new attributes.
+[06/20 17:36:27     30s] INFO: New setup and hold views overwrite old settings during design initialization
+[06/20 17:36:27     30s] #% End Load MMMC data ... (date=06/20 17:36:27, total cpu=0:00:00.0, real=0:00:00.0, peak res=1021.4M, current mem=1021.4M)
+[06/20 17:36:27     30s] 
+[06/20 17:36:27     30s] Loading LEF file ../lef/gsclib090_tech.lef ...
+[06/20 17:36:27     30s] **ERROR: (IMPLF-111):	Layer 'Metal1' is not defined
+**ERROR: (IMPLF-224):	Failed to create via 'VIA1X'.
+**ERROR: (IMPLF-3):	Error found when processing LEF file '../lef/gsclib090_tech.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus'.
+Type 'man IMPLF-3' for more detail.
+[06/20 17:36:27     30s] **ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[06/20 17:36:41     31s] <CMD> set init_gnd_net VSS
+[06/20 17:36:41     31s] <CMD> set init_lef_file {../lef/gsclib090_tech.lef ../lef/gsclib090_macro.lef ../lef/gsclib090_translated.lef}
+[06/20 17:36:41     31s] <CMD> set init_design_settop 0
+[06/20 17:36:41     31s] <CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+[06/20 17:36:41     31s] <CMD> set init_mmmc_file gpu.view
+[06/20 17:36:41     31s] <CMD> set init_pwr_net VDD
+[06/20 17:36:41     31s] <CMD> init_design
+[06/20 17:36:41     31s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[06/20 17:36:41     31s] #% Begin Load MMMC data ... (date=06/20 17:36:41, mem=1021.4M)
+[06/20 17:36:41     31s] Extraction setup Started 
+[06/20 17:36:41     31s] 
+[06/20 17:36:41     31s] Trim Metal Layers:
+[06/20 17:36:41     31s] 
+[06/20 17:36:41     31s] Trim Metal Layers:
+[06/20 17:36:41     31s] 
+[06/20 17:36:41     31s] Trim Metal Layers:
+[06/20 17:36:41     31s] Extraction setup Started 
+[06/20 17:36:41     31s] 
+[06/20 17:36:41     31s] Trim Metal Layers:
+[06/20 17:36:41     31s] 
+[06/20 17:36:41     31s] Trim Metal Layers:
+[06/20 17:36:41     31s] 
+[06/20 17:36:41     31s] Trim Metal Layers:
+[06/20 17:36:41     31s] Extraction setup Started 
+[06/20 17:36:41     31s] 
+[06/20 17:36:41     31s] Trim Metal Layers:
+[06/20 17:36:41     31s] 
+[06/20 17:36:41     31s] Trim Metal Layers:
+[06/20 17:36:41     31s] 
+[06/20 17:36:41     31s] Trim Metal Layers:
+[06/20 17:36:41     31s] The existing analysis_view 'best_case' has been replaced with new attributes.
+[06/20 17:36:41     31s] The existing analysis_view 'worst_case' has been replaced with new attributes.
+[06/20 17:36:41     31s] INFO: New setup and hold views overwrite old settings during design initialization
+[06/20 17:36:41     31s] #% End Load MMMC data ... (date=06/20 17:36:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=1021.4M, current mem=1021.4M)
+[06/20 17:36:41     31s] 
+[06/20 17:36:41     31s] Loading LEF file ../lef/gsclib090_tech.lef ...
+[06/20 17:36:41     31s] **ERROR: (IMPLF-111):	Layer 'Metal1' is not defined
+**ERROR: (IMPLF-224):	Failed to create via 'VIA1X'.
+**ERROR: (IMPLF-3):	Error found when processing LEF file '../lef/gsclib090_tech.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus'.
+Type 'man IMPLF-3' for more detail.
+[06/20 17:36:41     31s] **ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[06/20 17:36:56     31s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[06/20 17:37:53     32s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[06/20 17:38:21     33s] child process exited abnormally
+[06/20 17:38:23     33s] child process exited abnormally
+[06/20 17:40:38     46s] <CMD> set init_gnd_net VSS
+[06/20 17:40:38     46s] <CMD> set init_lef_file {../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef}
+[06/20 17:40:38     46s] <CMD> set init_design_settop 0
+[06/20 17:40:38     46s] <CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+[06/20 17:40:38     46s] <CMD> set init_mmmc_file gpu.view
+[06/20 17:40:38     46s] <CMD> set init_pwr_net VDD
+[06/20 17:40:38     46s] <CMD> init_design
+[06/20 17:40:38     46s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[06/20 17:40:38     46s] #% Begin Load MMMC data ... (date=06/20 17:40:38, mem=1025.0M)
+[06/20 17:40:38     46s] Extraction setup Started 
+[06/20 17:40:38     46s] 
+[06/20 17:40:38     46s] Trim Metal Layers:
+[06/20 17:40:38     46s] 
+[06/20 17:40:38     46s] Trim Metal Layers:
+[06/20 17:40:38     46s] 
+[06/20 17:40:38     46s] Trim Metal Layers:
+[06/20 17:40:38     46s] Extraction setup Started 
+[06/20 17:40:38     46s] 
+[06/20 17:40:38     46s] Trim Metal Layers:
+[06/20 17:40:38     46s] 
+[06/20 17:40:38     46s] Trim Metal Layers:
+[06/20 17:40:38     46s] 
+[06/20 17:40:38     46s] Trim Metal Layers:
+[06/20 17:40:38     46s] Extraction setup Started 
+[06/20 17:40:38     46s] 
+[06/20 17:40:38     46s] Trim Metal Layers:
+[06/20 17:40:38     46s] 
+[06/20 17:40:38     46s] Trim Metal Layers:
+[06/20 17:40:38     46s] 
+[06/20 17:40:38     46s] Trim Metal Layers:
+[06/20 17:40:38     46s] The existing analysis_view 'best_case' has been replaced with new attributes.
+[06/20 17:40:38     46s] The existing analysis_view 'worst_case' has been replaced with new attributes.
+[06/20 17:40:38     46s] INFO: New setup and hold views overwrite old settings during design initialization
+[06/20 17:40:38     46s] #% End Load MMMC data ... (date=06/20 17:40:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=1025.0M, current mem=1025.0M)
+[06/20 17:40:38     46s] 
+[06/20 17:40:38     46s] Loading LEF file ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ...
+[06/20 17:40:38     46s] 
+[06/20 17:40:38     46s] Loading LEF file ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef ...
+[06/20 17:40:38     46s] Set DBUPerIGU to M2 pitch 400.
+[06/20 17:40:38     46s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[06/20 17:40:38     46s] Type 'man IMPLF-200' for more detail.
+[06/20 17:40:38     46s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[06/20 17:40:38     46s] Loading view definition file from gpu.view
+[06/20 17:40:38     46s] Reading max_timing timing library '/home/userdata/22bec0039/kar/GPU/lib/slow.lib' ...
+[06/20 17:40:39     46s] Read 479 cells in library 'slow' 
+[06/20 17:40:39     46s] Reading min_timing timing library '/home/userdata/22bec0039/kar/GPU/lib/fast.lib' ...
+[06/20 17:40:39     47s] Read 479 cells in library 'fast' 
+[06/20 17:40:39     47s] Ending "PreSetAnalysisView" (total cpu=0:00:00.6, real=0:00:01.0, peak res=1098.9M, current mem=1042.1M)
+[06/20 17:40:39     47s] *** End library_loading (cpu=0.01min, real=0.02min, mem=29.0M, fe_cpu=0.78min, fe_real=8.87min, fe_mem=1068.3M) ***
+[06/20 17:40:39     47s] #% Begin Load netlist data ... (date=06/20 17:40:39, mem=1042.1M)
+[06/20 17:40:39     47s] *** Begin netlist parsing (mem=1068.3M) ***
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[06/20 17:40:39     47s] Type 'man IMPVL-159' for more detail.
+[06/20 17:40:39     47s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[06/20 17:40:39     47s] To increase the message display limit, refer to the product command reference manual.
+[06/20 17:40:39     47s] Created 479 new cells from 2 timing libraries.
+[06/20 17:40:39     47s] Reading netlist ...
+[06/20 17:40:39     47s] Backslashed names will retain backslash and a trailing blank character.
+[06/20 17:40:39     47s] Reading verilog netlist '../synthesis/output/gpu_netlist.v'
+[06/20 17:40:39     47s] 
+[06/20 17:40:39     47s] *** Memory Usage v#1 (Current mem = 1069.309M, initial mem = 491.871M) ***
+[06/20 17:40:39     47s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=1069.3M) ***
+[06/20 17:40:39     47s] #% End Load netlist data ... (date=06/20 17:40:39, total cpu=0:00:00.1, real=0:00:00.0, peak res=1061.0M, current mem=1061.0M)
+[06/20 17:40:39     47s] Top level cell is gpu.
+[06/20 17:40:40     47s] Hooked 958 DB cells to tlib cells.
+[06/20 17:40:40     47s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1068.5M, current mem=1068.5M)
+[06/20 17:40:40     47s] Starting recursive module instantiation check.
+[06/20 17:40:40     47s] No recursion found.
+[06/20 17:40:40     47s] Building hierarchical netlist for Cell gpu ...
+[06/20 17:40:40     47s] *** Netlist is unique.
+[06/20 17:40:40     47s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[06/20 17:40:40     47s] ** info: there are 967 modules.
+[06/20 17:40:40     47s] ** info: there are 9979 stdCell insts.
+[06/20 17:40:40     47s] 
+[06/20 17:40:40     47s] *** Memory Usage v#1 (Current mem = 1130.223M, initial mem = 491.871M) ***
+[06/20 17:40:40     47s] **WARN: (IMPFP-3961):	The techSite 'gsclib090site' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[06/20 17:40:40     47s] Type 'man IMPFP-3961' for more detail.
+[06/20 17:40:40     47s] Horizontal Layer M1 offset = 190 (guessed)
+[06/20 17:40:40     47s] Vertical Layer M2 offset = 200 (derived)
+[06/20 17:40:40     47s] Suggestion: specify LAYER OFFSET in LEF file
+[06/20 17:40:40     47s] Reason: hard to extract LAYER OFFSET from standard cells
+[06/20 17:40:40     47s] Start create_tracks
+[06/20 17:40:40     47s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in unpreferred direction.
+[06/20 17:40:40     47s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in preferred direction.
+[06/20 17:40:40     47s] Generated pitch 0.4 in M10 is different from 0.48 defined in technology file in unpreferred direction.
+[06/20 17:40:40     47s] Generated pitch 0.5 in M10 is different from 0.48 defined in technology file in preferred direction.
+[06/20 17:40:40     47s] Generated pitch 0.2 in M9 is different from 0.33 defined in technology file in unpreferred direction.
+[06/20 17:40:40     47s] Generated pitch 0.4 in M9 is different from 0.33 defined in technology file in preferred direction.
+[06/20 17:40:40     47s] Generated pitch 0.19 in M2 is different from 0.2 defined in technology file in unpreferred direction.
+[06/20 17:40:40     47s] Generated pitch 0.2 in M1 is different from 0.19 defined in technology file in unpreferred direction.
+[06/20 17:40:40     47s] Extraction setup Started 
+[06/20 17:40:40     47s] 
+[06/20 17:40:40     47s] Trim Metal Layers:
+[06/20 17:40:40     47s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[06/20 17:40:40     47s] Reading Capacitance Table File ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl ...
+[06/20 17:40:40     47s] Cap table was created using Encounter 05.20-s112_1.
+[06/20 17:40:40     47s] Process name: gpdk090_9l.
+[06/20 17:40:40     47s] **ERROR: (IMPEXT-3548):	Process information for layer 'M10' is missing from the cap table file but is defined in the tech database (which is derived from the tech LEF or Open Access technology file). To include this information, you can do one of the following: Correct the cap table file by editing it, generate a new cap table from an ICT file with the proper layers defined, or obtain the correct cap table from your foundry and run again.
+**WARN: (IMPEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[06/20 17:40:40     47s] Type 'man IMPEXT-2773' for more detail.
+[06/20 17:40:40     47s] **ERROR: (IMPEXT-3548):	Process information for layer 'M11' is missing from the cap table file but is defined in the tech database (which is derived from the tech LEF or Open Access technology file). To include this information, you can do one of the following: Correct the cap table file by editing it, generate a new cap table from an ICT file with the proper layers defined, or obtain the correct cap table from your foundry and run again.
+**WARN: (IMPEXT-2773):	The via resistance between layers M10 and M11 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[06/20 17:40:40     47s] Type 'man IMPEXT-2773' for more detail.
+[06/20 17:40:40     47s] **ERROR: (IMPEXT-2715):	Syntax Error in line 152
+**ERROR: (IMPEXT-2677):	Multi-corner RC initialization is aborted because of previously-reported errors. Use the reason provided in the error message(s) to resolve this issue and use the set_analysis_view command to invoke multi-corner initialization again.
+*Info: initialize multi-corner CTS.
+[06/20 17:40:40     47s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1341.1M, current mem=1099.0M)
+[06/20 17:40:40     47s] Reading timing constraints file '../synthesis/gpu_syn.sdc' ...
+[06/20 17:40:40     47s] Current (total cpu=0:00:47.6, real=0:08:53, peak res=1355.2M, current mem=1355.2M)
+[06/20 17:40:40     47s] INFO (CTE): Constraints read successfully.
+[06/20 17:40:40     47s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1395.9M, current mem=1395.9M)
+[06/20 17:40:40     47s] Current (total cpu=0:00:47.6, real=0:08:53, peak res=1395.9M, current mem=1395.9M)
+[06/20 17:40:40     47s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[06/20 17:40:40     47s] 
+[06/20 17:40:40     47s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[06/20 17:40:40     47s] Summary for sequential cells identification: 
+[06/20 17:40:40     47s]   Identified SBFF number: 112
+[06/20 17:40:40     47s]   Identified MBFF number: 0
+[06/20 17:40:40     47s]   Identified SB Latch number: 0
+[06/20 17:40:40     47s]   Identified MB Latch number: 0
+[06/20 17:40:40     47s]   Not identified SBFF number: 8
+[06/20 17:40:40     47s]   Not identified MBFF number: 0
+[06/20 17:40:40     47s]   Not identified SB Latch number: 0
+[06/20 17:40:40     47s]   Not identified MB Latch number: 0
+[06/20 17:40:40     47s]   Number of sequential cells which are not FFs: 32
+[06/20 17:40:40     47s] Total number of combinational cells: 317
+[06/20 17:40:40     47s] Total number of sequential cells: 152
+[06/20 17:40:40     47s] Total number of tristate cells: 10
+[06/20 17:40:40     47s] Total number of level shifter cells: 0
+[06/20 17:40:40     47s] Total number of power gating cells: 0
+[06/20 17:40:40     47s] Total number of isolation cells: 0
+[06/20 17:40:40     47s] Total number of power switch cells: 0
+[06/20 17:40:40     47s] Total number of pulse generator cells: 0
+[06/20 17:40:40     47s] Total number of always on buffers: 0
+[06/20 17:40:40     47s] Total number of retention cells: 0
+[06/20 17:40:40     47s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[06/20 17:40:40     47s] Total number of usable buffers: 16
+[06/20 17:40:40     47s] List of unusable buffers:
+[06/20 17:40:40     47s] Total number of unusable buffers: 0
+[06/20 17:40:40     47s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[06/20 17:40:40     47s] Total number of usable inverters: 19
+[06/20 17:40:40     47s] List of unusable inverters:
+[06/20 17:40:40     47s] Total number of unusable inverters: 0
+[06/20 17:40:40     47s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[06/20 17:40:40     47s] Total number of identified usable delay cells: 8
+[06/20 17:40:40     47s] List of identified unusable delay cells:
+[06/20 17:40:40     47s] Total number of identified unusable delay cells: 0
+[06/20 17:40:40     47s] 
+[06/20 17:40:40     47s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[06/20 17:40:40     47s] 
+[06/20 17:40:40     47s] TimeStamp Deleting Cell Server Begin ...
+[06/20 17:40:40     47s] 
+[06/20 17:40:40     47s] TimeStamp Deleting Cell Server End ...
+[06/20 17:40:40     47s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1397.6M, current mem=1397.6M)
+[06/20 17:40:40     47s] 
+[06/20 17:40:40     47s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[06/20 17:40:40     47s] Summary for sequential cells identification: 
+[06/20 17:40:40     47s]   Identified SBFF number: 112
+[06/20 17:40:40     47s]   Identified MBFF number: 0
+[06/20 17:40:40     47s]   Identified SB Latch number: 0
+[06/20 17:40:40     47s]   Identified MB Latch number: 0
+[06/20 17:40:40     47s]   Not identified SBFF number: 8
+[06/20 17:40:40     47s]   Not identified MBFF number: 0
+[06/20 17:40:40     47s]   Not identified SB Latch number: 0
+[06/20 17:40:40     47s]   Not identified MB Latch number: 0
+[06/20 17:40:40     47s]   Number of sequential cells which are not FFs: 32
+[06/20 17:40:40     47s]  Visiting view : worst_case
+[06/20 17:40:40     47s]    : PowerDomain = none : Weighted F : unweighted  = 37.10 (1.000) with rcCorner = -1
+[06/20 17:40:40     47s]    : PowerDomain = none : Weighted F : unweighted  = 33.00 (1.000) with rcCorner = -1
+[06/20 17:40:40     47s]  Visiting view : best_case
+[06/20 17:40:40     47s]    : PowerDomain = none : Weighted F : unweighted  = 12.40 (1.000) with rcCorner = -1
+[06/20 17:40:40     47s]    : PowerDomain = none : Weighted F : unweighted  = 11.00 (1.000) with rcCorner = -1
+[06/20 17:40:40     47s] TLC MultiMap info (StdDelay):
+[06/20 17:40:40     47s]   : min_delay + min_timing + 1 + no RcCorner := 11ps
+[06/20 17:40:40     47s]   : min_delay + min_timing + 1 + rccorner := 12.4ps
+[06/20 17:40:40     47s]   : max_delay + max_timing + 1 + no RcCorner := 33ps
+[06/20 17:40:40     47s]   : max_delay + max_timing + 1 + rccorner := 37.1ps
+[06/20 17:40:40     47s]  Setting StdDelay to: 37.1ps
+[06/20 17:40:40     47s] 
+[06/20 17:40:40     47s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[06/20 17:40:40     47s] 
+[06/20 17:40:40     47s] TimeStamp Deleting Cell Server Begin ...
+[06/20 17:40:40     47s] 
+[06/20 17:40:40     47s] TimeStamp Deleting Cell Server End ...
+[06/20 17:40:40     47s] Extraction setup Started 
+[06/20 17:40:40     47s] 
+[06/20 17:40:40     47s] Trim Metal Layers:
+[06/20 17:40:40     47s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[06/20 17:40:40     47s] Reading Capacitance Table File ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl ...
+[06/20 17:40:40     47s] Cap table was created using Encounter 05.20-s112_1.
+[06/20 17:40:40     47s] Process name: gpdk090_9l.
+[06/20 17:40:40     47s] **ERROR: (IMPEXT-3548):	Process information for layer 'M10' is missing from the cap table file but is defined in the tech database (which is derived from the tech LEF or Open Access technology file). To include this information, you can do one of the following: Correct the cap table file by editing it, generate a new cap table from an ICT file with the proper layers defined, or obtain the correct cap table from your foundry and run again.
+**WARN: (IMPEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[06/20 17:40:40     47s] Type 'man IMPEXT-2773' for more detail.
+[06/20 17:40:40     47s] **ERROR: (IMPEXT-3548):	Process information for layer 'M11' is missing from the cap table file but is defined in the tech database (which is derived from the tech LEF or Open Access technology file). To include this information, you can do one of the following: Correct the cap table file by editing it, generate a new cap table from an ICT file with the proper layers defined, or obtain the correct cap table from your foundry and run again.
+**WARN: (IMPEXT-2773):	The via resistance between layers M10 and M11 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[06/20 17:40:40     47s] Type 'man IMPEXT-2773' for more detail.
+[06/20 17:40:40     47s] **ERROR: (IMPEXT-2715):	Syntax Error in line 152
+**ERROR: (IMPEXT-2677):	Multi-corner RC initialization is aborted because of previously-reported errors. Use the reason provided in the error message(s) to resolve this issue and use the set_analysis_view command to invoke multi-corner initialization again.
+report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[06/20 17:41:37     48s] <CMD> getIoFlowFlag
+[06/20 17:42:05     49s] <CMD> setIoFlowFlag 0
+[06/20 17:42:05     49s] <CMD> floorPlan -coreMarginsBy die -site CoreSite -r 1 0.699996 2.5 2.5 2.5 2.5
+[06/20 17:42:05     49s] **WARN: (IMPFP-3961):	The techSite 'gsclib090site' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[06/20 17:42:05     49s] Type 'man IMPFP-3961' for more detail.
+[06/20 17:42:05     49s] Horizontal Layer M1 offset = 190 (guessed)
+[06/20 17:42:05     49s] Vertical Layer M2 offset = 200 (derived)
+[06/20 17:42:05     49s] Suggestion: specify LAYER OFFSET in LEF file
+[06/20 17:42:05     49s] Reason: hard to extract LAYER OFFSET from standard cells
+[06/20 17:42:05     49s] Start create_tracks
+[06/20 17:42:05     49s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in unpreferred direction.
+[06/20 17:42:05     49s] Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in preferred direction.
+[06/20 17:42:05     49s] Generated pitch 0.4 in M10 is different from 0.48 defined in technology file in unpreferred direction.
+[06/20 17:42:05     49s] Generated pitch 0.5 in M10 is different from 0.48 defined in technology file in preferred direction.
+[06/20 17:42:05     49s] Generated pitch 0.2 in M9 is different from 0.33 defined in technology file in unpreferred direction.
+[06/20 17:42:05     49s] Generated pitch 0.4 in M9 is different from 0.33 defined in technology file in preferred direction.
+[06/20 17:42:05     49s] Generated pitch 0.19 in M2 is different from 0.2 defined in technology file in unpreferred direction.
+[06/20 17:42:05     49s] Generated pitch 0.2 in M1 is different from 0.19 defined in technology file in unpreferred direction.
+[06/20 17:42:05     49s] <CMD> uiSetTool select
+[06/20 17:42:05     49s] <CMD> getIoFlowFlag
+[06/20 17:42:05     49s] <CMD> fit
+[06/20 17:42:47     49s] <CMD> set sprCreateIeRingOffset 1.0
+[06/20 17:42:47     49s] <CMD> set sprCreateIeRingThreshold 1.0
+[06/20 17:42:47     49s] <CMD> set sprCreateIeRingJogDistance 1.0
+[06/20 17:42:47     49s] <CMD> set sprCreateIeRingLayers {}
+[06/20 17:42:47     49s] <CMD> set sprCreateIeRingOffset 1.0
+[06/20 17:42:47     49s] <CMD> set sprCreateIeRingThreshold 1.0
+[06/20 17:42:47     49s] <CMD> set sprCreateIeRingJogDistance 1.0
+[06/20 17:42:47     49s] <CMD> set sprCreateIeRingLayers {}
+[06/20 17:42:47     49s] <CMD> set sprCreateIeStripeWidth 10.0
+[06/20 17:42:47     49s] <CMD> set sprCreateIeStripeThreshold 1.0
+[06/20 17:42:47     49s] <CMD> set sprCreateIeStripeWidth 10.0
+[06/20 17:42:47     49s] <CMD> set sprCreateIeStripeThreshold 1.0
+[06/20 17:42:48     50s] <CMD> set sprCreateIeRingOffset 1.0
+[06/20 17:42:48     50s] <CMD> set sprCreateIeRingThreshold 1.0
+[06/20 17:42:48     50s] <CMD> set sprCreateIeRingJogDistance 1.0
+[06/20 17:42:48     50s] <CMD> set sprCreateIeRingLayers {}
+[06/20 17:42:48     50s] <CMD> set sprCreateIeStripeWidth 10.0
+[06/20 17:42:48     50s] <CMD> set sprCreateIeStripeThreshold 1.0
+[06/20 17:43:56     51s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer M11 -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[06/20 17:43:56     51s] The ring targets are set to core/block ring wires.
+[06/20 17:43:56     51s] addRing command will consider rows while creating rings.
+[06/20 17:43:56     51s] addRing command will disallow rings to go over rows.
+[06/20 17:43:56     51s] addRing command will ignore shorts while creating rings.
+[06/20 17:43:56     51s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M11 bottom M11 left M10 right M10} -width {top 0.7 bottom 0.7 left 0.7 right 0.7} -spacing {top 0.2 bottom 0.2 left 0.2 right 0.2} -offset {top 0.5 bottom 0.5 left 0.5 right 0.5} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[06/20 17:43:56     51s] 
+[06/20 17:43:56     51s] 
+[06/20 17:43:56     51s] viaInitial starts at Sat Jun 20 17:43:56 2026
+viaInitial ends at Sat Jun 20 17:43:56 2026
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1855.2M)
+[06/20 17:43:56     51s] **WARN: (IMPPP-193):	The currently specified top spacing 0.200000  might create min enclosed area violation. The required min enclosed area for layer M11 is 0.110000. If violation happens, increase the spacing to around 0.381662. The recommended spacing is the square root of min enclosure area.
+[06/20 17:43:56     51s] **WARN: (IMPPP-193):	The currently specified bottom spacing 0.200000  might create min enclosed area violation. The required min enclosed area for layer M11 is 0.110000. If violation happens, increase the spacing to around 0.381662. The recommended spacing is the square root of min enclosure area.
+[06/20 17:43:56     51s] **WARN: (IMPPP-193):	The currently specified left spacing 0.200000  might create min enclosed area violation. The required min enclosed area for layer M10 is 0.110000. If violation happens, increase the spacing to around 0.381662. The recommended spacing is the square root of min enclosure area.
+[06/20 17:43:56     51s] **WARN: (IMPPP-193):	The currently specified right spacing 0.200000  might create min enclosed area violation. The required min enclosed area for layer M10 is 0.110000. If violation happens, increase the spacing to around 0.381662. The recommended spacing is the square root of min enclosure area.
+[06/20 17:43:56     51s] Ring generation is complete.
+[06/20 17:43:56     51s] vias are now being generated.
+[06/20 17:43:56     51s] addRing created 8 wires.
+[06/20 17:43:56     51s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[06/20 17:43:56     51s] +--------+----------------+----------------+
+[06/20 17:43:56     51s] |  Layer |     Created    |     Deleted    |
+[06/20 17:43:56     51s] +--------+----------------+----------------+
+[06/20 17:43:56     51s] |   M10  |        4       |       NA       |
+[06/20 17:43:56     51s] |  Via10 |        8       |        0       |
+[06/20 17:43:56     51s] |   M11  |        4       |       NA       |
+[06/20 17:43:56     51s] +--------+----------------+----------------+
+[06/20 17:44:28     52s] <CMD> set sprCreateIeRingOffset 1.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeRingThreshold 1.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeRingJogDistance 1.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeRingLayers {}
+[06/20 17:44:28     52s] <CMD> set sprCreateIeRingOffset 1.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeRingThreshold 1.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeRingJogDistance 1.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeRingLayers {}
+[06/20 17:44:28     52s] <CMD> set sprCreateIeStripeWidth 10.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeStripeThreshold 1.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeStripeWidth 10.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeStripeThreshold 1.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeRingOffset 1.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeRingThreshold 1.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeRingJogDistance 1.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeRingLayers {}
+[06/20 17:44:28     52s] <CMD> set sprCreateIeStripeWidth 10.0
+[06/20 17:44:28     52s] <CMD> set sprCreateIeStripeThreshold 1.0
+[06/20 17:45:22     53s] <CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer M11 -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+[06/20 17:45:22     53s] addStripe will allow jog to connect padcore ring and block ring.
+[06/20 17:45:22     53s] 
+[06/20 17:45:22     53s] Stripes will stop at the boundary of the specified area.
+[06/20 17:45:22     53s] When breaking rings, the power planner will consider the existence of blocks.
+[06/20 17:45:22     53s] Stripes will not extend to closest target.
+[06/20 17:45:22     53s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[06/20 17:45:22     53s] Stripes will not be created over regions without power planning wires.
+[06/20 17:45:22     53s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[06/20 17:45:22     53s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[06/20 17:45:22     53s] Offset for stripe breaking is set to 0.
+[06/20 17:45:22     53s] <CMD> addStripe -nets {VDD VSS} -layer M10 -direction vertical -width 0.7 -spacing 0.2 -set_to_set_distance 5 -start_from left -start_offset 1 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit M11 -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit M11 -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+[06/20 17:45:22     53s] 
+[06/20 17:45:22     53s] Initialize fgc environment(mem: 1862.2M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] **WARN: (IMPPP-193):	The currently specified  spacing 0.200000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer M10 is 0.110000. If violation happens, increase the spacing to around 0.381662. The recommended spacing is the square root of min enclosure area.
+[06/20 17:45:22     53s] Starting stripe generation ...
+[06/20 17:45:22     53s] Non-Default Mode Option Settings :
+[06/20 17:45:22     53s]   NONE
+[06/20 17:45:22     53s] Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1862.2M)
+[06/20 17:45:22     53s] Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1860.2M)
+[06/20 17:45:22     53s] Stripe generation is complete.
+[06/20 17:45:22     53s] vias are now being generated.
+[06/20 17:45:22     53s] addStripe created 77 wires.
+[06/20 17:45:22     53s] ViaGen created 154 vias, deleted 0 via to avoid violation.
+[06/20 17:45:22     53s] +--------+----------------+----------------+
+[06/20 17:45:22     53s] |  Layer |     Created    |     Deleted    |
+[06/20 17:45:22     53s] +--------+----------------+----------------+
+[06/20 17:45:22     53s] |   M10  |       77       |       NA       |
+[06/20 17:45:22     53s] |  Via10 |       154      |        0       |
+[06/20 17:45:22     53s] +--------+----------------+----------------+
+[06/20 17:46:32     55s] <CMD> setSrouteMode -viaConnectToShape { noshape }
+[06/20 17:46:32     55s] <CMD> sroute -connect { corePin } -layerChangeRange { M1(1) M11(11) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) M11(11) } -nets { VDD VSS } -allowLayerChange 1 -targetViaLayerRange { M1(1) M11(11) }
+[06/20 17:46:32     55s] **WARN: (IMPSR-4058):	Sroute option: blockPinTarget should be used in conjunction with option: -connect blockPin. 
+[06/20 17:46:32     55s] *** Begin SPECIAL ROUTE on Sat Jun 20 17:46:32 2026 ***
+[06/20 17:46:32     55s] SPECIAL ROUTE ran on directory: /home/userdata/22bec0039/kar/GPU/PD
+[06/20 17:46:32     55s] SPECIAL ROUTE ran on machine: cadence-server.vit.ac.in (Linux 4.18.0-477.21.1.el8_8.x86_64 Xeon 3.60Ghz)
+[06/20 17:46:32     55s] 
+[06/20 17:46:32     55s] Begin option processing ...
+[06/20 17:46:32     55s] srouteConnectPowerBump set to false
+[06/20 17:46:32     55s] routeSelectNet set to "VDD VSS"
+[06/20 17:46:32     55s] routeSpecial set to true
+[06/20 17:46:32     55s] srouteBottomLayerLimit set to 1
+[06/20 17:46:32     55s] srouteBottomTargetLayerLimit set to 1
+[06/20 17:46:32     55s] srouteConnectBlockPin set to false
+[06/20 17:46:32     55s] srouteConnectConverterPin set to false
+[06/20 17:46:32     55s] srouteConnectPadPin set to false
+[06/20 17:46:32     55s] srouteConnectStripe set to false
+[06/20 17:46:32     55s] srouteCrossoverViaBottomLayer set to 1
+[06/20 17:46:32     55s] srouteCrossoverViaTopLayer set to 11
+[06/20 17:46:32     55s] srouteFollowCorePinEnd set to 3
+[06/20 17:46:32     55s] srouteFollowPadPin set to false
+[06/20 17:46:32     55s] srouteJogControl set to "preferWithChanges differentLayer"
+[06/20 17:46:32     55s] srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+[06/20 17:46:32     55s] sroutePadPinAllPorts set to true
+[06/20 17:46:32     55s] sroutePreserveExistingRoutes set to true
+[06/20 17:46:32     55s] srouteRoutePowerBarPortOnBothDir set to true
+[06/20 17:46:32     55s] srouteStopBlockPin set to "nearestTarget"
+[06/20 17:46:32     55s] srouteTopLayerLimit set to 11
+[06/20 17:46:32     55s] srouteTopTargetLayerLimit set to 11
+[06/20 17:46:32     55s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3328.00 megs.
+[06/20 17:46:32     55s] 
+[06/20 17:46:32     55s] Reading DB technology information...
+[06/20 17:46:32     55s] Finished reading DB technology information.
+[06/20 17:46:32     55s] Reading floorplan and netlist information...
+[06/20 17:46:32     55s] Finished reading floorplan and netlist information.
+[06/20 17:46:33     55s] Read in 23 layers, 11 routing layers, 1 overlap layer
+[06/20 17:46:33     55s] Read in 2 nondefault rules, 0 used
+[06/20 17:46:33     55s] Read in 487 macros, 75 used
+[06/20 17:46:33     55s] Read in 75 components
+[06/20 17:46:33     55s]   75 core components: 75 unplaced, 0 placed, 0 fixed
+[06/20 17:46:33     55s] Read in 183 logical pins
+[06/20 17:46:33     55s] Read in 183 nets
+[06/20 17:46:33     55s] Read in 2 special nets, 2 routed
+[06/20 17:46:33     55s] 2 nets selected.
+[06/20 17:46:33     55s] 
+[06/20 17:46:33     55s] Begin power routing ...
+[06/20 17:46:33     55s] **WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VDD net.
+[06/20 17:46:33     55s]  Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+[06/20 17:46:33     55s] **WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VSS net.
+[06/20 17:46:33     55s]  Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+[06/20 17:46:33     55s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[06/20 17:46:33     55s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[06/20 17:46:33     55s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[06/20 17:46:33     55s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[06/20 17:46:33     55s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[06/20 17:46:33     55s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[06/20 17:46:33     55s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[06/20 17:46:33     55s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[06/20 17:46:33     55s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[06/20 17:46:33     55s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[06/20 17:46:33     55s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[06/20 17:46:33     55s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[06/20 17:46:33     55s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[06/20 17:46:33     55s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[06/20 17:46:33     55s] CPU time for VDD FollowPin 0 seconds
+[06/20 17:46:33     55s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[06/20 17:46:33     55s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[06/20 17:46:33     55s] CPU time for VSS FollowPin 0 seconds
+[06/20 17:46:33     55s]   Number of Core ports routed: 224
+[06/20 17:46:33     55s]   Number of Followpin connections: 112
+[06/20 17:46:33     55s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 3344.00 megs.
+[06/20 17:46:33     55s] 
+[06/20 17:46:33     55s] 
+[06/20 17:46:33     55s] 
+[06/20 17:46:33     55s]  Begin updating DB with routing results ...
+[06/20 17:46:33     55s]  Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+[06/20 17:46:33     55s] Pin and blockage extraction finished
+[06/20 17:46:33     55s] 
+[06/20 17:46:33     55s] sroute created 336 wires.
+[06/20 17:46:33     55s] ViaGen created 2016 vias, deleted 0 via to avoid violation.
+[06/20 17:46:33     55s] +--------+----------------+----------------+
+[06/20 17:46:33     55s] |  Layer |     Created    |     Deleted    |
+[06/20 17:46:33     55s] +--------+----------------+----------------+
+[06/20 17:46:33     55s] |   M1   |       336      |       NA       |
+[06/20 17:46:33     55s] |  Via1  |       224      |        0       |
+[06/20 17:46:33     55s] |  Via2  |       224      |        0       |
+[06/20 17:46:33     55s] |  Via3  |       224      |        0       |
+[06/20 17:46:33     55s] |  Via4  |       224      |        0       |
+[06/20 17:46:33     55s] |  Via5  |       224      |        0       |
+[06/20 17:46:33     55s] |  Via6  |       224      |        0       |
+[06/20 17:46:33     55s] |  Via7  |       224      |        0       |
+[06/20 17:46:33     55s] |  Via8  |       224      |        0       |
+[06/20 17:46:33     55s] |  Via9  |       224      |        0       |
+[06/20 17:46:33     55s] +--------+----------------+----------------+
+[06/20 17:48:16     57s] <CMD> setAnalysisMode -cppr both -clockGatingCheck true -timeBorrowing true -useOutputPinCap true -sequentialConstProp false -timingSelfLoopsNoSkew false -enableMultipleDriveNet true -clkSrcPath true -warn true -usefulSkew false -analysisType onChipVariation -log true
+[06/20 17:49:02     58s] <CMD> setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+[06/20 17:49:02     58s] <CMD> setEndCapMode -reset
+[06/20 17:49:02     58s] <CMD> setEndCapMode -boundary_tap false
+[06/20 17:49:02     58s] <CMD> setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+[06/20 17:49:02     58s] <CMD> setNanoRouteMode -quiet -droutePostRouteWidenWireRule VLMDefaultSetup
+[06/20 17:49:02     58s] <CMD> setNanoRouteMode -quiet -timingEngine {}
+[06/20 17:49:02     58s] <CMD> setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+[06/20 17:49:02     58s] <CMD> setPlaceMode -reset
+[06/20 17:49:02     58s] <CMD> setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 1 -moduleAwareSpare 0 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+[06/20 17:49:04     58s] <CMD> setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+[06/20 17:49:04     58s] <CMD> setEndCapMode -reset
+[06/20 17:49:04     58s] <CMD> setEndCapMode -boundary_tap false
+[06/20 17:49:04     58s] <CMD> setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+[06/20 17:50:07     60s] <CMD> setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+[06/20 17:50:07     60s] <CMD> setEndCapMode -reset
+[06/20 17:50:07     60s] <CMD> setEndCapMode -boundary_tap false
+[06/20 17:50:07     60s] <CMD> setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+[06/20 17:52:07     62s] <CMD> redraw
+[06/20 17:52:09     62s] <CMD> redraw
+[06/20 17:52:09     62s] <CMD> redraw
+[06/20 17:52:09     62s] <CMD> redraw
+[06/20 17:52:09     62s] <CMD> redraw
+[06/20 17:52:13     62s] <CMD> redraw
+[06/20 17:52:29     63s] <CMD> editPin -pin * -assign auto
+[06/20 17:52:29     63s] 
+[06/20 17:52:29     63s] Usage: editPin [-help] [-end {x y}] [-fixedPin] [-global_location] [-include_rectilinear_edge] [-masterCloneAware] [-offsetEnd <float>]
+[06/20 17:52:29     63s]                [-offsetStart <float>] -pin {pinName | pinNameList} [-pinDepth <float>] [-pinWidth <float>] [-skipWrappingPins]
+[06/20 17:52:29     63s]                [-snap {TRACK USERGRID MGRID}] [-spreadDirection {clockwise counterclockwise both}] [-start { x y}] [-use <string>] [ { -layer {layerId | layerIdList} | {[-layerH <layerId>] [-layerV <layerId>]} } [-layer_priority ] [-assign {x y} | -pattern {fill_track fill_layer fill_optimised fill_diagonal fill_sinusoidal fill_checkerboard}]] [ -side <string> | -edge <integer> ] [ -cell <string> | {-hinst <hinstName> [-refMaster ]} ] [ -fixOverlap  [ -honorConstraint  ]] [ -pattern {fill_track fill_layer fill_optimised fill_diagonal fill_sinusoidal fill_checkerboard} [ -reverse_alternate  ]] [ -spacing <string> [ -unit {MICRON TRACK} ]] [ -assign {x y} | -spreadType {START CENTER SIDE EDGE RANGE} | -pattern {fill_track fill_layer fill_optimised fill_diagonal fill_sinusoidal fill_checkerboard}]
+[06/20 17:52:29     63s] 
+[06/20 17:52:29     63s] **ERROR: (IMPTCM-35):	Option -assign requires two floating numbers.
+**ERROR: (IMPPTN-1599):	Invalid syntax of editPin command, errorCode [-2]
+
+[06/20 17:52:37     63s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[06/20 17:54:12     65s] <CMD> editPin -pin * -layer {Metal5 Metal6} -side All -spreadType SIDE
+[06/20 17:54:12     65s] **ERROR: (IMPPTN-914):	Side value [All] for the specified cell is invalid. Valid values for side name are N, S, E, or W. Specify a valid value and run the command again.
+
+[06/20 17:54:21     66s] <CMD> editPin -pin {clk rst_n} -side Top -layer Metal6 -spreadType SIDE
+[06/20 17:54:21     66s] **ERROR: (IMPPTN-1578):	The value [Metal6] specified for the layer is incorrect. Specify the correct value for the layer and run the command again.
+
+[06/20 17:54:21     66s] <CMD> editPin -pin data_in* -side Left -layer Metal5 -spreadType SIDE
+[06/20 17:54:21     66s] **ERROR: (IMPPTN-1578):	The value [Metal5] specified for the layer is incorrect. Specify the correct value for the layer and run the command again.
+
+[06/20 17:54:21     66s] <CMD> editPin -pin data_out* -side Right -layer Metal5 -spreadType SIDE
+[06/20 17:54:21     66s] **ERROR: (IMPPTN-1578):	The value [Metal5] specified for the layer is incorrect. Specify the correct value for the layer and run the command again.
+
+[06/20 17:54:24     66s] <CMD> editPin -pin addr* -side Bottom -layer Metal6 -spreadType SIDE
+[06/20 17:54:24     66s] **ERROR: (IMPPTN-1578):	The value [Metal6] specified for the layer is incorrect. Specify the correct value for the layer and run the command again.
+
+[06/20 17:54:34     66s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[06/20 17:54:55     66s] <CMD> editPin -pin {clk rst_n} -side N -layer Metal6 -spreadType SIDE
+[06/20 17:54:55     66s] **ERROR: (IMPPTN-1578):	The value [Metal6] specified for the layer is incorrect. Specify the correct value for the layer and run the command again.
+
+[06/20 17:54:55     66s] <CMD> editPin -pin data_in* -side W -layer Metal5 -spreadType SIDE
+[06/20 17:54:55     66s] **ERROR: (IMPPTN-1578):	The value [Metal5] specified for the layer is incorrect. Specify the correct value for the layer and run the command again.
+
+[06/20 17:54:55     66s] <CMD> editPin -pin data_out* -side E -layer Metal5 -spreadType SIDE
+[06/20 17:54:55     66s] **ERROR: (IMPPTN-1578):	The value [Metal5] specified for the layer is incorrect. Specify the correct value for the layer and run the command again.
+
+[06/20 17:54:56     66s] <CMD> editPin -pin addr* -side S -layer Metal6 -spreadType SIDE
+[06/20 17:54:56     66s] **ERROR: (IMPPTN-1578):	The value [Metal6] specified for the layer is incorrect. Specify the correct value for the layer and run the command again.
+
+[06/20 17:55:52     68s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[06/20 17:56:07     68s] <CMD> editPin -pin {clk rst_n} -side N -layer M6 -spreadType SIDE
+[06/20 17:56:07     68s] **WARN: (IMPPTN-1235):	Cannot find pin rst_n on partition gpu
+[06/20 17:56:07     68s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/20 17:56:07     68s] #No via in the lib
+[06/20 17:56:07     68s] #create default rule from bind_ndr_rule rule=0x7fc457f08e20 0x7fc4515ae940
+[06/20 17:56:07     68s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[06/20 17:56:07     68s] Successfully spread [1] pins.
+[06/20 17:56:07     68s] editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1902.0M).
+[06/20 17:56:07     68s] <CMD> editPin -pin data_in* -side W -layer M5 -spreadType SIDE
+[06/20 17:56:07     68s] **ERROR: (IMPPTN-963):	Either specified pin name for the selected partition does not exist or has status 'cover'. Specify the pin or the list of pins correctly and run the command again.
+
+[06/20 17:56:07     68s] <CMD> editPin -pin data_out* -side E -layer M5 -spreadType SIDE
+[06/20 17:56:07     68s] **ERROR: (IMPPTN-963):	Either specified pin name for the selected partition does not exist or has status 'cover'. Specify the pin or the list of pins correctly and run the command again.
+
+[06/20 17:56:09     68s] <CMD> editPin -pin addr* -side S -layer M6 -spreadType SIDE
+[06/20 17:56:09     68s] **ERROR: (IMPPTN-963):	Either specified pin name for the selected partition does not exist or has status 'cover'. Specify the pin or the list of pins correctly and run the command again.
+
+[06/20 17:56:15     69s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[06/20 17:56:37     69s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[06/20 17:57:02     70s] <CMD> editPin -pin {clk reset start done device_control_write_enable device_control_data*} -side N -layer M6 -spreadType SIDE
+[06/20 17:57:02     70s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/20 17:57:02     70s] ### import design signature (2): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[06/20 17:57:02     70s] Successfully spread [13] pins.
+[06/20 17:57:02     70s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1903.0M).
+[06/20 17:57:02     70s] <CMD> editPin -pin {program_mem_read_valid* program_mem_read_address* program_mem_read_ready* program_mem_read_data*} -side S -layer M6 -spreadType SIDE
+[06/20 17:57:02     70s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/20 17:57:02     70s] ### import design signature (3): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[06/20 17:57:02     70s] Successfully spread [26] pins.
+[06/20 17:57:02     70s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1903.0M).
+[06/20 17:57:02     70s] <CMD> editPin -pin {data_mem_read_valid* data_mem_read_address* data_mem_read_ready* data_mem_read_data*} -side E -layer M5 -spreadType SIDE
+[06/20 17:57:02     70s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/20 17:57:02     70s] ### import design signature (4): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[06/20 17:57:02     70s] Successfully spread [72] pins.
+[06/20 17:57:02     70s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1903.0M).
+[06/20 17:57:05     70s] <CMD> editPin -pin {data_mem_write_valid* data_mem_write_address* data_mem_write_data* data_mem_write_ready*} -side W -layer M5 -spreadType SIDE
+[06/20 17:57:05     70s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[06/20 17:57:05     70s] ### import design signature (5): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[06/20 17:57:05     70s] Successfully spread [72] pins.
+[06/20 17:57:05     70s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1903.0M).
+[06/20 18:14:25     70s] 
+[06/20 18:14:25     70s] *** Memory Usage v#1 (Current mem = 1902.020M, initial mem = 491.871M) ***
+[06/20 18:14:25     70s] 
+[06/20 18:14:25     70s] *** Summary of all messages that are not suppressed in this session:
+[06/20 18:14:25     70s] Severity  ID               Count  Summary                                  
+[06/20 18:14:25     70s] ERROR     IMPLF-3              4  Error found when processing LEF file '%s...
+[06/20 18:14:25     70s] ERROR     IMPLF-26             8  No technology information is defined in ...
+[06/20 18:14:25     70s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[06/20 18:14:25     70s] ERROR     IMPLF-224            4  Failed to create via '%s'.               
+[06/20 18:14:25     70s] ERROR     IMPLF-111            4  Layer '%s' is not defined                
+[06/20 18:14:25     70s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[06/20 18:14:25     70s] ERROR     IMPPTN-1578          8  The value [%s] specified for the layer i...
+[06/20 18:14:25     70s] ERROR     IMPPTN-1599          1  Invalid syntax of %s command, errorCode ...
+[06/20 18:14:25     70s] WARNING   IMPPTN-1235          1  Cannot find pin %s on partition %s       
+[06/20 18:14:25     70s] ERROR     IMPPTN-914           1  Side value [%s] for the specified cell i...
+[06/20 18:14:25     70s] ERROR     IMPPTN-963           3  Either specified pin name for the select...

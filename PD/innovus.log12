@@ -1,0 +1,80 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Sun Jun 21 12:22:02 2026
+Host:		cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB)
+OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+License:
+		[12:22:02.400201] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (2062 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef}
+<CMD> set init_design_settop 0
+<CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+#% Begin Load MMMC data ... (date=06/21 12:31:57, mem=1038.2M)
+
+Usage: create_analysis_view [-help] -constraint_mode <modeName> -delay_corner <dcCornerObj> -name <viewName>
+
+**ERROR: (IMPTCM-46):	Argument "-constraint_mode" is required for command "create_analysis_view", either this option is not specified or an option prior to it is not specified correctly.
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef}
+<CMD> set init_design_settop 0
+<CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/21 12:33:06, mem=1042.5M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+
+Usage: create_analysis_view [-help] -constraint_mode <modeName> -delay_corner <dcCornerObj> -name <viewName>
+
+**ERROR: (IMPTCM-46):	Argument "-constraint_mode" is required for command "create_analysis_view", either this option is not specified or an option prior to it is not specified correctly.
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef}
+<CMD> set init_design_settop 0
+<CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+% Begin Load MMMC data ... (date=06/21 12:34:27, mem=1043.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+
+Usage: create_analysis_view [-help] -constraint_mode <modeName> -delay_corner <dcCornerObj> -name <viewName>
+
+**ERROR: (IMPTCM-46):	Argument "-constraint_mode" is required for command "create_analysis_view", either this option is not specified or an option prior to it is not specified correctly.
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Jun 21 12:34:51 2026
+  Total CPU time:     0:01:33
+  Total real time:    0:12:50
+  Peak memory (main): 1053.93MB
+
+
+*** Memory Usage v#1 (Current mem = 1060.219M, initial mem = 491.871M) ***
+*** Message Summary: 0 warning(s), 3 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:32, real=0:12:49, mem=1060.2M) ---

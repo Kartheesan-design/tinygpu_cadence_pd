@@ -1,0 +1,165 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Jun 22 12:18:10 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+set init_gnd_net VSS
+set init_lef_file {../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef}
+set init_design_settop 0
+set init_verilog ../synthesis/output/gpu_netlist.v
+set init_mmmc_file gpu.view
+set init_pwr_net VDD
+init_design
+setDrawView fplan
+setDrawView place
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -coreMarginsBy die -site CoreSite -r 1 0.7 2.5 2.5 2.5 2.5
+uiSetTool select
+getIoFlowFlag
+fit
+editPin -pin {clk reset start done device_control_write_enable device_control_data*} -side N -layer M6 -spreadType SIDE
+editPin -pin {program_mem_read_valid* program_mem_read_address* program_mem_read_ready* program_mem_read_data*} -side S -layer M6 -spreadType SIDE
+editPin -pin {data_mem_read_valid* data_mem_read_address* data_mem_read_ready* data_mem_read_data*} -side E -layer M5 -spreadType SIDE
+editPin -pin {data_mem_write_valid* data_mem_write_address* data_mem_write_data* data_mem_write_ready*} -side W -layer M5 -spreadType SIDE
+redraw
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer M11 -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M11 bottom M11 left M10 right M10} -width {top 0.7 bottom 0.7 left 0.7 right 0.7} -spacing {top 0.2 bottom 0.2 left 0.2 right 0.2} -offset {top 0.2 bottom 0.2 left 0.2 right 0.2} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer M11 -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer M10 -direction vertical -width 0.7 -spacing 0.2 -set_to_set_distance 5 -start_from left -start_offset 1 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit M11 -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit M11 -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { corePin } -layerChangeRange { M1(1) M11(11) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) M11(11) } -nets { VDD VSS } -allowLayerChange 1 -targetViaLayerRange { M1(1) M11(11) }
+zoomBox 17.45450 98.29450 165.88200 181.38600
+zoomBox 36.44050 118.53500 127.59400 169.56400
+zoomBox 31.13000 112.85000 138.37150 172.88500
+zoomBox -26.31650 50.50700 258.03200 209.68900
+zoomBox -400.88250 -356.98600 1043.43650 451.56150
+zoomBox -693.92650 -675.57400 1657.90600 641.01100
+fit
+zoomBox -43.48750 60.94850 350.06000 281.26150
+zoomBox -8.54850 90.16450 325.96700 277.43050
+fit
+setAnalysisMode -cppr both -clockGatingCheck false -timeBorrowing true -useOutputPinCap true -sequentialConstProp false -timingSelfLoopsNoSkew false -enableMultipleDriveNet true -clkSrcPath true -warn true -usefulSkew false -analysisType onChipVariation -log true
+saveFPlan tinygpu.fp
+setPlaceMode -fp false
+place_design
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix gpu_preCTS -outDir timingReports
+getAnalysisMode -checkType -quiet
+get_time_unit
+report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+getAnalysisMode -checkType -quiet
+get_time_unit
+report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+create_clock -name clk -period 10 [get_ports clk]
+create_ccopt_clock_tree_spec -file ccopt.spec
+create_ccopt_clock_tree_spec -file ccopt.spec
+get_ccopt_clock_trees
+ccopt_check_and_flatten_ilms_no_restore
+set_ccopt_property cts_is_sdc_clock_root -pin clk true
+create_ccopt_clock_tree -name clk -source clk -no_skew_group
+set_ccopt_property clock_period -pin clk 10
+set_ccopt_property timing_connectivity_info {}
+create_ccopt_skew_group -name clk/constraints -sources clk -auto_sinks
+set_ccopt_property include_source_latency -skew_group clk/constraints true
+set_ccopt_property extracted_from_clock_name -skew_group clk/constraints clk
+set_ccopt_property extracted_from_constraint_mode_name -skew_group clk/constraints constraints
+set_ccopt_property extracted_from_delay_corners -skew_group clk/constraints {max_delay min_delay}
+check_ccopt_clock_tree_convergence
+get_ccopt_property auto_design_state_for_ilms
+ccopt_design
+report_ccopt_clock_trees
+report_ccopt_skew_groups
+redraw
+redraw
+getCTSMode -engine -quiet
+ctd_win -side none -id ctd_window
+set_ccopt_property target_max_trans 0.15 -clock_tree clk
+ccopt_design
+saveDesign tinygpucts
+report_timing -delay_type min -max_paths 10
+getCTSMode -engine -quiet
+setNanoRouteMode -quiet -routeTopRoutingLayer 11
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail -viaOpt -wireOpt
+saveDesign tinygpuroute
+getFillerMode -quiet
+addFiller -cell FILL32 FILL4 FILL16 FILL8 FILL64 FILL2 FILL1 -prefix FILLER
+getFillerMode -quiet
+addFiller -cell FILL32 FILL4 FILL16 FILL8 FILL64 FILL2 FILL1 -prefix FILLER -doDRC -fitGap
+reset_parasitics
+extractRC
+rcOut -spef gpu.spef -rc_corner rccorner
+saveNetlist gpu_nl.v
+verify_drc
+ecoRoute -fix_drc
+verify_drc
+reportViolation -file drc_violations.rpt
+refinePlace -refiDelay true
+ecoRoute -fix_drc
+verify_drc
+floorPlan -ru -ar 1.0 -coreSpacingBottom 10 -coreSpacingTop 10 -coreSpacingLeft 10 -coreSpacingRight 10 -coreDensity 0.65
+place_design
+floorPlan -r 1.0 0.65 10 10 10 10
+floorPlan -r 1.0 0.70 20 20 20 20
+redraw
+redraw
+redraw
+restoreDesign tinygpuroute.dat gpu

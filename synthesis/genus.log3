@@ -1,0 +1,105 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:28:08.400345] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files gpu_script.tcl 
+Date:    Thu Apr 16 18:28:09 2026
+Host:    cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*1physical cpu*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB) (1055760632KB)
+PID:     2535094
+OS:      Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+
+[18:28:09.026722] Periodic Lic check successful
+[18:28:09.026728] Feature usage summary:
+[18:28:09.026728] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (11 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source gpu_script.tcl
+#@ Begin verbose source ./gpu_script.tcl
+@file(gpu_script.tcl) 8: read_libs /home/cadence/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(gpu_script.tcl) 13: set_db init_hdl_search_path ./rtl
+  Setting attribute of root '/': 'init_hdl_search_path' = ./rtl
+@file(gpu_script.tcl) 14: read_hdl -sv {
+    gpu.sv
+    core.sv
+    controller.sv
+    decoder.sv
+    alu.sv
+    lsu.sv
+    pc.sv
+    registers.sv
+    fetcher.sv
+    scheduler.sv
+    dispatch.sv
+    dcr.sv
+}
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'gpu.sv'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'core.sv'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'controller.sv'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'decoder.sv'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'alu.sv'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'lsu.sv'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'pc.sv'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'registers.sv'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'fetcher.sv'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'scheduler.sv'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'dispatch.sv'.
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'dcr.sv'.
+@file(gpu_script.tcl) 32: elaborate gpu
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'gpu'.
+        : This error may happen if you read a set of files, and you try to elaborate a design which description is not part of the files read. To fix this, check the name of the design you want to elaborate, or check if you have read all the expected RTL files.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+#@ End verbose source ./gpu_script.tcl
+1
+Encountered problems processing file: gpu_script.tcl
+WARNING: This version of the tool is 1393 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[18:28:38.011914] Cdslmd servers: cadence-server
+[18:28:38.011922] Feature usage summary:
+[18:28:38.011922] Genus_Synthesis
+
+Normal exit.

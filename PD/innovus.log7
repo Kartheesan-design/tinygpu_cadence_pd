@@ -1,0 +1,2468 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Sat Jun 20 17:58:19 2026
+Host:		cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB)
+OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+License:
+		[17:58:19.400377] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (2062 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef}
+<CMD> set init_design_settop 0
+<CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+<CMD> set init_mmmc_file gpu.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+#% Begin Load MMMC data ... (date=06/20 18:00:05, mem=1023.0M)
+#% End Load MMMC data ... (date=06/20 18:00:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=1023.5M, current mem=1023.5M)
+rccorner
+
+Loading LEF file ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_tech.lef ...
+
+Loading LEF file ../../../../../cadence/install/FOUNDRY/digital/45nm/dig/lef/gsclib045_macro.lef ...
+Set DBUPerIGU to M2 pitch 400.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from gpu.view
+Reading max_timing timing library '/home/userdata/22bec0039/kar/GPU/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+Reading min_timing timing library '/home/userdata/22bec0039/kar/GPU/lib/fast.lib' ...
+Read 479 cells in library 'fast' 
+*** End library_loading (cpu=0.01min, real=0.02min, mem=32.0M, fe_cpu=0.30min, fe_real=1.78min, fe_mem=1070.0M) ***
+#% Begin Load netlist data ... (date=06/20 18:00:06, mem=1043.4M)
+*** Begin netlist parsing (mem=1070.0M) ***
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 479 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../synthesis/output/gpu_netlist.v'
+
+*** Memory Usage v#1 (Current mem = 1070.957M, initial mem = 483.871M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=1071.0M) ***
+#% End Load netlist data ... (date=06/20 18:00:06, total cpu=0:00:00.1, real=0:00:00.0, peak res=1061.4M, current mem=1061.4M)
+Top level cell is gpu.
+Hooked 958 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell gpu ...
+*** Netlist is unique.
+** info: there are 967 modules.
+** info: there are 9979 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1130.871M, initial mem = 483.871M) ***
+Horizontal Layer M1 offset = 190 (guessed)
+Vertical Layer M2 offset = 200 (derived)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+Start create_tracks
+Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in unpreferred direction.
+Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in preferred direction.
+Generated pitch 0.4 in M10 is different from 0.48 defined in technology file in unpreferred direction.
+Generated pitch 0.5 in M10 is different from 0.48 defined in technology file in preferred direction.
+Generated pitch 0.2 in M9 is different from 0.33 defined in technology file in unpreferred direction.
+Generated pitch 0.4 in M9 is different from 0.33 defined in technology file in preferred direction.
+Generated pitch 0.19 in M2 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.2 in M1 is different from 0.19 defined in technology file in unpreferred direction.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl ...
+Cap table was created using Encounter 05.20-s112_1.
+Process name: gpdk090_9l.
+**ERROR: (IMPEXT-3548):	Process information for layer 'M10' is missing from the cap table file but is defined in the tech database (which is derived from the tech LEF or Open Access technology file). To include this information, you can do one of the following: Correct the cap table file by editing it, generate a new cap table from an ICT file with the proper layers defined, or obtain the correct cap table from your foundry and run again.
+**WARN: (IMPEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**ERROR: (IMPEXT-3548):	Process information for layer 'M11' is missing from the cap table file but is defined in the tech database (which is derived from the tech LEF or Open Access technology file). To include this information, you can do one of the following: Correct the cap table file by editing it, generate a new cap table from an ICT file with the proper layers defined, or obtain the correct cap table from your foundry and run again.
+**WARN: (IMPEXT-2773):	The via resistance between layers M10 and M11 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**ERROR: (IMPEXT-2715):	Syntax Error in line 152
+**ERROR: (IMPEXT-2677):	Multi-corner RC initialization is aborted because of previously-reported errors. Use the reason provided in the error message(s) to resolve this issue and use the set_analysis_view command to invoke multi-corner initialization again.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '../synthesis/gpu_syn.sdc' ...
+Current (total cpu=0:00:18.8, real=0:01:47, peak res=1354.1M, current mem=1354.0M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1394.8M, current mem=1394.8M)
+Current (total cpu=0:00:18.8, real=0:01:47, peak res=1394.8M, current mem=1394.8M)
+Total number of combinational cells: 317
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File ../../../../../cadence/install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl ...
+Cap table was created using Encounter 05.20-s112_1.
+Process name: gpdk090_9l.
+**ERROR: (IMPEXT-3548):	Process information for layer 'M10' is missing from the cap table file but is defined in the tech database (which is derived from the tech LEF or Open Access technology file). To include this information, you can do one of the following: Correct the cap table file by editing it, generate a new cap table from an ICT file with the proper layers defined, or obtain the correct cap table from your foundry and run again.
+**WARN: (IMPEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**ERROR: (IMPEXT-3548):	Process information for layer 'M11' is missing from the cap table file but is defined in the tech database (which is derived from the tech LEF or Open Access technology file). To include this information, you can do one of the following: Correct the cap table file by editing it, generate a new cap table from an ICT file with the proper layers defined, or obtain the correct cap table from your foundry and run again.
+**WARN: (IMPEXT-2773):	The via resistance between layers M10 and M11 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**ERROR: (IMPEXT-2715):	Syntax Error in line 152
+**ERROR: (IMPEXT-2677):	Multi-corner RC initialization is aborted because of previously-reported errors. Use the reason provided in the error message(s) to resolve this issue and use the set_analysis_view command to invoke multi-corner initialization again.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+ERROR     IMPEXT-2677          2  Multi-corner RC initialization is aborte...
+ERROR     IMPEXT-2715          2  Syntax Error in line %d                  
+WARNING   IMPEXT-2773          4  The via resistance between layers %s and...
+ERROR     IMPEXT-3548          4  Process information for layer '%s' is mi...
+WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+*** Message Summary: 963 warning(s), 8 error(s)
+
+<CMD> editPin -pin {clk reset start done device_control_write_enable device_control_data*} -side N -layer M6 -spreadType SIDE
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+Successfully spread [13] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1859.2M).
+<CMD> editPin -pin {program_mem_read_valid* program_mem_read_address* program_mem_read_ready* program_mem_read_data*} -side S -layer M6 -spreadType SIDE
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+Successfully spread [26] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1860.2M).
+<CMD> editPin -pin {data_mem_read_valid* data_mem_read_address* data_mem_read_ready* data_mem_read_data*} -side E -layer M5 -spreadType SIDE
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+Successfully spread [72] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1860.2M).
+<CMD> editPin -pin {data_mem_write_valid* data_mem_write_address* data_mem_write_data* data_mem_write_ready*} -side W -layer M5 -spreadType SIDE
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+Successfully spread [72] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1860.2M).
+<CMD> redraw
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -coreMarginsBy die -site CoreSite -r 1 0.699996 2.5 2.5 2.5 2.5
+Horizontal Layer M1 offset = 190 (guessed)
+Vertical Layer M2 offset = 200 (derived)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+Start create_tracks
+Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in unpreferred direction.
+Generated pitch 0.5 in M11 is different from 0.48 defined in technology file in preferred direction.
+Generated pitch 0.4 in M10 is different from 0.48 defined in technology file in unpreferred direction.
+Generated pitch 0.5 in M10 is different from 0.48 defined in technology file in preferred direction.
+Generated pitch 0.2 in M9 is different from 0.33 defined in technology file in unpreferred direction.
+Generated pitch 0.4 in M9 is different from 0.33 defined in technology file in preferred direction.
+Generated pitch 0.19 in M2 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.2 in M1 is different from 0.19 defined in technology file in unpreferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer M11 -stacked_via_bottom_layer M1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top M11 bottom M11 left M10 right M10} -width {top 0.7 bottom 0.7 left 0.7 right 0.7} -spacing {top 0.2 bottom 0.2 left 0.2 right 0.2} -offset {top 0.5 bottom 0.5 left 0.5 right 0.5} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+
+viaInitial starts at Sat Jun 20 18:38:40 2026
+viaInitial ends at Sat Jun 20 18:38:40 2026
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1876.9M)
+**WARN: (IMPPP-193):	The currently specified top spacing 0.200000  might create min enclosed area violation. The required min enclosed area for layer M11 is 0.110000. If violation happens, increase the spacing to around 0.381662. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified bottom spacing 0.200000  might create min enclosed area violation. The required min enclosed area for layer M11 is 0.110000. If violation happens, increase the spacing to around 0.381662. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified left spacing 0.200000  might create min enclosed area violation. The required min enclosed area for layer M10 is 0.110000. If violation happens, increase the spacing to around 0.381662. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified right spacing 0.200000  might create min enclosed area violation. The required min enclosed area for layer M10 is 0.110000. If violation happens, increase the spacing to around 0.381662. The recommended spacing is the square root of min enclosure area.
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M10  |        4       |       NA       |
+|  Via10 |        8       |        0       |
+|   M11  |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer M11 -stacked_via_bottom_layer M1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer M10 -direction vertical -width 0.7 -spacing 0.2 -set_to_set_distance 5 -start_from left -start_offset 1 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit M11 -padcore_ring_bottom_layer_limit M1 -block_ring_top_layer_limit M11 -block_ring_bottom_layer_limit M1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1885.7M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+**WARN: (IMPPP-193):	The currently specified  spacing 0.200000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer M10 is 0.110000. If violation happens, increase the spacing to around 0.381662. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1885.7M)
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 77 wires.
+ViaGen created 154 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M10  |       77       |       NA       |
+|  Via10 |       154      |        0       |
++--------+----------------+----------------+
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { corePin } -layerChangeRange { M1(1) M11(11) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { M1(1) M11(11) } -nets { VDD VSS } -allowLayerChange 1 -targetViaLayerRange { M1(1) M11(11) }
+**WARN: (IMPSR-4058):	Sroute option: blockPinTarget should be used in conjunction with option: -connect blockPin. 
+*** Begin SPECIAL ROUTE on Sat Jun 20 18:47:18 2026 ***
+SPECIAL ROUTE ran on directory: /home/userdata/22bec0039/kar/GPU/PD
+SPECIAL ROUTE ran on machine: cadence-server.vit.ac.in (Linux 4.18.0-477.21.1.el8_8.x86_64 Xeon 3.60Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectBlockPin set to false
+srouteConnectConverterPin set to false
+srouteConnectPadPin set to false
+srouteConnectStripe set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 11
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to false
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 11
+srouteTopTargetLayerLimit set to 11
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3352.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 23 layers, 11 routing layers, 1 overlap layer
+Read in 2 nondefault rules, 0 used
+Read in 487 macros, 75 used
+Read in 75 components
+  75 core components: 75 unplaced, 0 placed, 0 fixed
+Read in 183 physical pins
+  183 physical pins: 0 unplaced, 183 placed, 0 fixed
+Read in 183 nets
+Read in 2 special nets, 2 routed
+Read in 183 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VDD net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VSS net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for VDD FollowPin 0 seconds
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for VSS FollowPin 0 seconds
+  Number of Core ports routed: 224
+  Number of Followpin connections: 112
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 3367.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 183 io pins ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 336 wires.
+ViaGen created 2016 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   M1   |       336      |       NA       |
+|  Via1  |       224      |        0       |
+|  Via2  |       224      |        0       |
+|  Via3  |       224      |        0       |
+|  Via4  |       224      |        0       |
+|  Via5  |       224      |        0       |
+|  Via6  |       224      |        0       |
+|  Via7  |       224      |        0       |
+|  Via8  |       224      |        0       |
+|  Via9  |       224      |        0       |
++--------+----------------+----------------+
+<CMD> setAnalysisMode -cppr both -clockGatingCheck true -timeBorrowing true -useOutputPinCap true -sequentialConstProp false -timingSelfLoopsNoSkew false -enableMultipleDriveNet true -clkSrcPath true -warn true -usefulSkew false -analysisType onChipVariation -log true
+<CMD> saveDesign gpu
+#% Begin save design ... (date=06/20 18:48:21, mem=1667.9M)
+% Begin Save ccopt configuration ... (date=06/20 18:48:21, mem=1667.9M)
+% End Save ccopt configuration ... (date=06/20 18:48:21, total cpu=0:00:00.0, real=0:00:00.0, peak res=1669.2M, current mem=1669.2M)
+% Begin Save netlist data ... (date=06/20 18:48:21, mem=1669.2M)
+Writing Binary DB to gpu.dat/gpu.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/20 18:48:21, total cpu=0:00:00.0, real=0:00:00.0, peak res=1670.1M, current mem=1670.1M)
+Saving symbol-table file ...
+Saving congestion map file gpu.dat/gpu.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/20 18:48:21, mem=1670.6M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/20 18:48:21, total cpu=0:00:00.0, real=0:00:00.0, peak res=1670.6M, current mem=1670.6M)
+Saving preference file gpu.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/20 18:48:22, mem=1674.8M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/20 18:48:22, total cpu=0:00:00.0, real=0:00:00.0, peak res=1674.9M, current mem=1674.9M)
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/20 18:48:22, mem=1674.9M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/20 18:48:22, total cpu=0:00:00.0, real=0:00:00.0, peak res=1675.7M, current mem=1675.7M)
+% Begin Save routing data ... (date=06/20 18:48:22, mem=1675.7M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1904.0M) ***
+% End Save routing data ... (date=06/20 18:48:22, total cpu=0:00:00.0, real=0:00:00.0, peak res=1676.0M, current mem=1676.0M)
+Saving property file gpu.dat/gpu.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1907.0M) ***
+% Begin Save power constraints data ... (date=06/20 18:48:22, mem=1677.4M)
+% End Save power constraints data ... (date=06/20 18:48:22, total cpu=0:00:00.0, real=0:00:00.0, peak res=1677.4M, current mem=1677.4M)
+rccorner
+Generated self-contained design gpu.dat
+#% End save design ... (date=06/20 18:48:22, total cpu=0:00:00.4, real=0:00:01.0, peak res=1705.4M, current mem=1677.9M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> saveFPlan gpu.fp
+<CMD> setPlaceMode -fp false
+<CMD> place_design
+*** placeDesign #1 [begin] : totSession cpu/real = 0:01:35.2/0:50:54.9 (0.0), mem = 1953.8M
+*** Starting placeDesign default flow ***
+Updating RC grid for preRoute extraction ...
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.4) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+Set Default Input Pin Transition as 1 ps.
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.2315482 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2074.89 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: gpu
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2077.89)
+Updating RC grid for preRoute extraction ...
+Total number of fetched objects 10289
+End delay calculation. (MEM=2245.71 CPU=0:00:00.7 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=2245.71 CPU=0:00:00.9 REAL=0:00:01.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Input Pin Transition as 0.1 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#6 (mem=2220.0M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:01.4 mem=2228.0M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:01.5 mem=2228.0M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 5768 (56.1%) nets
+3		: 1593 (15.5%) nets
+4     -	14	: 2811 (27.3%) nets
+15    -	39	: 112 (1.1%) nets
+40    -	79	: 1 (0.0%) nets
+80    -	159	: 1 (0.0%) nets
+160   -	319	: 2 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 1 (0.0%) nets
+2560  -	5119	: 0 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+Scan chains were not defined.
+#std cell=9979 (0 fixed + 9979 movable) #buf cell=0 #inv cell=596 #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=10289 #term=37801 #term/net=3.67, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=183
+stdCell: 9979 single + 0 double + 0 multi
+Total standard cell length = 14.9354 (mm), area = 0.0255 (mm^2)
+**Info: (IMPSP-307): Design contains fractional 3 cells.
+Estimated cell power/ground rail width = 0.160 um
+Average module density = 0.699.
+Density for the design = 0.699.
+       = stdcell_area 74677 sites (25540 um^2) / alloc_area 106782 sites (36519 um^2).
+Pin Density = 0.3540.
+            = total # of pins 37801 / total area 106782.
+=== lastAutoLevel = 8 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 4.522e+04 (2.59e+04 1.94e+04)
+              Est.  stn bbox = 4.910e+04 (2.80e+04 2.11e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2297.0M
+Iteration  2: Total net bbox = 4.522e+04 (2.59e+04 1.94e+04)
+              Est.  stn bbox = 4.910e+04 (2.80e+04 2.11e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2297.0M
+Iteration  3: Total net bbox = 4.709e+04 (2.53e+04 2.18e+04)
+              Est.  stn bbox = 5.581e+04 (3.00e+04 2.58e+04)
+              cpu = 0:00:00.6 real = 0:00:01.0 mem = 2317.0M
+Active setup views:
+    worst_case
+Iteration  4: Total net bbox = 1.111e+05 (4.89e+04 6.22e+04)
+              Est.  stn bbox = 1.338e+05 (5.82e+04 7.56e+04)
+              cpu = 0:00:01.5 real = 0:00:02.0 mem = 2317.0M
+Iteration  5: Total net bbox = 1.129e+05 (5.10e+04 6.19e+04)
+              Est.  stn bbox = 1.367e+05 (6.07e+04 7.60e+04)
+              cpu = 0:00:01.3 real = 0:00:01.0 mem = 2317.0M
+Iteration  6: Total net bbox = 1.301e+05 (5.91e+04 7.10e+04)
+              Est.  stn bbox = 1.572e+05 (7.04e+04 8.68e+04)
+              cpu = 0:00:02.2 real = 0:00:02.0 mem = 2321.6M
+Iteration  7: Total net bbox = 1.331e+05 (6.16e+04 7.15e+04)
+              Est.  stn bbox = 1.603e+05 (7.30e+04 8.73e+04)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 2322.3M
+Iteration  8: Total net bbox = 1.331e+05 (6.16e+04 7.15e+04)
+              Est.  stn bbox = 1.603e+05 (7.30e+04 8.73e+04)
+              cpu = 0:00:02.5 real = 0:00:03.0 mem = 2322.3M
+Iteration  9: Total net bbox = 1.369e+05 (6.44e+04 7.24e+04)
+              Est.  stn bbox = 1.649e+05 (7.64e+04 8.85e+04)
+              cpu = 0:00:02.4 real = 0:00:02.0 mem = 2322.3M
+Iteration 10: Total net bbox = 1.369e+05 (6.44e+04 7.24e+04)
+              Est.  stn bbox = 1.649e+05 (7.64e+04 8.85e+04)
+              cpu = 0:00:02.5 real = 0:00:03.0 mem = 2322.3M
+Iteration 11: Total net bbox = 1.380e+05 (6.42e+04 7.38e+04)
+              Est.  stn bbox = 1.653e+05 (7.57e+04 8.96e+04)
+              cpu = 0:00:06.3 real = 0:00:06.0 mem = 2322.3M
+Iteration 12: Total net bbox = 1.380e+05 (6.42e+04 7.38e+04)
+              Est.  stn bbox = 1.653e+05 (7.57e+04 8.96e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2322.3M
+*** cost = 1.380e+05 (6.42e+04 7.38e+04) (cpu for global=0:00:20.1) real=0:00:21.0***
+Info: 0 clock gating cells identified, 0 (on average) moved 0/5
+Solver runtime cpu: 0:00:13.8 real: 0:00:13.8
+Core Placement runtime cpu: 0:00:14.3 real: 0:00:15.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+**Info: (IMPSP-307): Design contains fractional 3 cells.
+*** Starting refinePlace (0:02:01 mem=2314.3M) ***
+Total net bbox length = 1.380e+05 (6.423e+04 7.376e+04) (ext = 5.557e+03)
+Move report: Detail placement moves 9979 insts, mean move: 0.50 um, max move: 14.85 um 
+	Max move on inst (data_memory_controller_g116904): (177.25, 64.22) --> (190.40, 62.51)
+	Runtime: CPU: 0:00:00.7 REAL: 0:00:01.0 MEM: 2338.3MB
+Summary Report:
+Instances move: 9979 (out of 9979 movable)
+Instances flipped: 0
+Mean displacement: 0.50 um
+Max displacement: 14.85 um (Instance: data_memory_controller_g116904) (177.254, 64.2185) -> (190.4, 62.51)
+	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: CLKINVX1
+Total net bbox length = 1.383e+05 (6.431e+04 7.396e+04) (ext = 5.550e+03)
+Runtime: CPU: 0:00:00.7 REAL: 0:00:01.0 MEM: 2338.3MB
+*** Finished refinePlace (0:02:02 mem=2338.3M) ***
+*** End of Placement (cpu=0:00:23.6, real=0:00:25.0, mem=2318.3M) ***
+**Info: (IMPSP-307): Design contains fractional 3 cells.
+default core: bins with density > 0.750 = 34.03 % ( 49 / 144 )
+Density distribution unevenness ratio = 5.890%
+*** Free Virtual Timing Model ...(mem=2318.3M)
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.2315482 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: gpu
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2304.05)
+Total number of fetched objects 10289
+End delay calculation. (MEM=2347.48 CPU=0:00:00.7 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=2347.48 CPU=0:00:00.9 REAL=0:00:01.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] M1 has single uniform track structure
+[NR-eGR] M2 has single uniform track structure
+[NR-eGR] M3 has single uniform track structure
+[NR-eGR] M4 has single uniform track structure
+[NR-eGR] M5 has single uniform track structure
+[NR-eGR] M6 has single uniform track structure
+[NR-eGR] M7 has single uniform track structure
+[NR-eGR] M8 has single uniform track structure
+[NR-eGR] M9 has single uniform track structure
+[NR-eGR] M10 has single uniform track structure
+[NR-eGR] M11 has single uniform track structure
+[NR-eGR] ERROR: No suitable DB via cell is found for layer1/2. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer2/3. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer3/4. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer4/5. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer5/6. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer6/7. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer7/8. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer8/9. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer9/10. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer10/11. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] No double-cut via on layer 1
+[NR-eGR] No double-cut via on layer 2
+[NR-eGR] No double-cut via on layer 3
+[NR-eGR] No double-cut via on layer 4
+[NR-eGR] No double-cut via on layer 5
+[NR-eGR] No double-cut via on layer 6
+[NR-eGR] No double-cut via on layer 7
+[NR-eGR] No double-cut via on layer 8
+[NR-eGR] No double-cut via on layer 9
+[NR-eGR] No double-cut via on layer 10
+[NR-eGR] Read 4217 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 4217
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 10289 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 10289
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 10289 net(s) in layer range [2, 11]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 1.580621e+05um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]        Layer             (1-2)    OverCon
+[NR-eGR] ----------------------------------------------
+[NR-eGR]      M1 ( 1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M2 ( 2)         4( 0.03%)   ( 0.03%) 
+[NR-eGR]      M3 ( 3)         2( 0.02%)   ( 0.02%) 
+[NR-eGR]      M4 ( 4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M5 ( 5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M6 ( 6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M7 ( 7)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M8 ( 8)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M9 ( 9)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]     M10 (10)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]     M11 (11)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]        Total         6( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+Early Global Route congestion estimation runtime: 0.13 seconds, mem = 2337.8M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR]              Length (um)   Vias 
+[NR-eGR] --------------------------------
+[NR-eGR]  M1   (1H)             0  37618 
+[NR-eGR]  M2   (2V)         54923  53661 
+[NR-eGR]  M3   (3H)         59860   5855 
+[NR-eGR]  M4   (4V)         32056   2116 
+[NR-eGR]  M5   (5H)         16717    324 
+[NR-eGR]  M6   (6V)          3867     22 
+[NR-eGR]  M7   (7H)           229      0 
+[NR-eGR]  M8   (8V)             0      0 
+[NR-eGR]  M9   (9H)             0      0 
+[NR-eGR]  M10  (10V)            0      0 
+[NR-eGR]  M11  (11H)            0      0 
+[NR-eGR] --------------------------------
+[NR-eGR]       Total       167651  99596 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total half perimeter of net bounding box: 138268um
+[NR-eGR] Total length: 167651um, number of vias: 99596
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 6188um, number of vias: 5201
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.14 seconds, mem = 2337.8M
+Tdgp not successfully inited but do clear! skip clearing
+End of congRepair (cpu=0:00:00.3, real=0:00:01.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0:28, real = 0: 0:30, mem = 2276.8M **
+Tdgp not successfully inited but do clear! skip clearing
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+*** Message Summary: 3 warning(s), 0 error(s)
+
+*** placeDesign #1 [finish] : cpu/real = 0:00:28.4/0:00:29.5 (1.0), totSession cpu/real = 0:02:03.6/0:51:24.4 (0.0), mem = 2276.8M
+<CMD> saveDesign gpu_placed
+#% Begin save design ... (date=06/20 18:51:11, mem=1880.9M)
+% Begin Save ccopt configuration ... (date=06/20 18:51:11, mem=1880.9M)
+% End Save ccopt configuration ... (date=06/20 18:51:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1880.9M, current mem=1880.9M)
+% Begin Save netlist data ... (date=06/20 18:51:11, mem=1880.9M)
+Writing Binary DB to gpu_placed.dat/gpu.v.bin in single-threaded mode...
+% End Save netlist data ... (date=06/20 18:51:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1880.9M, current mem=1880.9M)
+Saving symbol-table file ...
+Saving congestion map file gpu_placed.dat/gpu.route.congmap.gz ...
+% Begin Save AAE data ... (date=06/20 18:51:12, mem=1881.2M)
+Saving AAE Data ...
+% End Save AAE data ... (date=06/20 18:51:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1881.2M, current mem=1881.2M)
+Saving preference file gpu_placed.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=06/20 18:51:12, mem=1881.8M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=06/20 18:51:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1881.8M, current mem=1881.8M)
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=06/20 18:51:12, mem=1881.8M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=06/20 18:51:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1881.8M, current mem=1881.8M)
+% Begin Save routing data ... (date=06/20 18:51:12, mem=1881.8M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2282.3M) ***
+% End Save routing data ... (date=06/20 18:51:12, total cpu=0:00:00.1, real=0:00:00.0, peak res=1882.0M, current mem=1882.0M)
+Saving property file gpu_placed.dat/gpu.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2285.3M) ***
+% Begin Save power constraints data ... (date=06/20 18:51:12, mem=1882.0M)
+% End Save power constraints data ... (date=06/20 18:51:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1882.0M, current mem=1882.0M)
+rccorner
+Generated self-contained design gpu_placed.dat
+#% End save design ... (date=06/20 18:51:13, total cpu=0:00:00.4, real=0:00:02.0, peak res=1882.0M, current mem=1881.8M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> zoomBox -34.01250 18.52750 243.00900 173.60750
+<CMD> zoomBox 51.29300 59.49250 174.21000 128.30300
+<CMD> zoomBox 78.23700 78.36450 132.77700 108.89650
+<CMD> zoomBox 88.50950 85.55900 116.98050 101.49750
+<CMD> zoomBox 90.67650 86.81800 114.87700 100.36550
+<CMD> zoomBox 98.32500 91.26050 107.45250 96.37000
+<CMD> fit
+<CMD> add_ndr -name 2w2s
+
+Usage: dbGet [-help] [-d] [-u] [-v] [-e] [-i <num>] [-regexp] [-p[<num>]] 
+             {<obj>|<objList>|head|top|selected}[.<objType>]...[[.<attrName>|.?|.??|.?h] [<pattern>] 
+             | [expression]]
+
+-help       # Prints out the command usage 
+-d          # User specified values and return values are in database units.
+            # Default: All values are in user units, in microns. (bool, optional) 
+-u          # Removes duplicate objects from the query results so that the 
+            # results list contains only unique entries. (bool, optional) 
+-v          # Return values will be items that do not match the specified 
+            # <pattern> or <expression> (bool, optional) 
+            # Example: dbGet -v -p2 top.nets.sWires.layer.name M4 
+            #    returns list of pointers to sWire objects on layers other than M4 
+-e          # For avoiding NULL (0x0) pointers and results from being printed. (bool, optional) 
+            # This would effect all kinds of outputs. In cases of nested dbGet statements 
+            # -e option should not be used in the inner dbGet statement. This is an incorrect usage 
+            # Example : CORRECT USAGE : 
+            # dbGet -e [dbGet -p2 [dbGet -p top.insts.pStatus fixed].cell.name INV1] 
+            # If none of the instances have 'fixed' placement status, the outer dbGet 
+            # will not return a 0x0 but an empty list which TCL would not consider as a list element 
+            # INCORRECT USAGE : 
+            # dbGet [dbGet -p2 [dbGet -p -e top.insts.pStatus fixed].cell.name INV1] 
+-i <num>    # For selecting a specific element from the list being returned as output 
+            # -i <num> would select the the <num>th element starting from 0 
+            # -i <num> option would also reduce a starting '{' and ending '}' for box and pt type attributes 
+            # Example : dbGet top.nets.name sum* -p -i 0 
+            # would return 1st pointer in the list of the nets whose name matches the pattern sum* 
+-regexp     # Uses regular expression <pattern> matching (equivalent to Tcl regexp 
+            # command) for string/enum attributes. The option does not apply to 
+            # filtering done using the <expression> method, where the Tcl regexp 
+            # command can be used directly.
+            # Default: Uses simple wild card pattern matching (bool, optional) 
+            # Example: dbGet -regexp -p top.insts.name M.* 
+            #    returns list of pointers to instances whose name starts with M 
+-p[<num>]   # Specifies the number of levels to traverse back through the 
+            # specified objects for the query. (-p = 1 level, num indicates 1 
+            # or more) (bool, optional) The -p option is used only with either a
+            # <pattern> or an <expression> to filter out objects.
+            # Example: dbGet -p2 top.nets.sWires.layer.name M4 
+            #    returns list of pointers to sWire objects on layer M4 
+{<obj>|<objList>|head|top|selected}[.<objType>]...[.<attrName>|.?|.??|.?h] 
+            # DB object-hierarchy-string. {<obj>|<objList>|head|top|selected}: 
+            # Specifies the starting point for the query; .<objType>: Specifies 
+            # the object type to query. You can specify more than one object in 
+            # the query; .<attrName>|.?|.??|.?h: Specifies the type of 
+            # information to return. (string, required) 
+<pattern>   # Specifies a string expression, numeric value, or boolean to use to 
+            # match object or attribute names or attribute values (string, optional)
+            # Example: dbGet top.nets.name *clk*
+            #    returns list of pointers to net names that match the *clk* pattern
+<expression>   # Specifies a tcl expression, using dbtcl attributes and objects, 
+            # to use to match objects which satisfy the tcl expression after replacing 
+            # the dbtcl attributes and objects values at runtime. (string, optional)
+            # Example: dbGet top.nets {.numTerms > 4} 
+            #    returns list of pointers to net objects with greater than 4 connections.
+
+
+
+
+**ERROR: (IMPTCM-48):	".name=~*BUF*" is not a legal option for command "dbGet". Either the current option or an option prior to it is not specified correctly.
+
+
+Usage: dbGet [-help] [-d] [-u] [-v] [-e] [-i <num>] [-regexp] [-p[<num>]] 
+             {<obj>|<objList>|head|top|selected}[.<objType>]...[[.<attrName>|.?|.??|.?h] [<pattern>] 
+             | [expression]]
+
+-help       # Prints out the command usage 
+-d          # User specified values and return values are in database units.
+            # Default: All values are in user units, in microns. (bool, optional) 
+-u          # Removes duplicate objects from the query results so that the 
+            # results list contains only unique entries. (bool, optional) 
+-v          # Return values will be items that do not match the specified 
+            # <pattern> or <expression> (bool, optional) 
+            # Example: dbGet -v -p2 top.nets.sWires.layer.name M4 
+            #    returns list of pointers to sWire objects on layers other than M4 
+-e          # For avoiding NULL (0x0) pointers and results from being printed. (bool, optional) 
+            # This would effect all kinds of outputs. In cases of nested dbGet statements 
+            # -e option should not be used in the inner dbGet statement. This is an incorrect usage 
+            # Example : CORRECT USAGE : 
+            # dbGet -e [dbGet -p2 [dbGet -p top.insts.pStatus fixed].cell.name INV1] 
+            # If none of the instances have 'fixed' placement status, the outer dbGet 
+            # will not return a 0x0 but an empty list which TCL would not consider as a list element 
+            # INCORRECT USAGE : 
+            # dbGet [dbGet -p2 [dbGet -p -e top.insts.pStatus fixed].cell.name INV1] 
+-i <num>    # For selecting a specific element from the list being returned as output 
+            # -i <num> would select the the <num>th element starting from 0 
+            # -i <num> option would also reduce a starting '{' and ending '}' for box and pt type attributes 
+            # Example : dbGet top.nets.name sum* -p -i 0 
+            # would return 1st pointer in the list of the nets whose name matches the pattern sum* 
+-regexp     # Uses regular expression <pattern> matching (equivalent to Tcl regexp 
+            # command) for string/enum attributes. The option does not apply to 
+            # filtering done using the <expression> method, where the Tcl regexp 
+            # command can be used directly.
+            # Default: Uses simple wild card pattern matching (bool, optional) 
+            # Example: dbGet -regexp -p top.insts.name M.* 
+            #    returns list of pointers to instances whose name starts with M 
+-p[<num>]   # Specifies the number of levels to traverse back through the 
+            # specified objects for the query. (-p = 1 level, num indicates 1 
+            # or more) (bool, optional) The -p option is used only with either a
+            # <pattern> or an <expression> to filter out objects.
+            # Example: dbGet -p2 top.nets.sWires.layer.name M4 
+            #    returns list of pointers to sWire objects on layer M4 
+{<obj>|<objList>|head|top|selected}[.<objType>]...[.<attrName>|.?|.??|.?h] 
+            # DB object-hierarchy-string. {<obj>|<objList>|head|top|selected}: 
+            # Specifies the starting point for the query; .<objType>: Specifies 
+            # the object type to query. You can specify more than one object in 
+            # the query; .<attrName>|.?|.??|.?h: Specifies the type of 
+            # information to return. (string, required) 
+<pattern>   # Specifies a string expression, numeric value, or boolean to use to 
+            # match object or attribute names or attribute values (string, optional)
+            # Example: dbGet top.nets.name *clk*
+            #    returns list of pointers to net names that match the *clk* pattern
+<expression>   # Specifies a tcl expression, using dbtcl attributes and objects, 
+            # to use to match objects which satisfy the tcl expression after replacing 
+            # the dbtcl attributes and objects values at runtime. (string, optional)
+            # Example: dbGet top.nets {.numTerms > 4} 
+            #    returns list of pointers to net objects with greater than 4 connections.
+
+
+
+
+**ERROR: (IMPTCM-48):	".name=~*INV*" is not a legal option for command "dbGet". Either the current option or an option prior to it is not specified correctly.
+
+
+Usage: dbGet [-help] [-d] [-u] [-v] [-e] [-i <num>] [-regexp] [-p[<num>]] 
+             {<obj>|<objList>|head|top|selected}[.<objType>]...[[.<attrName>|.?|.??|.?h] [<pattern>] 
+             | [expression]]
+
+-help       # Prints out the command usage 
+-d          # User specified values and return values are in database units.
+            # Default: All values are in user units, in microns. (bool, optional) 
+-u          # Removes duplicate objects from the query results so that the 
+            # results list contains only unique entries. (bool, optional) 
+-v          # Return values will be items that do not match the specified 
+            # <pattern> or <expression> (bool, optional) 
+            # Example: dbGet -v -p2 top.nets.sWires.layer.name M4 
+            #    returns list of pointers to sWire objects on layers other than M4 
+-e          # For avoiding NULL (0x0) pointers and results from being printed. (bool, optional) 
+            # This would effect all kinds of outputs. In cases of nested dbGet statements 
+            # -e option should not be used in the inner dbGet statement. This is an incorrect usage 
+            # Example : CORRECT USAGE : 
+            # dbGet -e [dbGet -p2 [dbGet -p top.insts.pStatus fixed].cell.name INV1] 
+            # If none of the instances have 'fixed' placement status, the outer dbGet 
+            # will not return a 0x0 but an empty list which TCL would not consider as a list element 
+            # INCORRECT USAGE : 
+            # dbGet [dbGet -p2 [dbGet -p -e top.insts.pStatus fixed].cell.name INV1] 
+-i <num>    # For selecting a specific element from the list being returned as output 
+            # -i <num> would select the the <num>th element starting from 0 
+            # -i <num> option would also reduce a starting '{' and ending '}' for box and pt type attributes 
+            # Example : dbGet top.nets.name sum* -p -i 0 
+            # would return 1st pointer in the list of the nets whose name matches the pattern sum* 
+-regexp     # Uses regular expression <pattern> matching (equivalent to Tcl regexp 
+            # command) for string/enum attributes. The option does not apply to 
+            # filtering done using the <expression> method, where the Tcl regexp 
+            # command can be used directly.
+            # Default: Uses simple wild card pattern matching (bool, optional) 
+            # Example: dbGet -regexp -p top.insts.name M.* 
+            #    returns list of pointers to instances whose name starts with M 
+-p[<num>]   # Specifies the number of levels to traverse back through the 
+            # specified objects for the query. (-p = 1 level, num indicates 1 
+            # or more) (bool, optional) The -p option is used only with either a
+            # <pattern> or an <expression> to filter out objects.
+            # Example: dbGet -p2 top.nets.sWires.layer.name M4 
+            #    returns list of pointers to sWire objects on layer M4 
+{<obj>|<objList>|head|top|selected}[.<objType>]...[.<attrName>|.?|.??|.?h] 
+            # DB object-hierarchy-string. {<obj>|<objList>|head|top|selected}: 
+            # Specifies the starting point for the query; .<objType>: Specifies 
+            # the object type to query. You can specify more than one object in 
+            # the query; .<attrName>|.?|.??|.?h: Specifies the type of 
+            # information to return. (string, required) 
+<pattern>   # Specifies a string expression, numeric value, or boolean to use to 
+            # match object or attribute names or attribute values (string, optional)
+            # Example: dbGet top.nets.name *clk*
+            #    returns list of pointers to net names that match the *clk* pattern
+<expression>   # Specifies a tcl expression, using dbtcl attributes and objects, 
+            # to use to match objects which satisfy the tcl expression after replacing 
+            # the dbtcl attributes and objects values at runtime. (string, optional)
+            # Example: dbGet top.nets {.numTerms > 4} 
+            #    returns list of pointers to net objects with greater than 4 connections.
+
+
+
+
+**ERROR: (IMPTCM-48):	".name=~*LATCH*" is not a legal option for command "dbGet". Either the current option or an option prior to it is not specified correctly.
+
+child process exited abnormally
+child process exited abnormally
+child process exited abnormally
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+<CMD> create_route_type -name clkroute -non_default_rule 2w2s -bottom_preferred_layer M5 -top_preferred_layer M6
+<CMD> set_ccopt_property route_type clkroute -net_type trunk
+<CMD> set_ccopt_property route_type clkroute -net_type leaf
+<CMD> set_ccopt_property buffer_cells {CLKBUFX2 CLKBUFX4 CLKBUFX6 CLKBUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20}
+<CMD> set_ccopt_property inverter_cells {CLKINVX1 CLKINVX2 CLKINVX4 CLKINVX6 CLKINVX8 CLKINVX12 CLKINVX16 CLKINVX20}
+<CMD> create_ccopt_clock_tree_spec -file ccopt.spec
+Creating clock tree spec for modes (timing configs): constraints
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Ignoring AAE DB Resetting ...
+Analyzing clock structure...
+Analyzing clock structure done.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Wrote: ccopt.spec
+<CMD> create_ccopt_clock_tree_spec
+Creating clock tree spec for modes (timing configs): constraints
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Ignoring AAE DB Resetting ...
+Analyzing clock structure...
+Analyzing clock structure done.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Extracting original clock gating for clk...
+  clock_tree clk contains 1811 sinks and 0 clock gates.
+Extracting original clock gating for clk done.
+The skew group clk/constraints was created. It contains 1811 sinks and 1 sources.
+Checking clock tree convergence...
+Checking clock tree convergence done.
+<CMD> ctd_win -side none -id ctd_window
+Clock tree timing engine global stage delay update for max_delay:setup.late...
+Updating RC grid for preRoute extraction ...
+Clock tree timing engine global stage delay update for max_delay:setup.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+<CMD> selectObject Net clk
+<CMD> zoomSelected
+<CMD> deselectObject Net clk
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> zoomBox -1.18450 194.74450 0.86900 195.89400
+<CMD> zoomBox -2.16900 194.50100 1.17600 196.37350
+<CMD> zoomBox -3.13650 194.24150 1.49350 196.83350
+<CMD> fit
+<CMD> deselectAll
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix gpu_preCTS -outDir timingReports
+AAE DB initialization (MEM=2333.77 CPU=0:00:00.0 REAL=0:00:00.0) 
+*** timeDesign #1 [begin] : totSession cpu/real = 0:02:22.5/1:03:57.2 (0.0), mem = 2333.8M
+Setting timing_disable_library_data_to_data_checks to 'true'.
+Setting timing_disable_user_data_to_data_checks to 'true'.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=2309.8M)
+Extraction called for design 'gpu' of instances=9979 and nets=10319 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design gpu.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+RCMode: PreRoute
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Clock Cap Scaling Factor    : 1.00000
+Clock Res Scaling Factor     : 1.00000
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Updating RC grid for preRoute extraction ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 2309.766M)
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: gpu
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2324.83)
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net clk is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (EMS-27):	Message (IMPEXT-2883) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPEXT-2878):	Unable to get via cell object instantiated at (237800 376390 2). Assign resistance 4.0 ohms.
+**WARN: (IMPEXT-2878):	Unable to get via cell object instantiated at (247000 383230 2). Assign resistance 4.0 ohms.
+**WARN: (IMPEXT-2878):	Unable to get via cell object instantiated at (243000 372970 2). Assign resistance 4.0 ohms.
+**WARN: (IMPEXT-2878):	Unable to get via cell object instantiated at (243800 369550 2). Assign resistance 4.0 ohms.
+**WARN: (IMPEXT-2878):	Unable to get via cell object instantiated at (279400 372970 2). Assign resistance 4.0 ohms.
+**WARN: (IMPEXT-2878):	Unable to get via cell object instantiated at (249400 376390 2). Assign resistance 4.0 ohms.
+**WARN: (IMPEXT-2878):	Unable to get via cell object instantiated at (250600 369550 2). Assign resistance 4.0 ohms.
+**WARN: (IMPEXT-2878):	Unable to get via cell object instantiated at (255000 383230 2). Assign resistance 4.0 ohms.
+**WARN: (IMPEXT-2878):	Unable to get via cell object instantiated at (280200 379810 2). Assign resistance 4.0 ohms.
+**WARN: (IMPEXT-2878):	Unable to get via cell object instantiated at (275800 383230 2). Assign resistance 4.0 ohms.
+**WARN: (IMPEXT-2878):	Unable to get via cell object instantiated at (256200 372970 2). Assign resistance 4.0 ohms.
+**WARN: (IMPEXT-2879):	There are more than 10 warning messages on via cell objects. The remaining messages will be suppressed. 
+Total number of fetched objects 10289
+End delay calculation. (MEM=2420.87 CPU=0:00:00.9 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=2420.87 CPU=0:00:01.2 REAL=0:00:01.0)
+*** Done Building Timing Graph (cpu=0:00:01.5 real=0:00:02.0 totSessionCpu=0:02:24 mem=2420.9M)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ worst_case 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.739  |  0.739  |  5.225  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  1941   |  1827   |   265   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 69.934%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 2.57 sec
+Total Real time: 3.0 sec
+Total Memory Usage: 2389.285156 Mbytes
+*** timeDesign #1 [finish] : cpu/real = 0:00:02.6/0:00:03.5 (0.7), totSession cpu/real = 0:02:25.0/1:04:00.7 (0.0), mem = 2389.3M
+<CMD> getAnalysisMode -checkType -quiet
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+Parsing file top.mtarpt...
+invalid command name "create_clock_tree_spec"
+<CMD> clock_opt_design
+Warning: clock_opt_design requires beta feature innovusClockOptFlow enabled.
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+<CMD> create_ccopt_clock_tree_spec -file ccopt.spec
+Creating clock tree spec for modes (timing configs): constraints
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+**ERROR: (IMPCCOPT-2048):	Clock tree extraction failed. Reason Cannot run automatic clock tree extraction as clock trees are already defined..
+
+<CMD> ccopt_design
+#% Begin ccopt_design (date=06/20 19:06:42, mem=1965.5M)
+Turning off fast DC mode.
+*** ccopt_design #1 [begin] : totSession cpu/real = 0:02:31.9/1:08:17.8 (0.0), mem = 2330.5M
+Runtime...
+**INFO: User's settings:
+setNanoRouteMode -extractThirdPartyCompatible  false
+setExtractRCMode -engine                       preRoute
+setDelayCalMode -enable_high_fanout            true
+setDelayCalMode -engine                        aae
+setDelayCalMode -ignoreNetLoad                 false
+setDelayCalMode -socv_accuracy_mode            low
+setOptMode -preserveAllSequential              true
+setPlaceMode -place_design_floorplan_mode      false
+
+(ccopt_design): CTS Engine: auto. Used Spec: pre-existing CCOPT spec.
+Placement constraints of type 'region' or 'fence' will not be downgraded to 'guide' because the property change_fences_to_guides has been set to false.
+Set place::cacheFPlanSiteMark to 1
+'setDesignMode -flowEffort standard' => 'setOptMode -usefulSkewCCOpt standard' 
+Using CCOpt effort standard.
+CCOpt::Phase::Initialization...
+Check Prerequisites...
+Leaving CCOpt scope - CheckPlace...
+Begin checking placement ... (start mem=2330.5M, init mem=2330.5M)
+*info: Placed = 9979          
+*info: Unplaced = 0           
+Placement Density:69.93%(25540/36519)
+Placement Density (including fixed std cells):69.93%(25540/36519)
+Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.1, real=0:00:00.0; mem=2330.5M)
+Leaving CCOpt scope - CheckPlace done. (took cpu=0:00:00.1 real=0:00:00.1)
+Innovus will update I/O latencies
+Found 0 ideal nets, 0 pins with transition annotations, 0 instances with delay annotations, 0 nets with delay annotations, refer to logv for details.
+
+Check Prerequisites done. (took cpu=0:00:00.1 real=0:00:00.1)
+CCOpt::Phase::Initialization done. (took cpu=0:00:00.1 real=0:00:00.1)
+Executing ccopt post-processing.
+Synthesizing clock trees with CCOpt...
+*** CTS #1 [begin] (ccopt_design #1) : totSession cpu/real = 0:02:32.0/1:08:17.9 (0.0), mem = 2330.5M
+CCOpt::Phase::PreparingToBalance...
+Leaving CCOpt scope - Initializing power interface...
+Leaving CCOpt scope - Initializing power interface done. (took cpu=0:00:00.0 real=0:00:00.0)
+Found 0 advancing pin insertion delay (0.000% of 1811 clock tree sinks)
+Found 0 delaying pin insertion delay (0.000% of 1811 clock tree sinks)
+Leaving CCOpt scope - optDesignGlobalRouteStep...
+[NR-eGR] Started Early Global Route kernel ( Curr Mem: 2311.53 MB )
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] M1 has single uniform track structure
+[NR-eGR] M2 has single uniform track structure
+[NR-eGR] M3 has single uniform track structure
+[NR-eGR] M4 has single uniform track structure
+[NR-eGR] M5 has single uniform track structure
+[NR-eGR] M6 has single uniform track structure
+[NR-eGR] M7 has single uniform track structure
+[NR-eGR] M8 has single uniform track structure
+[NR-eGR] M9 has single uniform track structure
+[NR-eGR] M10 has single uniform track structure
+[NR-eGR] M11 has single uniform track structure
+[NR-eGR] ERROR: No suitable DB via cell is found for layer1/2. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer2/3. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer3/4. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer4/5. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer5/6. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer6/7. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer7/8. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer8/9. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer9/10. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] ERROR: No suitable DB via cell is found for layer10/11. HUM create via cell for internal use. Via instances in the routing result will not associate to any DB via cell
+[NR-eGR] No double-cut via on layer 1
+[NR-eGR] No double-cut via on layer 2
+[NR-eGR] No double-cut via on layer 3
+[NR-eGR] No double-cut via on layer 4
+[NR-eGR] No double-cut via on layer 5
+[NR-eGR] No double-cut via on layer 6
+[NR-eGR] No double-cut via on layer 7
+[NR-eGR] No double-cut via on layer 8
+[NR-eGR] No double-cut via on layer 9
+[NR-eGR] No double-cut via on layer 10
+[NR-eGR] Read 4217 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 4217
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 10289 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 10289
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 10289 net(s) in layer range [2, 11]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 1.580621e+05um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]        Layer             (1-2)    OverCon
+[NR-eGR] ----------------------------------------------
+[NR-eGR]      M1 ( 1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M2 ( 2)         4( 0.03%)   ( 0.03%) 
+[NR-eGR]      M3 ( 3)         2( 0.02%)   ( 0.02%) 
+[NR-eGR]      M4 ( 4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M5 ( 5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M6 ( 6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M7 ( 7)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M8 ( 8)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]      M9 ( 9)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]     M10 (10)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]     M11 (11)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]        Total         6( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+[NR-eGR]              Length (um)   Vias 
+[NR-eGR] --------------------------------
+[NR-eGR]  M1   (1H)             0  37618 
+[NR-eGR]  M2   (2V)         54923  53661 
+[NR-eGR]  M3   (3H)         59860   5855 
+[NR-eGR]  M4   (4V)         32056   2116 
+[NR-eGR]  M5   (5H)         16717    324 
+[NR-eGR]  M6   (6V)          3867     22 
+[NR-eGR]  M7   (7H)           229      0 
+[NR-eGR]  M8   (8V)             0      0 
+[NR-eGR]  M9   (9H)             0      0 
+[NR-eGR]  M10  (10V)            0      0 
+[NR-eGR]  M11  (11H)            0      0 
+[NR-eGR] --------------------------------
+[NR-eGR]       Total       167651  99596 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total half perimeter of net bounding box: 138268um
+[NR-eGR] Total length: 167651um, number of vias: 99596
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 6188um, number of vias: 5201
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Finished Early Global Route kernel ( CPU: 0.27 sec, Real: 0.27 sec, Curr Mem: 2321.17 MB )
+Leaving CCOpt scope - optDesignGlobalRouteStep done. (took cpu=0:00:00.3 real=0:00:00.3)
+Legalization setup...
+Using cell based legalization.
+Initializing placement interface...
+  Use check_library -place or consult logv if problems occur.
+  Leaving CCOpt scope - Initializing placement interface...
+**Info: (IMPSP-307): Design contains fractional 3 cells.
+  Leaving CCOpt scope - Initializing placement interface done. (took cpu=0:00:00.0 real=0:00:00.0)
+Initializing placement interface done.
+Leaving CCOpt scope - Cleaning up placement interface...
+Leaving CCOpt scope - Cleaning up placement interface done. (took cpu=0:00:00.0 real=0:00:00.0)
+Leaving CCOpt scope - Initializing placement interface...
+**Info: (IMPSP-307): Design contains fractional 3 cells.
+Leaving CCOpt scope - Initializing placement interface done. (took cpu=0:00:00.0 real=0:00:00.0)
+Legalization setup done. (took cpu=0:00:00.1 real=0:00:00.1)
+Validating CTS configuration...
+Checking module port directions...
+Checking module port directions done. (took cpu=0:00:00.0 real=0:00:00.0)
+Non-default CCOpt properties:
+  Public non-default CCOpt properties:
+    buffer_cells is set for at least one object
+    cts_merge_clock_gates is set for at least one object
+    cts_merge_clock_logic is set for at least one object
+    inverter_cells is set for at least one object
+    route_type is set for at least one object
+  No private non-default CCOpt properties
+Route type trimming info:
+  No route type modifications were made.
+Updating RC grid for preRoute extraction ...
+**DIAG[/icd/cm_t1nb_002/INNOVUS211/Rel/21.15/main/lnx86_64_opt/21.15-s110_1/fe/src/ccopt/analysis/edi/preroutercextractor.cpp:59:Ccopt::Analysis::Edi::PreRouteRCExtractor::PreRouteRCExtractor(tosRcCorner*, bool, double, bool)]: Assertion Failed: "m_cornerId != -1"
+No corner ID
+Stack backtrace: /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus() [0x6a0de66]
+/lib64/libc.so.6(__libc_start_main+0xe4) [0x7fbca5c54864]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(main+0x800) [0x5e7a680]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_MainEx+0x17b) [0x2938a53b]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(edi_app_init(Tcl_Interp*)+0x2cb) [0x6ae92db]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/lib/64bit/libtq.so(TqApplication::exec()+0x176) [0x7fbcaed2d896]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5(QCoreApplication::exec()+0x83) [0x7fbcadef5953]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5(QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>)+0xe9) [0x7fbcadeed0c9]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/lib/64bit/libtq.so(TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>)+0x69) [0x7fbcaed2e239]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_DoOneEvent+0x148) [0x2938fdf8]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_ServiceEvent+0x88) [0x2938fae8]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus() [0x293cf2dd]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Redline::Editor::Internals::Run(bool)+0xc6) [0x16486df6]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Redline::Command::Run(Redline::Editor&, Redline::KeyCombination const&) const+0x1b) [0x1649f23b]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(boost::detail::function::void_function_obj_invoker2<boost::_bi::bind_t<boost::_bi::unspecified, boost::function<void (Redline::Editor&)>, boost::_bi::list1<boost::arg<1> > >, void, Redline::Editor&, Redline::KeyCombination const&>::invoke(boost::detail::function::function_buffer&, Redline::Editor&, Redline::KeyCombination const&)+0x1a) [0x1649fa1a]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Redline::ModeCommand<Redline::EmacsMode>::CommandFnNoKeys(boost::function<void (Redline::EmacsMode&)> const&, Redline::Editor&)+0x60) [0x16491880]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Redline::EmacsMode::AcceptLine()+0x3f) [0x1648a0bf]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(seConsole::sesMode::DoExecute(std::string const&, void*)+0xee) [0x14debf9e]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(rdaEditCmdLineEnd(char*)+0x1c6) [0x6b0bdd6]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_RecordAndEval+0x38) [0x29368f48]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_RecordAndEvalObj+0xd3) [0x29368dd3]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(TclNRRunCallbacks+0x71) [0x292cb111]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(tcmMgr::objCmdParser(void*, Tcl_Interp*, int, Tcl_Obj**)+0xad6) [0x1b7ce3e6]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(tcmBaseCmd::execute(Tcl_Interp*, int, Tcl_Obj**)+0x1b3) [0x1b7d9ce3]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(int oiTcl::CmdManager::invokeCmd<goPerfLogTATProfileCmd>(void*, Tcl_Interp*, int, Tcl_Obj* const*, tcmObjCmd*)+0x54) [0xaf3d794]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(oiTcl::CmdExecInterface::execMain(oiTcl::MasterCmd*, int, Tcl_Obj* const*)+0x3f) [0xa7aee8f]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(oiTcl::CmdExec<goPerfLogTATProfileCmd>::executeCmdMain(oiTcl::MasterCmd*)+0x213) [0xaf47cb3]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(goPerfLogTATProfileCmd::execute(Tcl_Interp*)+0x2a6) [0xaf44ce6]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(goPerfLogTATProfileCmd::executeScript(Tcl_Interp*)+0xce) [0xaf42cee]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_Eval+0x15) [0x292cdd95]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_EvalEx+0x12) [0x292cdd72]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus() [0x292cd323]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(TclNRRunCallbacks+0x71) [0x292cb111]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(tcmMgr::objCmdParser(void*, Tcl_Interp*, int, Tcl_Obj**)+0xad6) [0x1b7ce3e6]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(tcmBaseCmd::execute(Tcl_Interp*, int, Tcl_Obj**)+0x15f) [0x1b7d9c8f]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus() [0xb4ba6b7]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus() [0xb571f91]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Cts::Balancer::PreBalance(Ccopt::Cts::PreBalanceOutput, Ccopt::Cts::Constraints*, boost::function<bool (Ccopt::DesignObjects::DesignObjectPtr<Ccopt::ClockTree::SkewGroup>)> const&, Ccopt::Cts::Constraints::MaybeUpdateLastTargets, Ccopt::Cts::CheckPlaceableArea)+0x13ff) [0xbfa05ff]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Cts::BalancerImpl::BuildConstraints(Ccopt::Cts::Constraints&, boost::function<bool (Ccopt::DesignObjects::DesignObjectPtr<Ccopt::ClockTree::SkewGroup>)> const&, Ccopt::Cts::Constraints::MaybeUpdateLastTargets, Ccopt::Cts::PreBalanceOutput, Ccopt::Cts::Balancer::PreBalanceResult*, Ccopt::Cts::CheckPlaceableArea)+0x4e5) [0xbe9ea25]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Cts::TreeBalancer::PreBalance(Ccopt::Cts::PreBalanceOutput, bool, Ccopt::Cts::CheckPlaceableArea)+0x8cc) [0xbf9792c]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Cts::TreeBalancer::PreBalanceSelectCells(Ccopt::Cts::PreBalanceOutput)+0x42b) [0xbf887db]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Cts::TreeBalancer::SelectDriverCells(std::map<Ccopt::Netlist::PowerContextAndIndex, Ccopt::Cts::TreeBalancerCellSet const*, std::less<Ccopt::Netlist::PowerContextAndIndex>, std::allocator<std::pair<Ccopt::Netlist::PowerContextAndIndex const, Ccopt::Cts::TreeBalancerCellSet const*> > >&, std::map<Ccopt::Netlist::PowerContext, std::string, std::less<Ccopt::Netlist::PowerContext>, std::allocator<std::pair<Ccopt::Netlist::PowerContext const, std::string> > >&, Ccopt::Cts::PreBalanceOutput, Ccopt::Cts::TreeBalancer::DriverCellType)+0x24f9) [0xbf73cf9]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Cts::TreeBalancerCellSetImpl::Trim(std::set<Ccopt::CellLib::CellDeclaration const*, Ccopt::Common::Uid::UidPtrLess, std::allocator<Ccopt::CellLib::CellDeclaration const*> > const&, Ccopt::Cts::PreBalanceOutput) const+0x818) [0xc047c98]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus() [0xc045026]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::CellLib::LibCellProperty::GetInternalDelay()+0x2c) [0xb6beeac]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus() [0xb6bbc2e]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Analysis::CellCharacterization::ConvergedCharacteristicsAtDist(Ccopt::Geometry::Distance, double) const+0x102) [0xb2eba92]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus() [0xb2eb2dd]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus() [0xb2ea9b7]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Analysis::FindBufBufDelay(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellDeclaration const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, double, Ccopt::Geometry::Distance, double&, double&, double&, Ccopt::Analysis::STA::Event, double, double*, double*, double, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>)+0x478) [0xb2e9f48]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus() [0xb2e9a58]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Analysis::FindCellCellDelay(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellPin const*, Ccopt::CellLib::CellPin const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Analysis::STA::SignalType, Ccopt::Analysis::DrivenLoad const&, double, Ccopt::Geometry::Distance, double&, double&, double&, Ccopt::Analysis::STA::Event, double*, double*, double*, double, Ccopt::Netlist::CellInst const*, Ccopt::Analysis::Edi::DelayCalcMethod const&, Ccopt::Common::Thing<Ccopt::Common::MaxCapacitanceTarget, false>, Ccopt::Analysis::Details::LoadPinDistributionMethod const&, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>)+0x12d) [0xb2e94cd]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Analysis::FindCellCellDelaySocv(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellPin const*, Ccopt::CellLib::CellPin const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Analysis::STA::SignalType, Ccopt::Analysis::DrivenLoad const&, double, Ccopt::Geometry::Distance, Ccopt::Analysis::StageDelay::TimeAndSensitivity&, Ccopt::Analysis::StageDelay::TimeAndSensitivity&, Ccopt::Analysis::StageDelay::SlewSensAndWaveform&, Ccopt::Analysis::STA::Event, double*, double*, double*, double, Ccopt::Netlist::CellInst const*, Ccopt::Analysis::Edi::DelayCalcMethod const&, Ccopt::Common::Thing<Ccopt::Common::MaxCapacitanceTarget, false>, Ccopt::Analysis::Details::LoadPinDistributionMethod const&, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>)+0x1c5) [0xb2e8d55]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus() [0xb2e6891]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Analysis::StageDelay::StageDelayModel::Internals::SetRoute(Ccopt::Route::Estimate::Estimator const&, unsigned int)+0x1b5) [0xb4a9805]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Analysis::StageDelay::StageDelayModel::Internals::OpConfData::SetRoute(Ccopt::Analysis::StageDelay::StageDelayModelConfig const&, Ccopt::Route::Estimate::Estimator const&, Ccopt::Netlist::OperatingConfig const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>)+0x2eb) [0xb49680b]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Route::Estimate::Estimator::GetRCNet(Ccopt::Netlist::OperatingConfig const*) const+0xc09) [0xcc8c139]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Analysis::Edi::RCNet::ExtractFromRouteEst(boost::shared_ptr<Ccopt::Analysis::Edi::RouteEstBase>)+0x46) [0xb39f146]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Analysis::Edi::RCNetImpl::Extract(Ccopt::Analysis::Edi::RouteEstBase*, bool)+0x4e) [0xb39c6be]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Analysis::Edi::RCNetImpl::Extract(Ccopt::Analysis::Edi::RouteEst*, bool)+0x127) [0xb39b107]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Analysis::Edi::PreRouteRCExtractor::PreRouteRCExtractor(tosRcCorner*, bool, double, bool)+0x9c) [0xb38eb7c]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Common::AssertionFailed::~AssertionFailed()+0x1e) [0xbbb2bfe]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Ccopt::Common::Debug::StackTrace::StackTrace(unsigned long)+0x36) [0xbbd52c6]
+
+Innovus terminated by internal (SEGV) error/signal...
+*** Stack trace:
+*** Stack trace:
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0x18b77a86]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(syStackTrace+0xad)[0x18b77fb8]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0x6a108e6]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN15goSignalHandler13executeActionEiP9siginfo_tPv+0x46)[0xae967d6]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN15goSignalHandler16executeSigActionEiP9siginfo_tPv+0x9b)[0xae968db]
+/lib64/libpthread.so.0(+0x1298f)[0x7fbca681a98f]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt6Common15AssertionFailedD1Ev+0x190)[0xbbb2d70]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt8Analysis3Edi19PreRouteRCExtractorC1EP11tosRcCornerbdb+0x9c)[0xb38eb7c]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt8Analysis3Edi9RCNetImpl7ExtractEPNS1_8RouteEstEb+0x127)[0xb39b107]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt8Analysis3Edi9RCNetImpl7ExtractEPNS1_12RouteEstBaseEb+0x4e)[0xb39c6be]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt8Analysis3Edi5RCNet19ExtractFromRouteEstEN5boost10shared_ptrINS1_12RouteEstBaseEEE+0x46)[0xb39f146]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZNK5Ccopt5Route8Estimate9Estimator8GetRCNetEPKNS_7Netlist15OperatingConfigE+0xc09)[0xcc8c139]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt8Analysis10StageDelay15StageDelayModel9Internals10OpConfData8SetRouteERKNS1_21StageDelayModelConfigERKNS_5Route8Estimate9EstimatorERKNS_7Netlist15OperatingConfigENS_6Common10ComparePtrINSD_11PowerDomainENSD_18PowerDomainPtrLessEEE+0x2eb)[0xb49680b]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt8Analysis10StageDelay15StageDelayModel9Internals8SetRouteERKNS_5Route8Estimate9EstimatorEj+0x1b5)[0xb4a9805]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0xb2e6891]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt8Analysis21FindCellCellDelaySocvEN5boost10shared_ptrIKNS_5Route11RoutingInfoEEEPKNS_7CellLib7CellPinESA_RKNS0_3STA16TimingHalfCornerENS_6Common10ComparePtrINS_7Netlist11PowerDomainENSH_18PowerDomainPtrLessEEENSB_10SignalTypeERKNS0_10DrivenLoadEdNS_8Geometry8DistanceERNS0_10StageDelay18TimeAndSensitivityEST_RNSR_19SlewSensAndWaveformENSB_5EventEPdSX_SX_dPKNSH_8CellInstERKNS0_3Edi15DelayCalcMethodENSF_5ThingINSF_20MaxCapacitanceTargetELb0EEERKNS0_7Details25LoadPinDistributionMethodENSF_7EnumSetINS3_8Estimate17EstimatorControlsELS1E_4EEE+0x1c5)[0xb2e8d55]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt8Analysis17FindCellCellDelayEN5boost10shared_ptrIKNS_5Route11RoutingInfoEEEPKNS_7CellLib7CellPinESA_RKNS0_3STA16TimingHalfCornerENS_6Common10ComparePtrINS_7Netlist11PowerDomainENSH_18PowerDomainPtrLessEEENSB_10SignalTypeERKNS0_10DrivenLoadEdNS_8Geometry8DistanceERdSR_SR_NSB_5EventEPdST_ST_dPKNSH_8CellInstERKNS0_3Edi15DelayCalcMethodENSF_5ThingINSF_20MaxCapacitanceTargetELb0EEERKNS0_7Details25LoadPinDistributionMethodENSF_7EnumSetINS3_8Estimate17EstimatorControlsELS1A_4EEE+0x12d)[0xb2e94cd]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0xb2e9a58]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt8Analysis15FindBufBufDelayEN5boost10shared_ptrIKNS_5Route11RoutingInfoEEEPKNS_7CellLib15CellDeclarationERKNS0_3STA16TimingHalfCornerENS_6Common10ComparePtrINS_7Netlist11PowerDomainENSH_18PowerDomainPtrLessEEEdNS_8Geometry8DistanceERdSN_SN_NSB_5EventEdPdSP_dNSF_7EnumSetINS3_8Estimate17EstimatorControlsELSS_4EEE+0x478)[0xb2e9f48]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0xb2ea9b7]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0xb2eb2dd]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZNK5Ccopt8Analysis20CellCharacterization30ConvergedCharacteristicsAtDistENS_8Geometry8DistanceEd+0x102)[0xb2eba92]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0xb6bbc2e]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt7CellLib15LibCellProperty16GetInternalDelayEv+0x2c)[0xb6beeac]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0xc045026]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZNK5Ccopt3Cts23TreeBalancerCellSetImpl4TrimERKSt3setIPKNS_7CellLib15CellDeclarationENS_6Common3Uid10UidPtrLessESaIS6_EENS0_16PreBalanceOutputE+0x818)[0xc047c98]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt3Cts12TreeBalancer17SelectDriverCellsERSt3mapINS_7Netlist20PowerContextAndIndexEPKNS0_19TreeBalancerCellSetESt4lessIS4_ESaISt4pairIKS4_S7_EEERS2_INS3_12PowerContextESsS8_ISG_ESaISA_IKSG_SsEEENS0_16PreBalanceOutputENS1_14DriverCellTypeE+0x24f9)[0xbf73cf9]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt3Cts12TreeBalancer21PreBalanceSelectCellsENS0_16PreBalanceOutputE+0x42b)[0xbf887db]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt3Cts12TreeBalancer10PreBalanceENS0_16PreBalanceOutputEbNS0_18CheckPlaceableAreaE+0x8cc)[0xbf9792c]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt3Cts12BalancerImpl16BuildConstraintsERNS0_11ConstraintsERKN5boost8functionIFbNS_13DesignObjects15DesignObjectPtrINS_9ClockTree9SkewGroupEEEEEENS2_22MaybeUpdateLastTargetsENS0_16PreBalanceOutputEPNS0_8Balancer16PreBalanceResultENS0_18CheckPlaceableAreaE+0x4e5)[0xbe9ea25]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5Ccopt3Cts8Balancer10PreBalanceENS0_16PreBalanceOutputEPNS0_11ConstraintsERKN5boost8functionIFbNS_13DesignObjects15DesignObjectPtrINS_9ClockTree9SkewGroupEEEEEENS3_22MaybeUpdateLastTargetsENS0_18CheckPlaceableAreaE+0x13ff)[0xbfa05ff]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0xb571f91]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0xb4ba6b7]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN10tcmBaseCmd7executeEP10Tcl_InterpiPP7Tcl_Obj+0x15f)[0x1b7d9c8f]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN6tcmMgr12objCmdParserEPvP10Tcl_InterpiPP7Tcl_Obj+0xad6)[0x1b7ce3e6]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(TclNRRunCallbacks+0x71)[0x292cb111]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0x292cd323]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_EvalEx+0x12)[0x292cdd72]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_Eval+0x15)[0x292cdd95]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN22goPerfLogTATProfileCmd13executeScriptEP10Tcl_Interp+0xce)[0xaf42cee]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN22goPerfLogTATProfileCmd7executeEP10Tcl_Interp+0x2a6)[0xaf44ce6]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5oiTcl7CmdExecI22goPerfLogTATProfileCmdE14executeCmdMainEPNS_9MasterCmdE+0x213)[0xaf47cb3]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5oiTcl16CmdExecInterface8execMainEPNS_9MasterCmdEiPKP7Tcl_Obj+0x3f)[0xa7aee8f]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5oiTcl10CmdManager9invokeCmdI22goPerfLogTATProfileCmdEEiPvP10Tcl_InterpiPKP7Tcl_ObjP9tcmObjCmd+0x54)[0xaf3d794]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN10tcmBaseCmd7executeEP10Tcl_InterpiPP7Tcl_Obj+0x1b3)[0x1b7d9ce3]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN6tcmMgr12objCmdParserEPvP10Tcl_InterpiPP7Tcl_Obj+0xad6)[0x1b7ce3e6]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(TclNRRunCallbacks+0x71)[0x292cb111]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_RecordAndEvalObj+0xd3)[0x29368dd3]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_RecordAndEval+0x38)[0x29368f48]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_Z17rdaEditCmdLineEndPc+0x1c6)[0x6b0bdd6]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN9seConsole7sesMode9DoExecuteERKSsPv+0xee)[0x14debf9e]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN7Redline9EmacsMode10AcceptLineEv+0x3f)[0x1648a0bf]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN7Redline11ModeCommandINS_9EmacsModeEE15CommandFnNoKeysERKN5boost8functionIFvRS1_EEERNS_6EditorE+0x60)[0x16491880]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN5boost6detail8function26void_function_obj_invoker2INS_3_bi6bind_tINS3_11unspecifiedENS_8functionIFvRN7Redline6EditorEEEENS3_5list1INS_3argILi1EEEEEEEvS9_RKNS7_14KeyCombinationEE6invokeERNS1_15function_bufferES9_SJ_+0x1a)[0x1649fa1a]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZNK7Redline7Command3RunERNS_6EditorERKNS_14KeyCombinationE+0x1b)[0x1649f23b]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_ZN7Redline6Editor9Internals3RunEb+0xc6)[0x16486df6]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0x293cf2dd]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_ServiceEvent+0x88)[0x2938fae8]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_DoOneEvent+0x148)[0x2938fdf8]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x69)[0x7fbcaed2e239]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5(_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE+0xe9)[0x7fbcadeed0c9]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5(_ZN16QCoreApplication4execEv+0x83)[0x7fbcadef5953]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/lib/64bit/libtq.so(_ZN13TqApplication4execEv+0x176)[0x7fbcaed2d896]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(_Z12edi_app_initP10Tcl_Interp+0x2cb)[0x6ae92db]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(Tcl_MainEx+0x17b)[0x2938a53b]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus(main+0x800)[0x5e7a680]
+/lib64/libc.so.6(__libc_start_main+0xe4)[0x7fbca5c54864]
+/home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/innovus/bin/64bit/innovus[0x6a0de66]
+========================================
+               pstack
+========================================
+Thread 43 (Thread 0x7fbc950f7700 (LWP 2315630)):
+#0  0x00007fbca6819877 in accept () from /lib64/libpthread.so.0
+#1  0x0000000027b444ca in ProcessInfo::handleConnection(void*) ()
+#2  0x0000000006e1e085 in create_head(void*) ()
+#3  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 42 (Thread 0x7fbc948f6700 (LWP 2315631)):
+#0  0x00007fbca5d4f21f in select () from /lib64/libc.so.6
+#1  0x0000000027b3d0cb in ProcessInfo::sampleUsage(void*) ()
+#2  0x0000000006e1e085 in create_head(void*) ()
+#3  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 41 (Thread 0x7fbc93de9700 (LWP 2315635)):
+#0  0x00007fbca6819e20 in nanosleep () from /lib64/libpthread.so.0
+#1  0x0000000008ac0a8d in rdaiLicRecheck(void*) ()
+#2  0x0000000006e1e085 in create_head(void*) ()
+#3  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 40 (Thread 0x7fbc92de7700 (LWP 2315637)):
+#0  0x00007fbca5d220a8 in nanosleep () from /lib64/libc.so.6
+#1  0x00007fbca5d21fae in sleep () from /lib64/libc.so.6
+#2  0x0000000018b9159a in syiPeakMem(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 39 (Thread 0x7fbc921c4700 (LWP 2315712)):
+#0  0x00007fbca5d4cae1 in poll () from /lib64/libc.so.6
+#1  0x00007fbcaaae96cf in ?? () from /lib64/libxcb.so.1
+#2  0x00007fbcaaaeb35a in xcb_wait_for_event () from /lib64/libxcb.so.1
+#3  0x00007fbc92219a59 in ?? () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5XcbQpa.so.5
+#4  0x00007fbcadd1017a in ?? () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#5  0x0000000006e1e085 in create_head(void*) ()
+#6  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#7  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 38 (Thread 0x7fbc8fa41700 (LWP 2315755)):
+#0  0x00007fbca5d4f21f in select () from /lib64/libc.so.6
+#1  0x00000000293cefd8 in NotifierThreadProc ()
+#2  0x0000000006e1e085 in create_head(void*) ()
+#3  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 37 (Thread 0x7fbc8ea9b700 (LWP 2315833)):
+#0  0x00007fbca5c6938c in sigtimedwait () from /lib64/libc.so.6
+#1  0x00007fbca681a51c in sigwait () from /lib64/libpthread.so.0
+#2  0x0000000006a0e7b0 in ctrlCHandle(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 36 (Thread 0x7fbc6949d700 (LWP 2316111)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00007fbcadd10fbb in QWaitCondition::wait(QMutex*, unsigned long) () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#2  0x00007fbcad95ce22 in ?? () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Widgets.so.5
+#3  0x00007fbcadd1017a in ?? () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#4  0x0000000006e1e085 in create_head(void*) ()
+#5  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#6  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 35 (Thread 0x7fbc58956700 (LWP 2318783)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 34 (Thread 0x7fbc59157700 (LWP 2318784)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 33 (Thread 0x7fbc59958700 (LWP 2318785)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 32 (Thread 0x7fbc5a159700 (LWP 2318786)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 31 (Thread 0x7fbc3ed85700 (LWP 2318787)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 30 (Thread 0x7fbc3e584700 (LWP 2318788)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 29 (Thread 0x7fbc3dd83700 (LWP 2318789)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 28 (Thread 0x7fbc3d582700 (LWP 2318790)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 27 (Thread 0x7fbc3cd81700 (LWP 2318791)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 26 (Thread 0x7fbc3c580700 (LWP 2318792)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 25 (Thread 0x7fbc3bd7f700 (LWP 2318793)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 24 (Thread 0x7fbc3b57e700 (LWP 2318794)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 23 (Thread 0x7fbc3ad7d700 (LWP 2318795)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 22 (Thread 0x7fbc3a57c700 (LWP 2318796)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 21 (Thread 0x7fbc39d7b700 (LWP 2318797)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 20 (Thread 0x7fbc3957a700 (LWP 2318798)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 19 (Thread 0x7fbc38d79700 (LWP 2318799)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 18 (Thread 0x7fbc38578700 (LWP 2318800)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 17 (Thread 0x7fbc37d77700 (LWP 2318801)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 16 (Thread 0x7fbc37576700 (LWP 2318802)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 15 (Thread 0x7fbc36d75700 (LWP 2318803)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 14 (Thread 0x7fbc36574700 (LWP 2318804)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 13 (Thread 0x7fbc35d73700 (LWP 2318805)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 12 (Thread 0x7fbc35572700 (LWP 2318806)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 11 (Thread 0x7fbc34d71700 (LWP 2318807)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 10 (Thread 0x7fbc34570700 (LWP 2318808)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 9 (Thread 0x7fbc33d6f700 (LWP 2318809)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 8 (Thread 0x7fbc3356e700 (LWP 2318810)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 7 (Thread 0x7fbc32d6d700 (LWP 2318811)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 6 (Thread 0x7fbc3256c700 (LWP 2318812)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 5 (Thread 0x7fbc31d6b700 (LWP 2318813)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 4 (Thread 0x7fbc3156a700 (LWP 2318814)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 3 (Thread 0x7fbc2fe68700 (LWP 2383514)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00007fbcb465e85c in std::condition_variable::wait(std::unique_lock<std::mutex>&) () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/lib/64bit/libstdc++.so.6
+#2  0x000000000e589f20 in spThread::spThreadPool::Worker<void>::loop() ()
+#3  0x00007fbcb4663af0 in ?? () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/lib/64bit/libstdc++.so.6
+#4  0x0000000006e1e085 in create_head(void*) ()
+#5  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#6  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 2 (Thread 0x7fbc15cd3700 (LWP 2383585)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000f641c23 in npiThrdCostGradWR_wkrThrd(void*) ()
+#2  0x0000000006e1e085 in create_head(void*) ()
+#3  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+Thread 1 (Thread 0x7fbc9cd0b980 (LWP 2315482)):
+#0  0x00007fbca5d21e52 in waitpid () from /lib64/libc.so.6
+#1  0x00007fbca5c757c7 in do_system () from /lib64/libc.so.6
+#2  0x0000000018b77bb2 in syStackTraceDump(_IO_FILE*, bool) ()
+#3  0x0000000018b77fb9 in syStackTrace ()
+#4  0x0000000006a108e7 in rdaiErrorHandler(int, siginfo_t*, void*) ()
+#5  0x000000000ae967d7 in goSignalHandler::executeAction(int, siginfo_t*, void*) ()
+#6  0x000000000ae968dc in goSignalHandler::executeSigAction(int, siginfo_t*, void*) ()
+#7  <signal handler called>
+#8  0x000000000bbb2d70 in Ccopt::Common::AssertionFailed::~AssertionFailed() ()
+#9  0x000000000b38eb7d in Ccopt::Analysis::Edi::PreRouteRCExtractor::PreRouteRCExtractor(tosRcCorner*, bool, double, bool) ()
+#10 0x000000000b39b108 in Ccopt::Analysis::Edi::RCNetImpl::Extract(Ccopt::Analysis::Edi::RouteEst*, bool) ()
+#11 0x000000000b39c6bf in Ccopt::Analysis::Edi::RCNetImpl::Extract(Ccopt::Analysis::Edi::RouteEstBase*, bool) ()
+#12 0x000000000b39f147 in Ccopt::Analysis::Edi::RCNet::ExtractFromRouteEst(boost::shared_ptr<Ccopt::Analysis::Edi::RouteEstBase>) ()
+#13 0x000000000cc8c13a in Ccopt::Route::Estimate::Estimator::GetRCNet(Ccopt::Netlist::OperatingConfig const*) const ()
+#14 0x000000000b49680c in Ccopt::Analysis::StageDelay::StageDelayModel::Internals::OpConfData::SetRoute(Ccopt::Analysis::StageDelay::StageDelayModelConfig const&, Ccopt::Route::Estimate::Estimator const&, Ccopt::Netlist::OperatingConfig const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>) ()
+#15 0x000000000b4a9806 in Ccopt::Analysis::StageDelay::StageDelayModel::Internals::SetRoute(Ccopt::Route::Estimate::Estimator const&, unsigned int) ()
+#16 0x000000000b2e6892 in (anonymous namespace)::FindCellCellDelay(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellPin const*, Ccopt::CellLib::CellPin const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Analysis::STA::SignalType, Ccopt::Analysis::DrivenLoad const&, double, Ccopt::Geometry::Distance, Ccopt::Analysis::StageDelay::TimeAndSensitivity&, Ccopt::Analysis::StageDelay::TimeAndSensitivity&, Ccopt::Analysis::StageDelay::SlewSensAndWaveform&, Ccopt::Analysis::STA::Event, double*, double*, double*, double, Ccopt::Netlist::CellInst const*, Ccopt::Analysis::Edi::DelayCalcMethod const&, Ccopt::Common::Thing<Ccopt::Common::MaxCapacitanceTarget, false> const&, Ccopt::Analysis::Details::LoadPinDistributionMethod const&, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>) ()
+#17 0x000000000b2e8d56 in Ccopt::Analysis::FindCellCellDelaySocv(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellPin const*, Ccopt::CellLib::CellPin const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Analysis::STA::SignalType, Ccopt::Analysis::DrivenLoad const&, double, Ccopt::Geometry::Distance, Ccopt::Analysis::StageDelay::TimeAndSensitivity&, Ccopt::Analysis::StageDelay::TimeAndSensitivity&, Ccopt::Analysis::StageDelay::SlewSensAndWaveform&, Ccopt::Analysis::STA::Event, double*, double*, double*, double, Ccopt::Netlist::CellInst const*, Ccopt::Analysis::Edi::DelayCalcMethod const&, Ccopt::Common::Thing<Ccopt::Common::MaxCapacitanceTarget, false>, Ccopt::Analysis::Details::LoadPinDistributionMethod const&, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>) ()
+#18 0x000000000b2e94ce in Ccopt::Analysis::FindCellCellDelay(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellPin const*, Ccopt::CellLib::CellPin const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Analysis::STA::SignalType, Ccopt::Analysis::DrivenLoad const&, double, Ccopt::Geometry::Distance, double&, double&, double&, Ccopt::Analysis::STA::Event, double*, double*, double*, double, Ccopt::Netlist::CellInst const*, Ccopt::Analysis::Edi::DelayCalcMethod const&, Ccopt::Common::Thing<Ccopt::Common::MaxCapacitanceTarget, false>, Ccopt::Analysis::Details::LoadPinDistributionMethod const&, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>) ()
+#19 0x000000000b2e9a59 in (anonymous namespace)::CallFindCellCellDelay(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellPin const*, Ccopt::CellLib::CellPin const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Analysis::DrivenLoad const&, double, Ccopt::Geometry::Distance, double&, double&, double&, Ccopt::Analysis::STA::Event, double*, double*, double, Ccopt::Analysis::Details::LoadPinDistributionMethod const&, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>) ()
+#20 0x000000000b2e9f49 in Ccopt::Analysis::FindBufBufDelay(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellDeclaration const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, double, Ccopt::Geometry::Distance, double&, double&, double&, Ccopt::Analysis::STA::Event, double, double*, double*, double, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>) ()
+#21 0x000000000b2ea9b8 in FindConvergedSlewBufBufDelay(Ccopt::Netlist::Interface&, boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::CellLib::CellDeclaration const*, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Geometry::Distance, bool, double&, double&, double&, double*, double*, double, Ccopt::Analysis::STA::SignalType, double) [clone .constprop.0] ()
+#22 0x000000000b2eb2de in (anonymous namespace)::FindConvergedSlewBufBufDelayBothEdges(Ccopt::Netlist::Interface&, boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::CellLib::CellDeclaration const*, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Geometry::Distance, double&, double&, double&, double*, double*, double, Ccopt::Analysis::STA::Event, Ccopt::Analysis::STA::SignalType, double) ()
+#23 0x000000000b2eba93 in Ccopt::Analysis::CellCharacterization::ConvergedCharacteristicsAtDist(Ccopt::Geometry::Distance, double) const ()
+#24 0x000000000b6bbc2f in Ccopt::CellLib::(anonymous namespace)::CalculateInternalDelay(Ccopt::CellLib::CellDeclaration const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>) ()
+#25 0x000000000b6beead in Ccopt::CellLib::LibCellProperty::GetInternalDelay() ()
+#26 0x000000000c045027 in Ccopt::Cts::(anonymous namespace)::TrimLibraryCellsByClustering(Ccopt::Common::SmallVector<Ccopt::CellLib::CellDeclaration const*, true> const&, std::set<Ccopt::CellLib::CellDeclaration const*, Ccopt::Common::Uid::UidPtrLess, std::allocator<Ccopt::CellLib::CellDeclaration const*> >&, unsigned int, Ccopt::Cts::(anonymous namespace)::TrimmingMode, bool, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>) ()
+#27 0x000000000c047c99 in Ccopt::Cts::TreeBalancerCellSetImpl::Trim(std::set<Ccopt::CellLib::CellDeclaration const*, Ccopt::Common::Uid::UidPtrLess, std::allocator<Ccopt::CellLib::CellDeclaration const*> > const&, Ccopt::Cts::PreBalanceOutput) const ()
+#28 0x000000000bf73cfa in Ccopt::Cts::TreeBalancer::SelectDriverCells(std::map<Ccopt::Netlist::PowerContextAndIndex, Ccopt::Cts::TreeBalancerCellSet const*, std::less<Ccopt::Netlist::PowerContextAndIndex>, std::allocator<std::pair<Ccopt::Netlist::PowerContextAndIndex const, Ccopt::Cts::TreeBalancerCellSet const*> > >&, std::map<Ccopt::Netlist::PowerContext, std::string, std::less<Ccopt::Netlist::PowerContext>, std::allocator<std::pair<Ccopt::Netlist::PowerContext const, std::string> > >&, Ccopt::Cts::PreBalanceOutput, Ccopt::Cts::TreeBalancer::DriverCellType) ()
+#29 0x000000000bf887dc in Ccopt::Cts::TreeBalancer::PreBalanceSelectCells(Ccopt::Cts::PreBalanceOutput) ()
+#30 0x000000000bf9792d in Ccopt::Cts::TreeBalancer::PreBalance(Ccopt::Cts::PreBalanceOutput, bool, Ccopt::Cts::CheckPlaceableArea) ()
+#31 0x000000000be9ea26 in Ccopt::Cts::BalancerImpl::BuildConstraints(Ccopt::Cts::Constraints&, boost::function<bool (Ccopt::DesignObjects::DesignObjectPtr<Ccopt::ClockTree::SkewGroup>)> const&, Ccopt::Cts::Constraints::MaybeUpdateLastTargets, Ccopt::Cts::PreBalanceOutput, Ccopt::Cts::Balancer::PreBalanceResult*, Ccopt::Cts::CheckPlaceableArea) ()
+#32 0x000000000bfa0600 in Ccopt::Cts::Balancer::PreBalance(Ccopt::Cts::PreBalanceOutput, Ccopt::Cts::Constraints*, boost::function<bool (Ccopt::DesignObjects::DesignObjectPtr<Ccopt::ClockTree::SkewGroup>)> const&, Ccopt::Cts::Constraints::MaybeUpdateLastTargets, Ccopt::Cts::CheckPlaceableArea) ()
+#33 0x000000000b571f92 in (anonymous namespace)::LegacySynthClockTreesCmd(void*, Tcl_Interp*, int, Tcl_Obj* const*) ()
+#34 0x000000000b4ba6b8 in (anonymous namespace)::CmdEntry(void*, Tcl_Interp*, int, Tcl_Obj* const*) ()
+#35 0x000000001b7d9c90 in tcmBaseCmd::execute(Tcl_Interp*, int, Tcl_Obj**) ()
+#36 0x000000001b7ce3e7 in tcmMgr::objCmdParser(void*, Tcl_Interp*, int, Tcl_Obj**) ()
+#37 0x00000000292cb112 in TclNRRunCallbacks ()
+#38 0x00000000292cd324 in TclEvalEx ()
+#39 0x00000000292cdd73 in Tcl_EvalEx ()
+#40 0x00000000292cdd96 in Tcl_Eval ()
+#41 0x000000000af42cef in goPerfLogTATProfileCmd::executeScript(Tcl_Interp*) ()
+#42 0x000000000af44ce7 in goPerfLogTATProfileCmd::execute(Tcl_Interp*) ()
+#43 0x000000000af47cb4 in oiTcl::CmdExec<goPerfLogTATProfileCmd>::executeCmdMain(oiTcl::MasterCmd*) ()
+#44 0x000000000a7aee90 in oiTcl::CmdExecInterface::execMain(oiTcl::MasterCmd*, int, Tcl_Obj* const*) ()
+#45 0x000000000af3d795 in int oiTcl::CmdManager::invokeCmd<goPerfLogTATProfileCmd>(void*, Tcl_Interp*, int, Tcl_Obj* const*, tcmObjCmd*) ()
+#46 0x000000001b7d9ce4 in tcmBaseCmd::execute(Tcl_Interp*, int, Tcl_Obj**) ()
+#47 0x000000001b7ce3e7 in tcmMgr::objCmdParser(void*, Tcl_Interp*, int, Tcl_Obj**) ()
+#48 0x00000000292cb112 in TclNRRunCallbacks ()
+#49 0x0000000029368dd4 in Tcl_RecordAndEvalObj ()
+#50 0x0000000029368f49 in Tcl_RecordAndEval ()
+#51 0x0000000006b0bdd7 in rdaEditCmdLineEnd(char*) ()
+#52 0x0000000014debf9f in seConsole::sesMode::DoExecute(std::string const&, void*) ()
+#53 0x000000001648a0c0 in Redline::EmacsMode::AcceptLine() ()
+#54 0x0000000016491881 in Redline::ModeCommand<Redline::EmacsMode>::CommandFnNoKeys(boost::function<void (Redline::EmacsMode&)> const&, Redline::Editor&) ()
+#55 0x000000001649fa1b in boost::detail::function::void_function_obj_invoker2<boost::_bi::bind_t<boost::_bi::unspecified, boost::function<void (Redline::Editor&)>, boost::_bi::list1<boost::arg<1> > >, void, Redline::Editor&, Redline::KeyCombination const&>::invoke(boost::detail::function::function_buffer&, Redline::Editor&, Redline::KeyCombination const&) ()
+#56 0x000000001649f23c in Redline::Command::Run(Redline::Editor&, Redline::KeyCombination const&) const ()
+#57 0x0000000016486df7 in Redline::Editor::Internals::Run(bool) ()
+#58 0x00000000293cf2de in FileHandlerEventProc ()
+#59 0x000000002938fae9 in Tcl_ServiceEvent ()
+#60 0x000000002938fdf9 in Tcl_DoOneEvent ()
+#61 0x00007fbcaed2e23a in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/lib/64bit/libtq.so
+#62 0x00007fbcadeed0ca in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#63 0x00007fbcadef5954 in QCoreApplication::exec() () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#64 0x00007fbcaed2d897 in TqApplication::exec() () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/lib/64bit/libtq.so
+#65 0x0000000006ae92dc in edi_app_init(Tcl_Interp*) ()
+#66 0x000000002938a53c in Tcl_MainEx ()
+#67 0x0000000005e7a681 in main ()
+========================================
+                gdb
+========================================
+Using: gdb
+
+warning: Could not load shared library symbols for linux-vdso.so.1.
+Do you need "set solib-search-path" or "set sysroot"?
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+[New LWP 2383585]
+[New LWP 2383514]
+[New LWP 2318814]
+[New LWP 2318813]
+[New LWP 2318812]
+[New LWP 2318811]
+[New LWP 2318810]
+[New LWP 2318809]
+[New LWP 2318808]
+[New LWP 2318807]
+[New LWP 2318806]
+[New LWP 2318805]
+[New LWP 2318804]
+[New LWP 2318803]
+[New LWP 2318802]
+[New LWP 2318801]
+[New LWP 2318800]
+[New LWP 2318799]
+[New LWP 2318798]
+[New LWP 2318797]
+[New LWP 2318796]
+[New LWP 2318795]
+[New LWP 2318794]
+[New LWP 2318793]
+[New LWP 2318792]
+[New LWP 2318791]
+[New LWP 2318790]
+[New LWP 2318789]
+[New LWP 2318788]
+[New LWP 2318787]
+[New LWP 2318786]
+[New LWP 2318785]
+[New LWP 2318784]
+[New LWP 2318783]
+[New LWP 2316111]
+[New LWP 2315833]
+[New LWP 2315755]
+[New LWP 2315712]
+[New LWP 2315637]
+[New LWP 2315635]
+[New LWP 2315631]
+[New LWP 2315630]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7fff29be3000
+0x00007fbca5d21e52 in waitpid () from /lib64/libc.so.6
+
+Thread 43 (Thread 0x7fbc950f7700 (LWP 2315630)):
+#0  0x00007fbca6819877 in accept () from /lib64/libpthread.so.0
+#1  0x0000000027b444ca in ProcessInfo::handleConnection(void*) ()
+#2  0x0000000006e1e085 in create_head(void*) ()
+#3  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 42 (Thread 0x7fbc948f6700 (LWP 2315631)):
+#0  0x00007fbca5d4f21f in select () from /lib64/libc.so.6
+#1  0x0000000027b3d0cb in ProcessInfo::sampleUsage(void*) ()
+#2  0x0000000006e1e085 in create_head(void*) ()
+#3  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 41 (Thread 0x7fbc93de9700 (LWP 2315635)):
+#0  0x00007fbca6819e20 in nanosleep () from /lib64/libpthread.so.0
+#1  0x0000000008ac0a8d in rdaiLicRecheck(void*) ()
+#2  0x0000000006e1e085 in create_head(void*) ()
+#3  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 40 (Thread 0x7fbc92de7700 (LWP 2315637)):
+#0  0x00007fbca5d220a8 in nanosleep () from /lib64/libc.so.6
+#1  0x00007fbca5d21fae in sleep () from /lib64/libc.so.6
+#2  0x0000000018b9159a in syiPeakMem(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 39 (Thread 0x7fbc921c4700 (LWP 2315712)):
+#0  0x00007fbca5d4cae1 in poll () from /lib64/libc.so.6
+#1  0x00007fbcaaae96cf in ?? () from /lib64/libxcb.so.1
+#2  0x00007fbcaaaeb35a in xcb_wait_for_event () from /lib64/libxcb.so.1
+#3  0x00007fbc92219a59 in ?? () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5XcbQpa.so.5
+#4  0x00007fbcadd1017a in ?? () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#5  0x0000000006e1e085 in create_head(void*) ()
+#6  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#7  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 38 (Thread 0x7fbc8fa41700 (LWP 2315755)):
+#0  0x00007fbca5d4f21f in select () from /lib64/libc.so.6
+#1  0x00000000293cefd8 in NotifierThreadProc ()
+#2  0x0000000006e1e085 in create_head(void*) ()
+#3  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 37 (Thread 0x7fbc8ea9b700 (LWP 2315833)):
+#0  0x00007fbca5c6938c in sigtimedwait () from /lib64/libc.so.6
+#1  0x00007fbca681a51c in sigwait () from /lib64/libpthread.so.0
+#2  0x0000000006a0e7b0 in ctrlCHandle(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 36 (Thread 0x7fbc6949d700 (LWP 2316111)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00007fbcadd10fbb in QWaitCondition::wait(QMutex*, unsigned long) () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#2  0x00007fbcad95ce22 in ?? () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Widgets.so.5
+#3  0x00007fbcadd1017a in ?? () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#4  0x0000000006e1e085 in create_head(void*) ()
+#5  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#6  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 35 (Thread 0x7fbc58956700 (LWP 2318783)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 34 (Thread 0x7fbc59157700 (LWP 2318784)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 33 (Thread 0x7fbc59958700 (LWP 2318785)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 32 (Thread 0x7fbc5a159700 (LWP 2318786)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 31 (Thread 0x7fbc3ed85700 (LWP 2318787)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 30 (Thread 0x7fbc3e584700 (LWP 2318788)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 29 (Thread 0x7fbc3dd83700 (LWP 2318789)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 28 (Thread 0x7fbc3d582700 (LWP 2318790)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 27 (Thread 0x7fbc3cd81700 (LWP 2318791)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 26 (Thread 0x7fbc3c580700 (LWP 2318792)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 25 (Thread 0x7fbc3bd7f700 (LWP 2318793)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 24 (Thread 0x7fbc3b57e700 (LWP 2318794)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 23 (Thread 0x7fbc3ad7d700 (LWP 2318795)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 22 (Thread 0x7fbc3a57c700 (LWP 2318796)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 21 (Thread 0x7fbc39d7b700 (LWP 2318797)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 20 (Thread 0x7fbc3957a700 (LWP 2318798)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 19 (Thread 0x7fbc38d79700 (LWP 2318799)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 18 (Thread 0x7fbc38578700 (LWP 2318800)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 17 (Thread 0x7fbc37d77700 (LWP 2318801)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 16 (Thread 0x7fbc37576700 (LWP 2318802)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 15 (Thread 0x7fbc36d75700 (LWP 2318803)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 14 (Thread 0x7fbc36574700 (LWP 2318804)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 13 (Thread 0x7fbc35d73700 (LWP 2318805)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 12 (Thread 0x7fbc35572700 (LWP 2318806)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7fbc34d71700 (LWP 2318807)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 10 (Thread 0x7fbc34570700 (LWP 2318808)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 9 (Thread 0x7fbc33d6f700 (LWP 2318809)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 8 (Thread 0x7fbc3356e700 (LWP 2318810)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7fbc32d6d700 (LWP 2318811)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7fbc3256c700 (LWP 2318812)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7fbc31d6b700 (LWP 2318813)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7fbc3156a700 (LWP 2318814)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x0000000028cc450e in CRL::Threading::ThreadPoolBase::thread(unsigned int) ()
+#2  0x0000000028cc46bf in CRL::Threading::ThreadPoolBase::thread(void*) ()
+#3  0x0000000006e1e085 in create_head(void*) ()
+#4  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7fbc2fe68700 (LWP 2383514)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00007fbcb465e85c in std::condition_variable::wait(std::unique_lock<std::mutex>&) () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/lib/64bit/libstdc++.so.6
+#2  0x000000000e589f20 in spThread::spThreadPool::Worker<void>::loop() ()
+#3  0x00007fbcb4663af0 in ?? () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/lib/64bit/libstdc++.so.6
+#4  0x0000000006e1e085 in create_head(void*) ()
+#5  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#6  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7fbc15cd3700 (LWP 2383585)):
+#0  0x00007fbca6816371 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x000000000f641c23 in npiThrdCostGradWR_wkrThrd(void*) ()
+#2  0x0000000006e1e085 in create_head(void*) ()
+#3  0x00007fbca68101ca in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fbca5c53953 in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7fbc9cd0b980 (LWP 2315482)):
+#0  0x00007fbca5d21e52 in waitpid () from /lib64/libc.so.6
+#1  0x00007fbca5c757c7 in do_system () from /lib64/libc.so.6
+#2  0x0000000018b77bb2 in syStackTraceDump(_IO_FILE*, bool) ()
+#3  0x0000000018b77fb9 in syStackTrace ()
+#4  0x0000000006a108e7 in rdaiErrorHandler(int, siginfo_t*, void*) ()
+#5  0x000000000ae967d7 in goSignalHandler::executeAction(int, siginfo_t*, void*) ()
+#6  0x000000000ae968dc in goSignalHandler::executeSigAction(int, siginfo_t*, void*) ()
+#7  <signal handler called>
+#8  0x000000000bbb2d70 in Ccopt::Common::AssertionFailed::~AssertionFailed() ()
+#9  0x000000000b38eb7d in Ccopt::Analysis::Edi::PreRouteRCExtractor::PreRouteRCExtractor(tosRcCorner*, bool, double, bool) ()
+#10 0x000000000b39b108 in Ccopt::Analysis::Edi::RCNetImpl::Extract(Ccopt::Analysis::Edi::RouteEst*, bool) ()
+#11 0x000000000b39c6bf in Ccopt::Analysis::Edi::RCNetImpl::Extract(Ccopt::Analysis::Edi::RouteEstBase*, bool) ()
+#12 0x000000000b39f147 in Ccopt::Analysis::Edi::RCNet::ExtractFromRouteEst(boost::shared_ptr<Ccopt::Analysis::Edi::RouteEstBase>) ()
+#13 0x000000000cc8c13a in Ccopt::Route::Estimate::Estimator::GetRCNet(Ccopt::Netlist::OperatingConfig const*) const ()
+#14 0x000000000b49680c in Ccopt::Analysis::StageDelay::StageDelayModel::Internals::OpConfData::SetRoute(Ccopt::Analysis::StageDelay::StageDelayModelConfig const&, Ccopt::Route::Estimate::Estimator const&, Ccopt::Netlist::OperatingConfig const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>) ()
+#15 0x000000000b4a9806 in Ccopt::Analysis::StageDelay::StageDelayModel::Internals::SetRoute(Ccopt::Route::Estimate::Estimator const&, unsigned int) ()
+#16 0x000000000b2e6892 in (anonymous namespace)::FindCellCellDelay(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellPin const*, Ccopt::CellLib::CellPin const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Analysis::STA::SignalType, Ccopt::Analysis::DrivenLoad const&, double, Ccopt::Geometry::Distance, Ccopt::Analysis::StageDelay::TimeAndSensitivity&, Ccopt::Analysis::StageDelay::TimeAndSensitivity&, Ccopt::Analysis::StageDelay::SlewSensAndWaveform&, Ccopt::Analysis::STA::Event, double*, double*, double*, double, Ccopt::Netlist::CellInst const*, Ccopt::Analysis::Edi::DelayCalcMethod const&, Ccopt::Common::Thing<Ccopt::Common::MaxCapacitanceTarget, false> const&, Ccopt::Analysis::Details::LoadPinDistributionMethod const&, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>) ()
+#17 0x000000000b2e8d56 in Ccopt::Analysis::FindCellCellDelaySocv(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellPin const*, Ccopt::CellLib::CellPin const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Analysis::STA::SignalType, Ccopt::Analysis::DrivenLoad const&, double, Ccopt::Geometry::Distance, Ccopt::Analysis::StageDelay::TimeAndSensitivity&, Ccopt::Analysis::StageDelay::TimeAndSensitivity&, Ccopt::Analysis::StageDelay::SlewSensAndWaveform&, Ccopt::Analysis::STA::Event, double*, double*, double*, double, Ccopt::Netlist::CellInst const*, Ccopt::Analysis::Edi::DelayCalcMethod const&, Ccopt::Common::Thing<Ccopt::Common::MaxCapacitanceTarget, false>, Ccopt::Analysis::Details::LoadPinDistributionMethod const&, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>) ()
+#18 0x000000000b2e94ce in Ccopt::Analysis::FindCellCellDelay(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellPin const*, Ccopt::CellLib::CellPin const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Analysis::STA::SignalType, Ccopt::Analysis::DrivenLoad const&, double, Ccopt::Geometry::Distance, double&, double&, double&, Ccopt::Analysis::STA::Event, double*, double*, double*, double, Ccopt::Netlist::CellInst const*, Ccopt::Analysis::Edi::DelayCalcMethod const&, Ccopt::Common::Thing<Ccopt::Common::MaxCapacitanceTarget, false>, Ccopt::Analysis::Details::LoadPinDistributionMethod const&, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>) ()
+#19 0x000000000b2e9a59 in (anonymous namespace)::CallFindCellCellDelay(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellPin const*, Ccopt::CellLib::CellPin const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Analysis::DrivenLoad const&, double, Ccopt::Geometry::Distance, double&, double&, double&, Ccopt::Analysis::STA::Event, double*, double*, double, Ccopt::Analysis::Details::LoadPinDistributionMethod const&, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>) ()
+#20 0x000000000b2e9f49 in Ccopt::Analysis::FindBufBufDelay(boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::CellLib::CellDeclaration const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, double, Ccopt::Geometry::Distance, double&, double&, double&, Ccopt::Analysis::STA::Event, double, double*, double*, double, Ccopt::Common::EnumSet<Ccopt::Route::Estimate::EstimatorControls, (Ccopt::Route::Estimate::EstimatorControls)4>) ()
+#21 0x000000000b2ea9b8 in FindConvergedSlewBufBufDelay(Ccopt::Netlist::Interface&, boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::CellLib::CellDeclaration const*, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Geometry::Distance, bool, double&, double&, double&, double*, double*, double, Ccopt::Analysis::STA::SignalType, double) [clone .constprop.0] ()
+#22 0x000000000b2eb2de in (anonymous namespace)::FindConvergedSlewBufBufDelayBothEdges(Ccopt::Netlist::Interface&, boost::shared_ptr<Ccopt::Route::RoutingInfo const>, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::CellLib::CellDeclaration const*, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>, Ccopt::Geometry::Distance, double&, double&, double&, double*, double*, double, Ccopt::Analysis::STA::Event, Ccopt::Analysis::STA::SignalType, double) ()
+#23 0x000000000b2eba93 in Ccopt::Analysis::CellCharacterization::ConvergedCharacteristicsAtDist(Ccopt::Geometry::Distance, double) const ()
+#24 0x000000000b6bbc2f in Ccopt::CellLib::(anonymous namespace)::CalculateInternalDelay(Ccopt::CellLib::CellDeclaration const*, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>) ()
+#25 0x000000000b6beead in Ccopt::CellLib::LibCellProperty::GetInternalDelay() ()
+#26 0x000000000c045027 in Ccopt::Cts::(anonymous namespace)::TrimLibraryCellsByClustering(Ccopt::Common::SmallVector<Ccopt::CellLib::CellDeclaration const*, true> const&, std::set<Ccopt::CellLib::CellDeclaration const*, Ccopt::Common::Uid::UidPtrLess, std::allocator<Ccopt::CellLib::CellDeclaration const*> >&, unsigned int, Ccopt::Cts::(anonymous namespace)::TrimmingMode, bool, Ccopt::Analysis::STA::TimingHalfCorner const&, Ccopt::Common::ComparePtr<Ccopt::Netlist::PowerDomain, Ccopt::Netlist::PowerDomainPtrLess>) ()
+#27 0x000000000c047c99 in Ccopt::Cts::TreeBalancerCellSetImpl::Trim(std::set<Ccopt::CellLib::CellDeclaration const*, Ccopt::Common::Uid::UidPtrLess, std::allocator<Ccopt::CellLib::CellDeclaration const*> > const&, Ccopt::Cts::PreBalanceOutput) const ()
+#28 0x000000000bf73cfa in Ccopt::Cts::TreeBalancer::SelectDriverCells(std::map<Ccopt::Netlist::PowerContextAndIndex, Ccopt::Cts::TreeBalancerCellSet const*, std::less<Ccopt::Netlist::PowerContextAndIndex>, std::allocator<std::pair<Ccopt::Netlist::PowerContextAndIndex const, Ccopt::Cts::TreeBalancerCellSet const*> > >&, std::map<Ccopt::Netlist::PowerContext, std::string, std::less<Ccopt::Netlist::PowerContext>, std::allocator<std::pair<Ccopt::Netlist::PowerContext const, std::string> > >&, Ccopt::Cts::PreBalanceOutput, Ccopt::Cts::TreeBalancer::DriverCellType) ()
+#29 0x000000000bf887dc in Ccopt::Cts::TreeBalancer::PreBalanceSelectCells(Ccopt::Cts::PreBalanceOutput) ()
+#30 0x000000000bf9792d in Ccopt::Cts::TreeBalancer::PreBalance(Ccopt::Cts::PreBalanceOutput, bool, Ccopt::Cts::CheckPlaceableArea) ()
+#31 0x000000000be9ea26 in Ccopt::Cts::BalancerImpl::BuildConstraints(Ccopt::Cts::Constraints&, boost::function<bool (Ccopt::DesignObjects::DesignObjectPtr<Ccopt::ClockTree::SkewGroup>)> const&, Ccopt::Cts::Constraints::MaybeUpdateLastTargets, Ccopt::Cts::PreBalanceOutput, Ccopt::Cts::Balancer::PreBalanceResult*, Ccopt::Cts::CheckPlaceableArea) ()
+#32 0x000000000bfa0600 in Ccopt::Cts::Balancer::PreBalance(Ccopt::Cts::PreBalanceOutput, Ccopt::Cts::Constraints*, boost::function<bool (Ccopt::DesignObjects::DesignObjectPtr<Ccopt::ClockTree::SkewGroup>)> const&, Ccopt::Cts::Constraints::MaybeUpdateLastTargets, Ccopt::Cts::CheckPlaceableArea) ()
+#33 0x000000000b571f92 in (anonymous namespace)::LegacySynthClockTreesCmd(void*, Tcl_Interp*, int, Tcl_Obj* const*) ()
+#34 0x000000000b4ba6b8 in (anonymous namespace)::CmdEntry(void*, Tcl_Interp*, int, Tcl_Obj* const*) ()
+#35 0x000000001b7d9c90 in tcmBaseCmd::execute(Tcl_Interp*, int, Tcl_Obj**) ()
+#36 0x000000001b7ce3e7 in tcmMgr::objCmdParser(void*, Tcl_Interp*, int, Tcl_Obj**) ()
+#37 0x00000000292cb112 in TclNRRunCallbacks ()
+#38 0x00000000292cd324 in TclEvalEx ()
+#39 0x00000000292cdd73 in Tcl_EvalEx ()
+#40 0x00000000292cdd96 in Tcl_Eval ()
+#41 0x000000000af42cef in goPerfLogTATProfileCmd::executeScript(Tcl_Interp*) ()
+#42 0x000000000af44ce7 in goPerfLogTATProfileCmd::execute(Tcl_Interp*) ()
+#43 0x000000000af47cb4 in oiTcl::CmdExec<goPerfLogTATProfileCmd>::executeCmdMain(oiTcl::MasterCmd*) ()
+#44 0x000000000a7aee90 in oiTcl::CmdExecInterface::execMain(oiTcl::MasterCmd*, int, Tcl_Obj* const*) ()
+#45 0x000000000af3d795 in int oiTcl::CmdManager::invokeCmd<goPerfLogTATProfileCmd>(void*, Tcl_Interp*, int, Tcl_Obj* const*, tcmObjCmd*) ()
+#46 0x000000001b7d9ce4 in tcmBaseCmd::execute(Tcl_Interp*, int, Tcl_Obj**) ()
+#47 0x000000001b7ce3e7 in tcmMgr::objCmdParser(void*, Tcl_Interp*, int, Tcl_Obj**) ()
+#48 0x00000000292cb112 in TclNRRunCallbacks ()
+#49 0x0000000029368dd4 in Tcl_RecordAndEvalObj ()
+#50 0x0000000029368f49 in Tcl_RecordAndEval ()
+#51 0x0000000006b0bdd7 in rdaEditCmdLineEnd(char*) ()
+#52 0x0000000014debf9f in seConsole::sesMode::DoExecute(std::string const&, void*) ()
+#53 0x000000001648a0c0 in Redline::EmacsMode::AcceptLine() ()
+#54 0x0000000016491881 in Redline::ModeCommand<Redline::EmacsMode>::CommandFnNoKeys(boost::function<void (Redline::EmacsMode&)> const&, Redline::Editor&) ()
+#55 0x000000001649fa1b in boost::detail::function::void_function_obj_invoker2<boost::_bi::bind_t<boost::_bi::unspecified, boost::function<void (Redline::Editor&)>, boost::_bi::list1<boost::arg<1> > >, void, Redline::Editor&, Redline::KeyCombination const&>::invoke(boost::detail::function::function_buffer&, Redline::Editor&, Redline::KeyCombination const&) ()
+#56 0x000000001649f23c in Redline::Command::Run(Redline::Editor&, Redline::KeyCombination const&) const ()
+#57 0x0000000016486df7 in Redline::Editor::Internals::Run(bool) ()
+#58 0x00000000293cf2de in FileHandlerEventProc ()
+#59 0x000000002938fae9 in Tcl_ServiceEvent ()
+#60 0x000000002938fdf9 in Tcl_DoOneEvent ()
+#61 0x00007fbcaed2e23a in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/lib/64bit/libtq.so
+#62 0x00007fbcadeed0ca in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#63 0x00007fbcadef5954 in QCoreApplication::exec() () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/Qt/v5//64bit/lib/libcdsQt5Core.so.5
+#64 0x00007fbcaed2d897 in TqApplication::exec() () from /home/cadence/install_RB_8.7/INNOVUS211/tools.lnx86/lib/64bit/libtq.so
+#65 0x0000000006ae92dc in edi_app_init(Tcl_Interp*) ()
+#66 0x000000002938a53c in Tcl_MainEx ()
+#67 0x0000000005e7a681 in main ()
+A debugging session is active.
+
+	Inferior 1 [process 2315482] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+Crashed in AAE on net Unknown net.
+
+*** Memory Usage v#1 (Current mem = 2314.680M, initial mem = 483.871M) ***
+*** Message Summary: 64373 warning(s), 12 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:33, real=1:08:50, mem=2314.7M) ---

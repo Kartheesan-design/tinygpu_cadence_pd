@@ -1,0 +1,55 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Jun 22 13:07:40 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+restoreDesign tinygpuroute.dat gpu
+selectWire 164.5000 0.8600 165.2000 276.3500 10 VSS
+fit
+checkPlace
+verify_drc
+deselectAll
+sroute -connect corePin -layerChangeRange {M1 M2} -blockPinTarget nearestTarget
+setNanoRouteMode -routeWithEco true
+ecoRoute -fix_drc
+verify_drc -limit 2000
+routeDesign -globalRoute
+routeDesign -detailRoute
+verify_drc
+setNanoRouteMode -routeBottomRoutingLayer 2
+routeDesign
+ecoRoute -fix_drc
+verify_drc
+reportViolation -file drc_report.txt
+sroute -connect {corePin padPin padRing} -layerChangeRange {M1 M11} -blockPinTarget nearestTarget -nets {VDD VSS}
+routeDesign
+verify_drc
+addRing -nets {VDD VSS} -width 2 -spacing 1 -layer_top M10 -layer_bottom M10 -layer_left M11 -layer_right M11
+sroute -connect corePin -nets {VDD VSS}
+routeDesign
+verify_drc
+verifyConnectivity -type special -report power_check.rpt
+routeDesign
+verify_drc
+verifyConnectivity
+routeDesign -verbose
+setNanoRouteMode -quiet false
+addRing -nets {VDD VSS} -width 2 -spacing 1 -layer_top M10 -layer_bottom M10 -layer_left M11 -layer_right M11
+addRing -nets {VDD VSS} -width 1 -spacing 0.5 -layer {top M10 bottom M10 left M11 right M11} -type core -offset 1
+addStripe -nets {VDD VSS} -layer M9 -direction horizontal -width 1 -set_to_set_distance 20 -spacing 0.5 -start_from left -start_offset 5

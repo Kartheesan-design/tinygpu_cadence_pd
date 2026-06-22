@@ -1,0 +1,152 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	-stylus 
+Date:		Thu Apr 16 21:16:12 2026
+Host:		cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB)
+OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+License:
+		[21:16:12.400233] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_2851408_cadence-server.vit.ac.in_22bec0039_Ay6vCg.
+
+Change the soft stacksize limit to 0.2%RAM (2062 mbytes). Set global soft_stack_size_limit to change the value.
+[INFO] Loading PVS 22.20 fill procedures
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> set_db init_power_nets VDD
+@innovus 2> set_db init_ground_nets VSS
+@innovus 3> #################################
+read_mmmc gpu.mmmc
+#################################
+#@ Begin verbose source gpu.mmmc (pre)
+@file 1: # =============================================================
+@file 2: # MMMC Configuration File for Innovus (Stylus)
+@file 3: # Design   : gpu
+@file 4: # PDK      : GPDK090
+@file 5: # =============================================================
+@file 6:
+@file 7: # -------------------------------------------------------------
+@file 8: # 1. LIBRARY SETS
+@file 9: # -------------------------------------------------------------
+@file 10:
+@@file 11: create_library_set -name lib_slow \
+    -timing [list \
+        slow.lib \
+    ]
+**ERROR: (TCLCMD-995):	Can not open file 'slow.lib' for library set
+**ERROR: (IMPSE-110):	File 'gpu.mmmc' line 11: errors out.
+#@ End verbose source gpu.mmmc
+
+    while executing
+"create_library_set -name lib_slow \
+    -timing [list \
+        slow.lib \
+    ]"
+    (file "gpu.mmmc" line 11)
+    invoked from within
+"::se_source_orig gpu.mmmc"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    invoked from within
+"if {[::SE::source_verbose_file_state $file_name] == 1} {
+              ::SE::source_verbose_start $file_name
+              set st [uplevel [concat ::s..."
+    invoked from within
+"if {$useTclVerbose} {
+          # use tcl internal method
+          set st ""
+          if {[::SE::source_verbose_file_state $file_name] == 1} {
+     ..."
+    invoked from within
+"if {$largeFile == 1} {
+    if {$enableVerbose == 0 && [::SE::isEchoFile] == 1} {
+      $putCmd "Sourcing $file_name"
+    }
+    set st [uplevel [concat..."
+    (procedure "source" line 157)
+    invoked from within
+"source gpu.mmmc"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 {source gpu.mmmc}"
+**ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_mmmc gpu.mmmc'.For more details, refer to error message from console.
+
+#################################
+read_physical -lef {../lef/gsclib090_tech.lef ../lef/gsclib090_macro.lef ../lef/gsclib090_translated.lef ../lef/gsclib090_translated_ref.lef}
+#################################
+
+Loading LEF file ../lef/gsclib090_tech.lef ...
+**ERROR: (IMPLF-111):	Layer 'Metal1' is not defined
+**ERROR: (IMPLF-224):	Failed to create via 'VIA1X'.
+**ERROR: (IMPLF-3):	Error found when processing LEF file '../lef/gsclib090_tech.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus'.
+Type 'man IMPLF-3' for more detail.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+**ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../lef/gsclib090_tech.lef ../lef/gsclib090_macro.lef ../lef/gsclib090_translated.lef ../lef/gsclib090_translated_ref.lef}'.For more details, refer to error message from console.
+
+#################################
+read_netlist ../synthesis/output/gpu_netlist.v -top gpu
+#################################
+**ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v 
+read_power_intent -1801 top.1801	    #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details.
+**ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_netlist ../synthesis/output/gpu_netlist.v -top gpu'.For more details, refer to error message from console.
+
+**ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+The MMMC init sequence looks like this: 
+read_mmmc top.mmmc 
+read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+read_netlist top.v 
+read_power_intent -1801 top.1801	    #only for MSV designs 
+init_design 
+
+Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+read_libs all.lib 
+read_netlist top.v 
+read_sdc top.sdc 
+init_design 
+
+See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+Common UI User Guide for more details.
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+
+@innovus 3> 
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu Apr 16 21:21:20 2026
+  Total CPU time:     0:00:32
+  Total real time:    0:05:10
+  Peak memory (main): 1030.02MB
+
+
+*** Memory Usage v#1 (Current mem = 1035.570M, initial mem = 492.871M) ***
+*** Message Summary: 0 warning(s), 13 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:31.0, real=0:05:08, mem=1035.6M) ---

@@ -1,0 +1,318 @@
+[04/16 21:22:01      0s] 
+[04/16 21:22:01      0s] Cadence Innovus(TM) Implementation System.
+[04/16 21:22:01      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/16 21:22:01      0s] 
+[04/16 21:22:01      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[04/16 21:22:01      0s] Options:	-stylus 
+[04/16 21:22:01      0s] Date:		Thu Apr 16 21:22:01 2026
+[04/16 21:22:01      0s] Host:		cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB)
+[04/16 21:22:01      0s] OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+[04/16 21:22:01      0s] 
+[04/16 21:22:01      0s] License:
+[04/16 21:22:01      0s] 		[21:22:01.400193] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+[04/16 21:22:01      0s] 
+[04/16 21:22:01      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[04/16 21:22:01      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[04/16 21:22:10      6s] 
+[04/16 21:22:10      6s] 
+[04/16 21:22:13      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[04/16 21:22:15     11s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[04/16 21:22:15     11s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[04/16 21:22:15     11s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[04/16 21:22:15     11s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[04/16 21:22:15     11s] @(#)CDS: CPE v21.15-s076
+[04/16 21:22:15     11s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[04/16 21:22:15     11s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[04/16 21:22:15     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[04/16 21:22:15     11s] @(#)CDS: RCDB 11.15.0
+[04/16 21:22:15     11s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[04/16 21:22:15     11s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[04/16 21:22:15     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_2867083_cadence-server.vit.ac.in_22bec0039_WhBBMl.
+
+[04/16 21:22:15     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_2867083_cadence-server.vit.ac.in_22bec0039_WhBBMl.
+[04/16 21:22:15     11s] 
+[04/16 21:22:15     11s] Change the soft stacksize limit to 0.2%RAM (2062 mbytes). Set global soft_stack_size_limit to change the value.
+[04/16 21:22:17     11s] [INFO] Loading PVS 22.20 fill procedures
+[04/16 21:22:18     12s] 
+[04/16 21:22:18     12s] **INFO:  MMMC transition support version v31-84 
+[04/16 21:22:18     12s] 
+[04/16 21:22:22     14s] @innovus 1> set_db init_power_nets VDD
+[04/16 21:23:23     17s] @innovus 2> set_db init_ground_nets VSS
+[04/16 21:23:23     17s] @innovus 3> #################################
+[04/16 21:23:23     17s] read_physical -lef {../lef/gsclib090_tech.lef ../lef/gsclib090_translated.lef ../lef/gsclib090_translated_ref.lef ../lef/gsclib090_macro.lef}
+[04/16 21:23:23     17s] #################################
+[04/16 21:23:23     17s] 
+[04/16 21:23:23     17s] Loading LEF file ../lef/gsclib090_tech.lef ...
+[04/16 21:23:23     17s] **ERROR: (IMPLF-111):	Layer 'Metal1' is not defined
+[04/16 21:23:23     17s] **ERROR: (IMPLF-224):	Failed to create via 'VIA1X'.
+[04/16 21:23:23     17s] **ERROR: (IMPLF-3):	Error found when processing LEF file '../lef/gsclib090_tech.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus'.
+[04/16 21:23:23     17s] Type 'man IMPLF-3' for more detail.
+[04/16 21:23:23     17s] **ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+[04/16 21:23:23     17s] Please rearrange the LEF file order and make sure the technology LEF file is the
+[04/16 21:23:23     17s] first one, exit and restart Innovus.
+[04/16 21:23:23     17s] **ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+[04/16 21:23:23     17s] Please rearrange the LEF file order and make sure the technology LEF file is the
+[04/16 21:23:23     17s] first one, exit and restart Innovus.
+[04/16 21:23:23     17s] **ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[04/16 21:23:33     18s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../lef/gsclib090_tech.lef ../lef/gsclib090_translated.lef ../lef/gsclib090_translated_ref.lef ../lef/gsclib090_macro.lef}'.For more details, refer to error message from console.
+[04/16 21:23:33     18s] 
+[04/16 21:23:33     18s] #################################
+[04/16 21:23:33     18s] read_netlist ../synthesis/output/gpu_netlist.v -top gpu
+[04/16 21:23:33     18s] #################################
+[04/16 21:23:33     18s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 21:23:33     18s] The MMMC init sequence looks like this: 
+[04/16 21:23:33     18s] read_mmmc top.mmmc 
+[04/16 21:23:33     18s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 21:23:33     18s] read_netlist top.v 
+[04/16 21:23:33     18s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 21:23:33     18s] init_design 
+[04/16 21:23:33     18s] 
+[04/16 21:23:33     18s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 21:23:33     18s] read_libs all.lib 
+[04/16 21:23:33     18s] read_netlist top.v 
+[04/16 21:23:33     18s] read_sdc top.sdc 
+[04/16 21:23:33     18s] init_design 
+[04/16 21:23:33     18s] 
+[04/16 21:23:33     18s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 21:23:33     18s] Common UI User Guide for more details.
+[04/16 21:23:37     19s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_netlist ../synthesis/output/gpu_netlist.v -top gpu'.For more details, refer to error message from console.
+[04/16 21:23:37     19s] 
+[04/16 21:23:37     19s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 21:23:37     19s] The MMMC init sequence looks like this: 
+[04/16 21:23:37     19s] read_mmmc top.mmmc 
+[04/16 21:23:37     19s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 21:23:37     19s] read_netlist top.v 
+[04/16 21:23:37     19s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 21:23:37     19s] init_design 
+[04/16 21:23:37     19s] 
+[04/16 21:23:37     19s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 21:23:37     19s] read_libs all.lib 
+[04/16 21:23:37     19s] read_netlist top.v 
+[04/16 21:23:37     19s] read_sdc top.sdc 
+[04/16 21:23:37     19s] init_design 
+[04/16 21:23:37     19s] 
+[04/16 21:23:37     19s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 21:23:37     19s] Common UI User Guide for more details.
+[04/16 21:23:46     19s] set_db init_power_nets VDD
+[04/16 21:23:46     19s] @innovus 4> set_db init_ground_nets VSS
+[04/16 21:23:46     19s] @innovus 5> #################################
+[04/16 21:23:46     19s] read_physical -lef {../lef/gsclib090_tech.lef ../lef/gsclib090_translated.lef ../lef/gsclib090_translated_ref.lef ../lef/gsclib090_macro.lef}
+[04/16 21:23:46     19s] #################################
+[04/16 21:23:46     19s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 21:23:46     19s] The MMMC init sequence looks like this: 
+[04/16 21:23:46     19s] read_mmmc top.mmmc 
+[04/16 21:23:46     19s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 21:23:46     19s] read_netlist top.v 
+[04/16 21:23:46     19s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 21:23:46     19s] init_design 
+[04/16 21:23:46     19s] 
+[04/16 21:23:46     19s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 21:23:46     19s] read_libs all.lib 
+[04/16 21:23:46     19s] read_netlist top.v 
+[04/16 21:23:46     19s] read_sdc top.sdc 
+[04/16 21:23:46     19s] init_design 
+[04/16 21:23:46     19s] 
+[04/16 21:23:46     19s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 21:23:46     19s] Common UI User Guide for more details.
+[04/16 21:23:50     20s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../lef/gsclib090_tech.lef ../lef/gsclib090_translated.lef ../lef/gsclib090_translated_ref.lef ../lef/gsclib090_macro.lef}'.For more details, refer to error message from console.
+[04/16 21:23:50     20s] 
+[04/16 21:23:50     20s] #################################
+[04/16 21:23:50     20s] read_netlist ../synthesis/output/gpu_netlist.v
+[04/16 21:23:50     20s] #################################
+[04/16 21:23:50     20s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 21:23:50     20s] The MMMC init sequence looks like this: 
+[04/16 21:23:50     20s] read_mmmc top.mmmc 
+[04/16 21:23:50     20s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 21:23:50     20s] read_netlist top.v 
+[04/16 21:23:50     20s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 21:23:50     20s] init_design 
+[04/16 21:23:50     20s] 
+[04/16 21:23:50     20s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 21:23:50     20s] read_libs all.lib 
+[04/16 21:23:50     20s] read_netlist top.v 
+[04/16 21:23:50     20s] read_sdc top.sdc 
+[04/16 21:23:50     20s] init_design 
+[04/16 21:23:50     20s] 
+[04/16 21:23:50     20s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 21:23:50     20s] Common UI User Guide for more details.
+[04/16 21:23:52     20s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_netlist ../synthesis/output/gpu_netlist.v'.For more details, refer to error message from console.
+[04/16 21:23:52     20s] 
+[04/16 21:23:52     20s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 21:23:52     20s] The MMMC init sequence looks like this: 
+[04/16 21:23:52     20s] read_mmmc top.mmmc 
+[04/16 21:23:52     20s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 21:23:52     20s] read_netlist top.v 
+[04/16 21:23:52     20s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 21:23:52     20s] init_design 
+[04/16 21:23:52     20s] 
+[04/16 21:23:52     20s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 21:23:52     20s] read_libs all.lib 
+[04/16 21:23:52     20s] read_netlist top.v 
+[04/16 21:23:52     20s] read_sdc top.sdc 
+[04/16 21:23:52     20s] init_design 
+[04/16 21:23:52     20s] 
+[04/16 21:23:52     20s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 21:23:52     20s] Common UI User Guide for more details.
+[04/16 21:24:40     21s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+
+[04/16 21:24:43     21s] @innovus 5> set_db init_power_nets VDD
+[04/16 21:25:27     24s] @innovus 6> set_db init_ground_nets VSS
+[04/16 21:25:27     24s] @innovus 7> #################################
+[04/16 21:25:27     24s] read_mmmc gpu.mmmc
+[04/16 21:25:27     24s] #################################
+[04/16 21:25:27     24s] #@ Begin verbose source gpu.mmmc (pre)
+[04/16 21:25:27     24s] @file 1: # =============================================================
+[04/16 21:25:27     24s] @file 2: # MMMC Configuration File for Innovus (Stylus)
+[04/16 21:25:27     24s] @file 3: # Design   : gpu
+[04/16 21:25:27     24s] @file 4: # PDK      : GPDK090
+[04/16 21:25:27     24s] @file 5: # =============================================================
+[04/16 21:25:27     24s] @file 6:
+[04/16 21:25:27     24s] @file 7: # -------------------------------------------------------------
+[04/16 21:25:27     24s] @file 8: # 1. LIBRARY SETS
+[04/16 21:25:27     24s] @file 9: # -------------------------------------------------------------
+[04/16 21:25:27     24s] @file 10:
+[04/16 21:25:27     24s] @@file 11: create_library_set -name lib_slow \
+[04/16 21:25:27     24s]     -timing [list \
+[04/16 21:25:27     24s]         slow.lib \
+[04/16 21:25:27     24s]     ]
+[04/16 21:25:27     24s] **ERROR: (TCLCMD-995):	Can not open file 'slow.lib' for library set
+[04/16 21:25:27     24s] **ERROR: (IMPSE-110):	File 'gpu.mmmc' line 11: errors out.
+[04/16 21:25:27     24s] #@ End verbose source gpu.mmmc
+[04/16 21:25:27     24s] 
+[04/16 21:25:27     24s]     while executing
+[04/16 21:25:27     24s] "create_library_set -name lib_slow \
+[04/16 21:25:27     24s]     -timing [list \
+[04/16 21:25:27     24s]         slow.lib \
+[04/16 21:25:27     24s]     ]"
+[04/16 21:25:27     24s]     (file "gpu.mmmc" line 11)
+[04/16 21:25:27     24s]     invoked from within
+[04/16 21:25:27     24s] "::se_source_orig gpu.mmmc"
+[04/16 21:25:27     24s]     ("uplevel" body line 1)
+[04/16 21:25:27     24s]     invoked from within
+[04/16 21:25:27     24s] "uplevel [concat ::se_source_orig $args]"
+[04/16 21:25:27     24s]     invoked from within
+[04/16 21:25:27     24s] "if {[::SE::source_verbose_file_state $file_name] == 1} {
+[04/16 21:25:27     24s]               ::SE::source_verbose_start $file_name
+[04/16 21:25:27     24s]               set st [uplevel [concat ::s..."
+[04/16 21:25:27     24s]     invoked from within
+[04/16 21:25:27     24s] "if {$useTclVerbose} {
+[04/16 21:25:27     24s]           # use tcl internal method
+[04/16 21:25:27     24s]           set st ""
+[04/16 21:25:27     24s]           if {[::SE::source_verbose_file_state $file_name] == 1} {
+[04/16 21:25:27     24s]      ..."
+[04/16 21:25:27     24s]     invoked from within
+[04/16 21:25:27     24s] "if {$largeFile == 1} {
+[04/16 21:25:27     24s]     if {$enableVerbose == 0 && [::SE::isEchoFile] == 1} {
+[04/16 21:25:27     24s]       $putCmd "Sourcing $file_name"
+[04/16 21:25:27     24s]     }
+[04/16 21:25:27     24s]     set st [uplevel [concat..."
+[04/16 21:25:27     24s]     (procedure "source" line 157)
+[04/16 21:25:27     24s]     invoked from within
+[04/16 21:25:27     24s] "source gpu.mmmc"
+[04/16 21:25:27     24s]     ("uplevel" body line 1)
+[04/16 21:25:27     24s]     invoked from within
+[04/16 21:25:27     24s] "uplevel #0 {source gpu.mmmc}"
+[04/16 21:25:30     24s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_mmmc gpu.mmmc'.For more details, refer to error message from console.
+[04/16 21:25:30     24s] 
+[04/16 21:25:30     24s] #################################
+[04/16 21:25:30     24s] read_physical -lef {../lef/gsclib090_tech.lef ../lef/gsclib090_translated.lef ../lef/gsclib090_translated_ref.lef ../lef/gsclib090_macro.lef}
+[04/16 21:25:30     24s] #################################
+[04/16 21:25:30     24s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 21:25:30     24s] The MMMC init sequence looks like this: 
+[04/16 21:25:30     24s] read_mmmc top.mmmc 
+[04/16 21:25:30     24s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 21:25:30     24s] read_netlist top.v 
+[04/16 21:25:30     24s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 21:25:30     24s] init_design 
+[04/16 21:25:30     24s] 
+[04/16 21:25:30     24s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 21:25:30     24s] read_libs all.lib 
+[04/16 21:25:30     24s] read_netlist top.v 
+[04/16 21:25:30     24s] read_sdc top.sdc 
+[04/16 21:25:30     24s] init_design 
+[04/16 21:25:30     24s] 
+[04/16 21:25:30     24s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 21:25:30     24s] Common UI User Guide for more details.
+[04/16 21:25:32     24s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_physical -lef {../lef/gsclib090_tech.lef ../lef/gsclib090_translated.lef ../lef/gsclib090_translated_ref.lef ../lef/gsclib090_macro.lef}'.For more details, refer to error message from console.
+[04/16 21:25:32     24s] 
+[04/16 21:25:32     24s] #################################
+[04/16 21:25:32     24s] read_netlist ../synthesis/output/gpu_netlist.v
+[04/16 21:25:32     24s] #################################
+[04/16 21:25:32     24s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 21:25:32     24s] The MMMC init sequence looks like this: 
+[04/16 21:25:32     24s] read_mmmc top.mmmc 
+[04/16 21:25:32     24s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 21:25:32     24s] read_netlist top.v 
+[04/16 21:25:32     24s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 21:25:32     24s] init_design 
+[04/16 21:25:32     24s] 
+[04/16 21:25:32     24s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 21:25:32     24s] read_libs all.lib 
+[04/16 21:25:32     24s] read_netlist top.v 
+[04/16 21:25:32     24s] read_sdc top.sdc 
+[04/16 21:25:32     24s] init_design 
+[04/16 21:25:32     24s] 
+[04/16 21:25:32     24s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 21:25:32     24s] Common UI User Guide for more details.
+[04/16 21:25:34     25s] **ERROR: **ERROR: (IMPSYT-16031):	Failed to execute command 'read_netlist ../synthesis/output/gpu_netlist.v'.For more details, refer to error message from console.
+[04/16 21:25:34     25s] 
+[04/16 21:25:34     25s] **ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 21:25:34     25s] The MMMC init sequence looks like this: 
+[04/16 21:25:34     25s] read_mmmc top.mmmc 
+[04/16 21:25:34     25s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 21:25:34     25s] read_netlist top.v 
+[04/16 21:25:34     25s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 21:25:34     25s] init_design 
+[04/16 21:25:34     25s] 
+[04/16 21:25:34     25s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 21:25:34     25s] read_libs all.lib 
+[04/16 21:25:34     25s] read_netlist top.v 
+[04/16 21:25:34     25s] read_sdc top.sdc 
+[04/16 21:25:34     25s] init_design 
+[04/16 21:25:34     25s] 
+[04/16 21:25:34     25s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 21:25:34     25s] Common UI User Guide for more details.
+
+[04/16 21:25:51     25s] @innovus 7> read_netlist ../synthesis/output/gpu_netlist.v
+**ERROR: (IMPIMEX-12):	'init_design' failed. You are missing one or more of the required commands before running init_design.
+[04/16 21:25:54     25s] The MMMC init sequence looks like this: 
+[04/16 21:25:54     25s] read_mmmc top.mmmc 
+[04/16 21:25:54     25s] read_physical -lef {tech.lef stdcell.lef}   #optional in Tempus, required for Innovus 
+[04/16 21:25:54     25s] read_netlist top.v 
+[04/16 21:25:54     25s] read_power_intent -1801 top.1801	    #only for MSV designs 
+[04/16 21:25:54     25s] init_design 
+[04/16 21:25:54     25s] 
+[04/16 21:25:54     25s] Tempus also supports a single-mode timing init sequence with no MMMC file like this: 
+[04/16 21:25:54     25s] read_libs all.lib 
+[04/16 21:25:54     25s] read_netlist top.v 
+[04/16 21:25:54     25s] read_sdc top.sdc 
+[04/16 21:25:54     25s] init_design 
+[04/16 21:25:54     25s] 
+[04/16 21:25:54     25s] See the 'Stylus Common UI Initialization' section in the 'Design Import and Export Capabilities' chapter of the Innovus Stylus 
+[04/16 21:25:54     25s] Common UI User Guide for more details.
+[04/16 21:25:54     25s] 
+[04/16 21:25:54     25s] 
+[04/16 21:25:54     25s] @innovus 8> 
+[04/16 21:26:40     27s] --------------------------------------------------------------------------------
+[04/16 21:26:40     27s] Exiting Innovus on Thu Apr 16 21:26:40 2026
+[04/16 21:26:40     27s]   Total CPU time:     0:00:27
+[04/16 21:26:40     27s]   Total real time:    0:04:41
+[04/16 21:26:40     27s]   Peak memory (main): 1023.88MB
+[04/16 21:26:40     27s] 
+[04/16 21:26:40     27s] 
+[04/16 21:26:40     27s] *** Memory Usage v#1 (Current mem = 1029.391M, initial mem = 491.871M) ***
+[04/16 21:26:40     27s] 
+[04/16 21:26:40     27s] *** Summary of all messages that are not suppressed in this session:
+[04/16 21:26:40     27s] Severity  ID               Count  Summary                                  
+[04/16 21:26:40     27s] ERROR     IMPLF-3              1  Error found when processing LEF file '%s...
+[04/16 21:26:40     27s] ERROR     IMPLF-26             2  No technology information is defined in ...
+[04/16 21:26:40     27s] ERROR     IMPLF-224            1  Failed to create via '%s'.               
+[04/16 21:26:40     27s] ERROR     IMPLF-111            1  Layer '%s' is not defined                
+[04/16 21:26:40     27s] ERROR     IMPSE-110            1  File '%s' line %s: %s.                   
+[04/16 21:26:40     27s] ERROR     IMPSYT-16013         1  Loading LEF file(s) failed, and has abor...
+[04/16 21:26:40     27s] ERROR     IMPSYT-16031         7  %s                                       
+[04/16 21:26:40     27s] ERROR     IMPIMEX-12           9  'init_design' failed. You are missing on...
+[04/16 21:26:40     27s] ERROR     TCLCMD-995           1  Can not open file '%s' for %s            
+[04/16 21:26:40     27s] *** Message Summary: 0 warning(s), 24 error(s)
+[04/16 21:26:40     27s] 
+[04/16 21:26:40     27s] --- Ending "Innovus" (totcpu=0:00:27.0, real=0:04:39, mem=1029.4M) ---

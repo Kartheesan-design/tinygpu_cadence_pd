@@ -1,0 +1,346 @@
+[04/28 17:58:35      0s] 
+[04/28 17:58:35      0s] Cadence Innovus(TM) Implementation System.
+[04/28 17:58:35      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/28 17:58:35      0s] 
+[04/28 17:58:35      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[04/28 17:58:35      0s] Options:	
+[04/28 17:58:35      0s] Date:		Tue Apr 28 17:58:35 2026
+[04/28 17:58:35      0s] Host:		cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB)
+[04/28 17:58:35      0s] OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+[04/28 17:58:35      0s] 
+[04/28 17:58:35      0s] License:
+[04/28 17:58:35      0s] 		[17:58:35.400361] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+[04/28 17:58:35      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[04/28 17:58:35      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[04/28 17:58:55      9s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[04/28 17:58:57     11s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[04/28 17:58:57     11s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[04/28 17:58:57     11s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[04/28 17:58:57     11s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[04/28 17:58:57     11s] @(#)CDS: CPE v21.15-s076
+[04/28 17:58:57     11s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[04/28 17:58:57     11s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[04/28 17:58:57     11s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[04/28 17:58:57     11s] @(#)CDS: RCDB 11.15.0
+[04/28 17:58:57     11s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[04/28 17:58:57     11s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[04/28 17:58:57     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3580441_cadence-server.vit.ac.in_22bec0039_aGcGNn.
+
+[04/28 17:58:57     11s] Change the soft stacksize limit to 0.2%RAM (2062 mbytes). Set global soft_stack_size_limit to change the value.
+[04/28 17:59:01     12s] 
+[04/28 17:59:01     12s] **INFO:  MMMC transition support version v31-84 
+[04/28 17:59:01     12s] 
+[04/28 17:59:01     12s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/28 17:59:01     12s] <CMD> suppressMessage ENCEXT-2799
+[04/28 17:59:01     12s] <CMD> getVersion
+[04/28 17:59:01     12s] <CMD> getVersion
+[04/28 17:59:01     12s] <CMD> getVersion
+[04/28 17:59:01     12s] [INFO] Loading PVS 22.20 fill procedures
+[04/28 17:59:01     12s] <CMD> win
+[04/28 18:09:12     61s] <CMD> set init_gnd_net VSS
+[04/28 18:09:12     61s] <CMD> set init_lef_file {../lef/gsclib090_tech.lef ../lef/gsclib090_translated.lef ../lef/gsclib090_translated_ref.lef ../lef/gsclib090_macro.lef}
+[04/28 18:09:12     61s] <CMD> set init_design_settop 0
+[04/28 18:09:12     61s] <CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+[04/28 18:09:12     61s] <CMD> set init_mmmc_file gpu.view
+[04/28 18:09:12     61s] <CMD> set init_pwr_net VDD
+[04/28 18:09:12     61s] <CMD> init_design
+[04/28 18:09:12     61s] #% Begin Load MMMC data ... (date=04/28 18:09:12, mem=1024.3M)
+[04/28 18:09:12     61s] #% End Load MMMC data ... (date=04/28 18:09:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1025.0M, current mem=1025.0M)
+[04/28 18:09:12     61s] 
+[04/28 18:09:12     61s] Loading LEF file ../lef/gsclib090_tech.lef ...
+[04/28 18:09:12     61s] **ERROR: (IMPLF-111):	Layer 'Metal1' is not defined
+**ERROR: (IMPLF-224):	Failed to create via 'VIA1X'.
+**ERROR: (IMPLF-3):	Error found when processing LEF file '../lef/gsclib090_tech.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus'.
+Type 'man IMPLF-3' for more detail.
+[04/28 18:09:12     61s] **ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[04/28 18:11:53    100s] <CMD> set init_gnd_net VSS
+[04/28 18:11:53    100s] <CMD> set init_design_settop 0
+[04/28 18:11:53    100s] <CMD> set init_verilog ../synthesis/output/gpu_netlist.v
+[04/28 18:11:53    100s] <CMD> set init_mmmc_file gpu.view
+[04/28 18:11:53    100s] <CMD> set init_pwr_net VDD
+[04/28 18:11:53    100s] <CMD> init_design
+[04/28 18:11:53    100s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[04/28 18:11:53    100s] #% Begin Load MMMC data ... (date=04/28 18:11:53, mem=1031.1M)
+[04/28 18:11:53    100s] Extraction setup Started 
+[04/28 18:11:53    100s] 
+[04/28 18:11:53    100s] Trim Metal Layers:
+[04/28 18:11:53    100s] 
+[04/28 18:11:53    100s] Trim Metal Layers:
+[04/28 18:11:53    100s] 
+[04/28 18:11:53    100s] Trim Metal Layers:
+[04/28 18:11:53    100s] Extraction setup Started 
+[04/28 18:11:53    100s] 
+[04/28 18:11:53    100s] Trim Metal Layers:
+[04/28 18:11:53    100s] 
+[04/28 18:11:53    100s] Trim Metal Layers:
+[04/28 18:11:53    100s] 
+[04/28 18:11:53    100s] Trim Metal Layers:
+[04/28 18:11:53    100s] Extraction setup Started 
+[04/28 18:11:53    100s] 
+[04/28 18:11:53    100s] Trim Metal Layers:
+[04/28 18:11:53    100s] 
+[04/28 18:11:53    100s] Trim Metal Layers:
+[04/28 18:11:53    100s] 
+[04/28 18:11:53    100s] Trim Metal Layers:
+[04/28 18:11:53    100s] The existing analysis_view 'best_case' has been replaced with new attributes.
+[04/28 18:11:53    100s] The existing analysis_view 'worst_case' has been replaced with new attributes.
+[04/28 18:11:53    100s] INFO: New setup and hold views overwrite old settings during design initialization
+[04/28 18:11:53    100s] #% End Load MMMC data ... (date=04/28 18:11:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1031.6M, current mem=1031.6M)
+[04/28 18:11:53    100s] **WARN: (IMPSYT-10026):	No LEF physical data was provided but timing libraries were given, so only timing analysis can be run. Any commands that require physical data will fail. This mode is meant for doing Tempus vs Innovus comparisons using common scripts, and is not intended for normal usage.
+[04/28 18:11:53    100s] Use timer mode.
+[04/28 18:11:53    100s] Loading view definition file from gpu.view
+[04/28 18:11:53    100s] Reading max_timing timing library '/home/userdata/22bec0039/kar/GPU/lib/slow.lib' ...
+[04/28 18:11:53    101s] Read 479 cells in library 'slow' 
+[04/28 18:11:53    101s] Reading min_timing timing library '/home/userdata/22bec0039/kar/GPU/lib/fast.lib' ...
+[04/28 18:11:53    101s] Read 479 cells in library 'fast' 
+[04/28 18:11:53    101s] Ending "PreSetAnalysisView" (total cpu=0:00:00.7, real=0:00:00.0, peak res=1098.3M, current mem=1042.3M)
+[04/28 18:11:53    101s] *** End library_loading (cpu=0.01min, real=0.00min, mem=27.0M, fe_cpu=1.69min, fe_real=13.30min, fe_mem=1073.1M) ***
+[04/28 18:11:54    101s] #% Begin Load netlist data ... (date=04/28 18:11:53, mem=1042.3M)
+[04/28 18:11:54    101s] *** Begin netlist parsing (mem=1073.1M) ***
+[04/28 18:11:54    101s] Created 479 new cells from 2 timing libraries.
+[04/28 18:11:54    101s] Reading netlist ...
+[04/28 18:11:54    101s] Backslashed names will retain backslash and a trailing blank character.
+[04/28 18:11:54    101s] Reading verilog netlist '../synthesis/output/gpu_netlist.v'
+[04/28 18:11:54    101s] 
+[04/28 18:11:54    101s] *** Memory Usage v#1 (Current mem = 1079.105M, initial mem = 483.871M) ***
+[04/28 18:11:54    101s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=1079.1M) ***
+[04/28 18:11:54    101s] #% End Load netlist data ... (date=04/28 18:11:54, total cpu=0:00:00.1, real=0:00:00.0, peak res=1063.6M, current mem=1063.6M)
+[04/28 18:11:54    101s] Top level cell is gpu.
+[04/28 18:11:54    101s] Hooked 958 DB cells to tlib cells.
+[04/28 18:11:54    101s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1068.4M, current mem=1068.4M)
+[04/28 18:11:54    101s] Starting recursive module instantiation check.
+[04/28 18:11:54    101s] No recursion found.
+[04/28 18:11:54    101s] Building hierarchical netlist for Cell gpu ...
+[04/28 18:11:54    101s] *** Netlist is unique.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_alu_arithmetic_mux_reg[0]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_alu_arithmetic_mux_reg[1]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_alu_output_mux_reg  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_immediate_reg[0]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_immediate_reg[1]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_immediate_reg[2]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_immediate_reg[3]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_immediate_reg[4]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_immediate_reg[5]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_immediate_reg[6]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_immediate_reg[7]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_mem_write_enable_reg  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_nzp_reg[0]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_nzp_reg[1]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_nzp_reg[2]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_pc_mux_reg  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_rd_address_reg[0]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_reg_input_mux_reg[1]  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_reg_write_enable_reg  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-102):	Instance \cores[0].core_instance_decoder_instance_decoded_ret_reg  of the cell DFFQX1 has no physical library or has wrong dimen-
+sion values (<=0). Check your design setup to make sure the physical
+ library is loaded in and the attributes specified in physical library are correct.
+Type 'man IMPREPO-102' for more detail.
+[04/28 18:11:54    101s] **WARN: (EMS-27):	Message (IMPREPO-102) has exceeded the current message display limit of 20.
+[04/28 18:11:54    101s] To increase the message display limit, refer to the product command reference manual.
+[04/28 18:11:54    101s] ** info: there are 959 modules.
+[04/28 18:11:54    101s] ** info: there are 9979 stdCell insts.
+[04/28 18:11:54    101s] **ERROR: (IMPREPO-103):	There are 9979 instances (75 cells) with no dimension defined.
+
+[04/28 18:11:54    101s] *** Memory Usage v#1 (Current mem = 1134.020M, initial mem = 483.871M) ***
+[04/28 18:11:54    101s] Extraction setup Started 
+[04/28 18:11:54    101s] 
+[04/28 18:11:54    101s] Trim Metal Layers:
+[04/28 18:11:54    101s] 
+[04/28 18:11:54    101s] Trim Metal Layers:
+[04/28 18:11:54    101s] 
+[04/28 18:11:54    101s] Trim Metal Layers:
+[04/28 18:11:54    101s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[04/28 18:11:54    101s] **ERROR: (IMPEXT-3466):	The technology layer information is not available. This can happen if either no LEF file is imported or an error occurs while reading the LEF file(s). The capacitance table file cannot be read without the layer information.
+**ERROR: (IMPEXT-2677):	Multi-corner RC initialization is aborted because of previously-reported errors. Use the reason provided in the error message(s) to resolve this issue and use the set_analysis_view command to invoke multi-corner initialization again.
+*Info: initialize multi-corner CTS.
+[04/28 18:11:54    101s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1332.5M, current mem=1092.4M)
+[04/28 18:11:54    101s] Reading timing constraints file '../synthesis/gpu_syn.sdc' ...
+[04/28 18:11:54    101s] Current (total cpu=0:01:42, real=0:13:19, peak res=1348.4M, current mem=1348.4M)
+[04/28 18:11:54    101s] INFO (CTE): Constraints read successfully.
+[04/28 18:11:54    101s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1389.1M, current mem=1389.1M)
+[04/28 18:11:54    101s] Current (total cpu=0:01:42, real=0:13:19, peak res=1389.1M, current mem=1389.1M)
+[04/28 18:11:54    101s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[04/28 18:11:54    101s] 
+[04/28 18:11:54    101s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[04/28 18:11:54    101s] Summary for sequential cells identification: 
+[04/28 18:11:54    101s]   Identified SBFF number: 0
+[04/28 18:11:54    101s]   Identified MBFF number: 0
+[04/28 18:11:54    101s]   Identified SB Latch number: 0
+[04/28 18:11:54    101s]   Identified MB Latch number: 0
+[04/28 18:11:54    101s]   Not identified SBFF number: 0
+[04/28 18:11:54    101s]   Not identified MBFF number: 0
+[04/28 18:11:54    101s]   Not identified SB Latch number: 0
+[04/28 18:11:54    101s]   Not identified MB Latch number: 0
+[04/28 18:11:54    101s]   Number of sequential cells which are not FFs: 0
+[04/28 18:11:54    101s] Total number of combinational cells: 0
+[04/28 18:11:54    101s] Total number of sequential cells: 0
+[04/28 18:11:54    101s] Total number of tristate cells: 0
+[04/28 18:11:54    101s] Total number of level shifter cells: 0
+[04/28 18:11:54    101s] Total number of power gating cells: 0
+[04/28 18:11:54    101s] Total number of isolation cells: 0
+[04/28 18:11:54    101s] Total number of power switch cells: 0
+[04/28 18:11:54    101s] Total number of pulse generator cells: 0
+[04/28 18:11:54    101s] Total number of always on buffers: 0
+[04/28 18:11:54    101s] Total number of retention cells: 0
+[04/28 18:11:54    101s] List of usable buffers:
+[04/28 18:11:54    101s] Total number of usable buffers: 0
+[04/28 18:11:54    101s] List of unusable buffers:
+[04/28 18:11:54    101s] Total number of unusable buffers: 0
+[04/28 18:11:54    101s] List of usable inverters:
+[04/28 18:11:54    101s] Total number of usable inverters: 0
+[04/28 18:11:54    101s] List of unusable inverters:
+[04/28 18:11:54    101s] Total number of unusable inverters: 0
+[04/28 18:11:54    101s] List of identified usable delay cells:
+[04/28 18:11:54    101s] Total number of identified usable delay cells: 0
+[04/28 18:11:54    101s] List of identified unusable delay cells:
+[04/28 18:11:54    101s] Total number of identified unusable delay cells: 0
+[04/28 18:11:54    101s] 
+[04/28 18:11:54    101s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[04/28 18:11:54    101s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[04/28 18:11:54    101s] 
+[04/28 18:11:54    101s] TimeStamp Deleting Cell Server Begin ...
+[04/28 18:11:54    101s] 
+[04/28 18:11:54    101s] TimeStamp Deleting Cell Server End ...
+[04/28 18:11:54    102s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1390.2M, current mem=1390.2M)
+[04/28 18:11:54    102s] 
+[04/28 18:11:54    102s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[04/28 18:11:54    102s] Summary for sequential cells identification: 
+[04/28 18:11:54    102s]   Identified SBFF number: 0
+[04/28 18:11:54    102s]   Identified MBFF number: 0
+[04/28 18:11:54    102s]   Identified SB Latch number: 0
+[04/28 18:11:54    102s]   Identified MB Latch number: 0
+[04/28 18:11:54    102s]   Not identified SBFF number: 0
+[04/28 18:11:54    102s]   Not identified MBFF number: 0
+[04/28 18:11:54    102s]   Not identified SB Latch number: 0
+[04/28 18:11:54    102s]   Not identified MB Latch number: 0
+[04/28 18:11:54    102s]   Number of sequential cells which are not FFs: 0
+[04/28 18:11:54    102s] **WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+[04/28 18:11:54    102s] Type 'man IMPOPT-3000' for more detail.
+[04/28 18:11:54    102s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[04/28 18:11:54    102s] Type 'man IMPOPT-3001' for more detail.
+[04/28 18:11:54    102s]  Visiting view : worst_case
+[04/28 18:11:54    102s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[04/28 18:11:54    102s]    : PowerDomain = none : no stdDelay from this view
+[04/28 18:11:54    102s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[04/28 18:11:54    102s]  Visiting view : best_case
+[04/28 18:11:54    102s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[04/28 18:11:54    102s]    : PowerDomain = none : no stdDelay from this view
+[04/28 18:11:54    102s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[04/28 18:11:54    102s] *INFO : stdDelay is calculated as zero; using legacy method.
+[04/28 18:11:54    102s] *INFO : stdSlew is calculated as zero; using legacy method.
+[04/28 18:11:54    102s] TLC MultiMap info (StdDelay):
+[04/28 18:11:54    102s]   : min_delay + min_timing + 1 + no RcCorner := -9.22337e+17ps
+[04/28 18:11:54    102s]   : min_delay + min_timing + 1 + rccorner := -9.22337e+17ps
+[04/28 18:11:54    102s]   : max_delay + max_timing + 1 + no RcCorner := -9.22337e+17ps
+[04/28 18:11:54    102s]   : max_delay + max_timing + 1 + rccorner := -9.22337e+17ps
+[04/28 18:11:54    102s]  Setting StdDelay to: 10ps
+[04/28 18:11:54    102s] 
+[04/28 18:11:54    102s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[04/28 18:11:54    102s] 
+[04/28 18:11:54    102s] TimeStamp Deleting Cell Server Begin ...
+[04/28 18:11:54    102s] 
+[04/28 18:11:54    102s] TimeStamp Deleting Cell Server End ...
+[04/28 18:11:54    102s] Extraction setup Started 
+[04/28 18:11:54    102s] 
+[04/28 18:11:54    102s] Trim Metal Layers:
+[04/28 18:11:54    102s] 
+[04/28 18:11:54    102s] Trim Metal Layers:
+[04/28 18:11:54    102s] 
+[04/28 18:11:54    102s] Trim Metal Layers:
+[04/28 18:11:54    102s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[04/28 18:11:54    102s] **ERROR: (IMPEXT-3466):	The technology layer information is not available. This can happen if either no LEF file is imported or an error occurs while reading the LEF file(s). The capacitance table file cannot be read without the layer information.
+**ERROR: (IMPEXT-2677):	Multi-corner RC initialization is aborted because of previously-reported errors. Use the reason provided in the error message(s) to resolve this issue and use the set_analysis_view command to invoke multi-corner initialization again.
+report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[04/28 18:12:15    102s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[04/28 18:13:18    103s] child process exited abnormally
+[04/28 18:14:46    106s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Tue Apr 28 18:14:46 2026
+  Total CPU time:     0:01:49
+  Total real time:    0:16:12
+  Peak memory (main): 1399.94MB
+
+[04/28 18:14:46    106s] 
+[04/28 18:14:46    106s] *** Memory Usage v#1 (Current mem = 1442.605M, initial mem = 483.871M) ***
+[04/28 18:14:46    106s] 
+[04/28 18:14:46    106s] *** Summary of all messages that are not suppressed in this session:
+[04/28 18:14:46    106s] Severity  ID               Count  Summary                                  
+[04/28 18:14:46    106s] ERROR     IMPLF-3              1  Error found when processing LEF file '%s...
+[04/28 18:14:46    106s] ERROR     IMPLF-26             2  No technology information is defined in ...
+[04/28 18:14:46    106s] ERROR     IMPLF-224            1  Failed to create via '%s'.               
+[04/28 18:14:46    106s] ERROR     IMPLF-111            1  Layer '%s' is not defined                
+[04/28 18:14:46    106s] ERROR     IMPEXT-2677          2  Multi-corner RC initialization is aborte...
+[04/28 18:14:46    106s] ERROR     IMPEXT-3466          2  The technology layer information is not ...
+[04/28 18:14:46    106s] ERROR     IMPSYT-16013         1  Loading LEF file(s) failed, and has abor...
+[04/28 18:14:46    106s] WARNING   IMPSYT-10026         1  No LEF physical data was provided but ti...
+[04/28 18:14:46    106s] WARNING   IMPOPT-3000          1  Buffer footprint is not defined or is an...
+[04/28 18:14:46    106s] WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
+[04/28 18:14:46    106s] ERROR     IMPREPO-102       9979  Instance %s of the cell %s has no physic...
+[04/28 18:14:46    106s] ERROR     IMPREPO-103          1  There are %d instances (%d cells) with n...
+[04/28 18:14:46    106s] *** Message Summary: 3 warning(s), 9990 error(s)
+[04/28 18:14:46    106s] 
+[04/28 18:14:46    106s] --- Ending "Innovus" (totcpu=0:01:47, real=0:16:11, mem=1442.6M) ---

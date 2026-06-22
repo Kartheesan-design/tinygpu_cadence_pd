@@ -1,0 +1,142 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[17:19:50.400313] Configured Lic search path (21.01-s002): 5280@10.110.5.59
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: 
+Date:    Sat Jun 20 17:19:50 2026
+Host:    cadence-server.vit.ac.in (x86_64 w/Linux 4.18.0-477.21.1.el8_8.x86_64) (16cores*32cpus*1physical cpu*Intel(R) Xeon(R) Gold 6346 CPU @ 3.10GHz 36864KB) (1055760632KB)
+PID:     2264301
+OS:      Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+
+[17:19:50.382416] Periodic Lic check successful
+[17:19:50.382425] Feature usage summary:
+[17:19:50.382426] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (17 seconds elapsed).
+
+WARNING: This version of the tool is 1458 days old.
+@genus:root: 1> ls
+fv
+genus.cmd
+genus.cmd1
+genus.cmd2
+genus.cmd3
+genus.cmd4
+genus.cmd5
+genus.cmd6
+genus.cmd7
+genus.log
+genus.log1
+genus.log2
+genus.log3
+genus.log4
+genus.log5
+genus.log6
+genus.log7
+gpu_script.tcl
+gpu_syn.sdc
+output
+reports
+@genus:root: 2> gpu_script.tcl
+invalid command name "gpu_script.tcl"
+@genus:root: 3> genus gpu_script.tcl
+@genus:root: 4> gedit gpu_script.tcl
+@genus:root: 5> ls
+fv
+genus.cmd
+genus.cmd1
+genus.cmd2
+genus.cmd3
+genus.cmd4
+genus.cmd5
+genus.cmd6
+genus.cmd7
+genus.cmd8
+genus.log
+genus.log1
+genus.log2
+genus.log3
+genus.log4
+genus.log5
+genus.log6
+genus.log7
+genus.log8
+gpu_script.tcl
+gpu_syn.sdc
+output
+reports
+@genus:root: 6> cd ../
+@genus:root: 7> ld
+@genus:root: 8> ls
+PD
+RTL
+lef
+lib
+synthesis
+tech
+@genus:root: 9> cd lib
+@genus:root: 10> ls
+fast.lib
+fast.lib_ecsm
+slow.lib
+slow.lib_ecsm
+ss_0v67.lib
+ss_0v67.lib_ecsm
+ss_0v75.lib
+ss_0v75.lib_ecsm
+typical.lib
+typical.lib_ecsm
+@genus:root: 11> cd ../
+@genus:root: 12> cd synthesis
+@genus:root: 13> ls
+fv
+genus.cmd
+genus.cmd1
+genus.cmd2
+genus.cmd3
+genus.cmd4
+genus.cmd5
+genus.cmd6
+genus.cmd7
+genus.cmd8
+genus.log
+genus.log1
+genus.log2
+genus.log3
+genus.log4
+genus.log5
+genus.log6
+genus.log7
+genus.log8
+gpu_script.tcl
+gpu_syn.sdc
+output
+reports
+@genus:root: 14> gedit gpu_script.tcl
+@genus:root: 15> genus gpu_script.tcl
+@genus:root: 16> gedit gpu_script.tcl
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 317s, ST: 8s, FG: 8s, CPU: 1.6%}, MEM {curr: 0.9G, peak: 0.9G, phys curr: 0.3G, phys peak: 0.4G}, SYS {load: 6.1, cpu: 32, total: 1006.9G, free: 547.5G}
+@genus:root: 17> 
+@genus:root: 17> exit
+
+Lic Summary:
+[17:25:46.091595] Cdslmd servers: cadence-server
+[17:25:46.091603] Feature usage summary:
+[17:25:46.091603] Genus_Synthesis
+
+Normal exit.

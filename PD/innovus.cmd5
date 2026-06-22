@@ -1,0 +1,42 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Apr 28 18:15:27 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+loadLefFile ../lef/gsclib090_translated.lef ../lef/gsclib090_translated_ref.lef ../lef/gsclib090_macro.lef
+set init_lef_file {../lef/gsclib090_translated.lef ../lef/gsclib090_translated_ref.lef ../lef/gsclib090_macro.lef}
+set init_gnd_net VSS
+set init_design_settop 0
+set init_verilog ../synthesis/output/gpu_netlist.v
+set init_mmmc_file gpu.view
+set init_pwr_net VDD
+init_design
+setDrawView fplan
+setDrawView place
+setDrawView fplan
+zoomBox -67.15600 -8.57400 210.46200 146.84000
+zoomBox -1.74450 -2.17800 1.70650 -0.24600
+zoomBox -3.94500 -2.39500 8.72450 4.69750
+zoomBox -6.08650 -3.04900 14.54450 8.50050
+zoomBox -3.67800 -1.82350 8.99200 5.26950
+zoomBox -2.01650 -0.93800 4.59750 2.76450
+zoomBox -1.03600 -0.47250 1.89900 1.17050
+zoomBox -0.60150 -0.26600 0.70150 0.46350
+zoomBox -0.38950 -0.14300 0.18950 0.18100
+zoomBox -0.32100 -0.10350 0.03550 0.09600
